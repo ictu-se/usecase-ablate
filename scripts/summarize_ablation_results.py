@@ -40,6 +40,24 @@ def write_csv(path, rows, fields):
         writer.writerows(rows)
 
 
+def model_family(model):
+    if model.startswith("qwen2.5-coder"):
+        return "qwen-coder"
+    if model.startswith("qwen2.5vl"):
+        return "qwen-vl"
+    if model.startswith("qwen2.5"):
+        return "qwen-text"
+    if model.startswith("llama3.2-vision"):
+        return "llama-vision"
+    if model.startswith("llama3.2"):
+        return "llama-text"
+    if model.startswith("gemma"):
+        return "gemma"
+    if model.startswith("granite"):
+        return "granite"
+    return "other"
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--results-dir", default=str(PROJECT / "results"))
@@ -121,6 +139,41 @@ def main():
         results_dir / "ablation_best_per_model.csv",
         best_by_model,
         ["model", "best_condition", "composite_score", "use_case_recall", "path_fidelity", "unsupported_feature_rate", "elapsed_sec"],
+    )
+
+    by_family = defaultdict(list)
+    for row in best_by_model:
+        by_family[model_family(row["model"])].append(row)
+    family_summary = []
+    for family, group in sorted(by_family.items()):
+        best = max(group, key=lambda row: row["composite_score"] if row["composite_score"] is not None else -1)
+        family_summary.append({
+            "family": family,
+            "models": len(group),
+            "mean_best_score": mean(row["composite_score"] for row in group),
+            "mean_best_use_case_recall": mean(row["use_case_recall"] for row in group),
+            "mean_best_path_fidelity": mean(row["path_fidelity"] for row in group),
+            "mean_best_unsupported_feature_rate": mean(row["unsupported_feature_rate"] for row in group),
+            "mean_best_elapsed_sec": mean(row["elapsed_sec"] for row in group),
+            "best_model": best["model"],
+            "best_condition": best["best_condition"],
+            "best_score": best["composite_score"],
+        })
+    write_csv(
+        results_dir / "ablation_summary_by_family.csv",
+        family_summary,
+        [
+            "family",
+            "models",
+            "mean_best_score",
+            "mean_best_use_case_recall",
+            "mean_best_path_fidelity",
+            "mean_best_unsupported_feature_rate",
+            "mean_best_elapsed_sec",
+            "best_model",
+            "best_condition",
+            "best_score",
+        ],
     )
 
     record_lookup = {}
@@ -267,7 +320,7 @@ def main():
         fig.savefig(figures_dir / "fig_ablation_runtime_quality.pdf")
         plt.close(fig)
 
-    print(f"wrote {len(summary)} condition rows, {len(best_by_model)} best-model rows, and figures to {figures_dir}")
+    print(f"wrote {len(summary)} condition rows, {len(best_by_model)} best-model rows, {len(family_summary)} family rows, and figures to {figures_dir}")
 
 
 if __name__ == "__main__":
