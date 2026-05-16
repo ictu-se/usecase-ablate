@@ -1,0 +1,11 @@
+[project]
+name = "usecase-ablate"
+version = "0.1.0"
+description = "Reproduction scripts for repository artifact ablation in LLM-based use-case recovery."
+requires-python = ">=3.9"
+dependencies = [
+  "matplotlib>=3.7",
+]
+
+[tool.setuptools]
+py-modules = []
