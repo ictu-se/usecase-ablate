@@ -1,0 +1,4 @@
+repo,project,condition,model,artifact_chars,gold_use_cases,predicted_use_cases,matched_use_cases,parse_ok,actor_recall,use_case_recall,path_fidelity,behavior_coverage,unsupported_feature_rate,elapsed_sec,composite_score
+4jean__lav_sms,LAVSMS Laravel School Management,readme_only,qwen2.5-coder:1.5b,3576,11,7,1,1,0.25,0.09090909090909091,0.0,0.12903225806451613,0.8571428571428571,5.105,11.545873481357352
+4jean__lav_sms,LAVSMS Laravel School Management,file_tree_only,qwen2.5-coder:1.5b,4907,11,9,0,1,0.75,0.0,0.0,0.0,1.0,4.08,15.000000000000002
+4jean__lav_sms,LAVSMS Laravel School Management,readme_plus_tree,qwen2.5-coder:1.5b,8485,11,7,1,1,0.25,0.09090909090909091,0.0,0.1,0.8571428571428571,4.293,11.11038961038961

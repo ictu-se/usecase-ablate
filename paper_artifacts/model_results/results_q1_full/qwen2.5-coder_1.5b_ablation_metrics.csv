@@ -1,0 +1,161 @@
+repo,project,condition,model,artifact_chars,gold_use_cases,predicted_use_cases,matched_use_cases,parse_ok,actor_recall,use_case_recall,path_fidelity,behavior_coverage,unsupported_feature_rate,elapsed_sec,composite_score
+4jean__lav_sms,LAVSMS Laravel School Management,readme_only,qwen2.5-coder:1.5b,3576,11,7,1,1,0.25,0.09090909090909091,0.0,0.11764705882352941,0.8571428571428571,4.306,11.37509549274255
+4jean__lav_sms,LAVSMS Laravel School Management,file_tree_only,qwen2.5-coder:1.5b,4907,11,8,0,1,0.75,0.0,0.0,0.0,1.0,3.75,15.000000000000002
+4jean__lav_sms,LAVSMS Laravel School Management,readme_plus_tree,qwen2.5-coder:1.5b,8485,11,6,2,1,0.75,0.18181818181818182,0.0,0.12452107279693486,0.6666666666666666,3.427,26.56478578892372
+4jean__lav_sms,LAVSMS Laravel School Management,routes_controllers,qwen2.5-coder:1.5b,30069,11,3,1,1,0.25,0.09090909090909091,0.0,0.14285714285714285,0.6666666666666666,3.946,13.658008658008658
+4jean__lav_sms,LAVSMS Laravel School Management,models_services,qwen2.5-coder:1.5b,7663,11,4,2,1,0.25,0.18181818181818182,0.0,0.07248157248157248,0.5,2.997,17.45085995085995
+4jean__lav_sms,LAVSMS Laravel School Management,readme_plus_code,qwen2.5-coder:1.5b,39646,11,5,1,1,0.0,0.09090909090909091,0.16666666666666666,0.046511627906976744,0.8,6.711,9.212825933756166
+4jean__lav_sms,LAVSMS Laravel School Management,bm25_retrieved_code,qwen2.5-coder:1.5b,42135,11,11,4,1,0.5,0.36363636363636365,0.0,0.1262887887887888,0.6363636363636364,9.861,28.257968195468198
+4jean__lav_sms,LAVSMS Laravel School Management,random_code_same_budget,qwen2.5-coder:1.5b,35828,11,4,0,1,0.25,0.0,0.0,0.0,1.0,5.393,5.0
+4jean__lav_sms,LAVSMS Laravel School Management,full_selected_context,qwen2.5-coder:1.5b,50577,11,5,1,1,0.5,0.09090909090909091,0.0,0.15384615384615385,0.8,7.423,17.48951048951049
+4jean__lav_sms,LAVSMS Laravel School Management,oracle_upper_bound,qwen2.5-coder:1.5b,50594,11,4,2,1,0.5,0.18181818181818182,0.0,0.14303959131545338,0.5,8.231,23.509230233368168
+AdityaKshettri__Student-Database-Management-System-using-JAVA-Spring-Boot,Student DBMS Spring Boot,readme_only,qwen2.5-coder:1.5b,255,7,3,2,1,1.0,0.2857142857142857,0.0,0.08448275862068966,0.3333333333333333,1.537,37.93390804597701
+AdityaKshettri__Student-Database-Management-System-using-JAVA-Spring-Boot,Student DBMS Spring Boot,file_tree_only,qwen2.5-coder:1.5b,844,7,2,0,1,1.0,0.0,0.0,0.0,1.0,1.466,20.0
+AdityaKshettri__Student-Database-Management-System-using-JAVA-Spring-Boot,Student DBMS Spring Boot,readme_plus_tree,qwen2.5-coder:1.5b,1101,7,7,3,1,1.0,0.42857142857142855,0.0,0.22,0.5714285714285714,3.864,42.58571428571429
+AdityaKshettri__Student-Database-Management-System-using-JAVA-Spring-Boot,Student DBMS Spring Boot,routes_controllers,qwen2.5-coder:1.5b,9831,7,4,2,1,0.0,0.2857142857142857,0.07142857142857142,0.1939655172413793,0.5,3.024,19.338054187192117
+AdityaKshettri__Student-Database-Management-System-using-JAVA-Spring-Boot,Student DBMS Spring Boot,models_services,qwen2.5-coder:1.5b,9266,7,4,0,1,1.0,0.0,0.0,0.0,1.0,3.357,20.0
+AdityaKshettri__Student-Database-Management-System-using-JAVA-Spring-Boot,Student DBMS Spring Boot,readme_plus_code,qwen2.5-coder:1.5b,17089,7,8,3,1,1.0,0.42857142857142855,0.08333333333333333,0.17165616246498602,0.625,6.497,42.991509103641455
+AdityaKshettri__Student-Database-Management-System-using-JAVA-Spring-Boot,Student DBMS Spring Boot,bm25_retrieved_code,qwen2.5-coder:1.5b,24114,7,7,2,1,0.0,0.2857142857142857,0.15476190476190477,0.12687500000000002,0.7142857142857143,6.359,17.855505952380952
+AdityaKshettri__Student-Database-Management-System-using-JAVA-Spring-Boot,Student DBMS Spring Boot,random_code_same_budget,qwen2.5-coder:1.5b,23193,7,6,3,1,0.0,0.42857142857142855,0.05555555555555555,0.10457984866587017,0.5,6.128,22.679808841099163
+AdityaKshettri__Student-Database-Management-System-using-JAVA-Spring-Boot,Student DBMS Spring Boot,full_selected_context,qwen2.5-coder:1.5b,18237,7,6,3,1,1.0,0.42857142857142855,0.08333333333333333,0.20148809523809522,0.5,5.188,44.68898809523809
+AdityaKshettri__Student-Database-Management-System-using-JAVA-Spring-Boot,Student DBMS Spring Boot,oracle_upper_bound,qwen2.5-coder:1.5b,18966,7,8,3,1,0.0,0.42857142857142855,0.047619047619047616,0.1887402452619844,0.625,6.244,22.533484631310717
+Asitha123__Java-Spring-boot-Student-Management-System,Student Management System Spring Boot,readme_only,qwen2.5-coder:1.5b,595,4,2,1,1,1.0,0.25,0.0,0.21428571428571427,0.5,1.135,36.96428571428571
+Asitha123__Java-Spring-boot-Student-Management-System,Student Management System Spring Boot,file_tree_only,qwen2.5-coder:1.5b,223,4,7,3,1,1.0,0.75,0.05555555555555555,0.1765873015873016,0.5714285714285714,3.84,54.29563492063492
+Asitha123__Java-Spring-boot-Student-Management-System,Student Management System Spring Boot,readme_plus_tree,qwen2.5-coder:1.5b,820,4,7,2,1,1.0,0.5,0.0,0.1543560606060606,0.7142857142857143,4.744,42.67248376623377
+Asitha123__Java-Spring-boot-Student-Management-System,Student Management System Spring Boot,routes_controllers,qwen2.5-coder:1.5b,2248,4,4,3,1,1.0,0.75,0.2222222222222222,0.23067076292882746,0.25,2.354,61.65450588837687
+Asitha123__Java-Spring-boot-Student-Management-System,Student Management System Spring Boot,models_services,qwen2.5-coder:1.5b,10520,4,4,2,1,1.0,0.5,0.41666666666666663,0.18287037037037038,0.5,3.188,53.57638888888889
+Asitha123__Java-Spring-boot-Student-Management-System,Student Management System Spring Boot,readme_plus_code,qwen2.5-coder:1.5b,13344,4,4,2,1,1.0,0.5,0.20833333333333331,0.2202797202797203,0.5,2.969,49.97086247086247
+Asitha123__Java-Spring-boot-Student-Management-System,Student Management System Spring Boot,bm25_retrieved_code,qwen2.5-coder:1.5b,27060,4,7,2,1,1.0,0.5,0.20833333333333331,0.24928160919540232,0.7142857142857143,6.116,48.263033661740565
+Asitha123__Java-Spring-boot-Student-Management-System,Student Management System Spring Boot,random_code_same_budget,qwen2.5-coder:1.5b,13579,4,4,2,1,1.0,0.5,0.5,0.11602787456445993,0.5,3.65,54.24041811846689
+Asitha123__Java-Spring-boot-Student-Management-System,Student Management System Spring Boot,full_selected_context,qwen2.5-coder:1.5b,13587,4,4,3,1,1.0,0.75,0.4444444444444444,0.22965367965367967,0.25,3.393,66.08369408369408
+Asitha123__Java-Spring-boot-Student-Management-System,Student Management System Spring Boot,oracle_upper_bound,qwen2.5-coder:1.5b,14321,4,4,2,1,0.0,0.5,0.5,0.14838709677419354,0.5,3.73,34.725806451612904
+JacksonGao1999__StudentManagement,Student Management CRUD,readme_only,qwen2.5-coder:1.5b,821,6,4,3,1,1.0,0.5,0.0,0.10320378151260505,0.25,2.035,46.548056722689076
+JacksonGao1999__StudentManagement,Student Management CRUD,file_tree_only,qwen2.5-coder:1.5b,435,6,4,3,1,1.0,0.5,0.21666666666666667,0.10404014844804317,0.25,2.535,50.89393556005398
+JacksonGao1999__StudentManagement,Student Management CRUD,readme_plus_tree,qwen2.5-coder:1.5b,1258,6,4,3,1,1.0,0.5,0.0,0.07941176470588235,0.25,2.168,46.19117647058823
+JacksonGao1999__StudentManagement,Student Management CRUD,routes_controllers,qwen2.5-coder:1.5b,3524,6,4,2,1,1.0,0.3333333333333333,0.4,0.03428571428571429,0.5,3.054,45.18095238095238
+JacksonGao1999__StudentManagement,Student Management CRUD,models_services,qwen2.5-coder:1.5b,2329,6,5,1,1,1.0,0.16666666666666666,0.0,0.045454545454545456,0.8,3.92,28.515151515151523
+JacksonGao1999__StudentManagement,Student Management CRUD,readme_plus_code,qwen2.5-coder:1.5b,6655,6,4,2,1,0.0,0.3333333333333333,0.2,0.08183183183183183,0.5,3.307,21.894144144144146
+JacksonGao1999__StudentManagement,Student Management CRUD,bm25_retrieved_code,qwen2.5-coder:1.5b,37337,6,3,1,1,0.0,0.16666666666666666,0.2,0.075,0.6666666666666666,6.507,14.291666666666666
+JacksonGao1999__StudentManagement,Student Management CRUD,random_code_same_budget,qwen2.5-coder:1.5b,36095,6,4,3,1,0.0,0.5,0.21666666666666667,0.09047619047619049,0.25,6.803,30.69047619047619
+JacksonGao1999__StudentManagement,Student Management CRUD,full_selected_context,qwen2.5-coder:1.5b,10738,6,4,2,1,1.0,0.3333333333333333,0.4,0.04292929292929293,0.5,3.739,45.310606060606055
+JacksonGao1999__StudentManagement,Student Management CRUD,oracle_upper_bound,qwen2.5-coder:1.5b,19443,6,5,3,1,1.0,0.5,0.3333333333333333,0.11944444444444445,0.4,5.2,51.95833333333333
+RameshMF__library-management-system,Library Management REST API,readme_only,qwen2.5-coder:1.5b,245,6,4,1,1,0.0,0.16666666666666666,0.0,0.13793103448275862,0.75,2.577,10.402298850574713
+RameshMF__library-management-system,Library Management REST API,file_tree_only,qwen2.5-coder:1.5b,238,6,7,3,1,0.0,0.5,0.0,0.14086141279123734,0.5714285714285714,4.669,23.898635477582847
+RameshMF__library-management-system,Library Management REST API,readme_plus_tree,qwen2.5-coder:1.5b,485,6,7,3,1,0.0,0.5,0.2611111111111111,0.1492063492063492,0.5714285714285714,5.669,29.246031746031747
+RameshMF__library-management-system,Library Management REST API,routes_controllers,qwen2.5-coder:1.5b,2731,6,7,2,1,0.0,0.3333333333333333,0.225,0.24444444444444444,0.7142857142857143,4.181,22.69047619047619
+RameshMF__library-management-system,Library Management REST API,models_services,qwen2.5-coder:1.5b,3799,6,6,3,1,0.0,0.5,0.15,0.20457912457912455,0.5,4.986,28.568686868686864
+RameshMF__library-management-system,Library Management REST API,readme_plus_code,qwen2.5-coder:1.5b,6756,6,7,2,1,0.5,0.3333333333333333,0.45,0.08166666666666667,0.7142857142857143,5.031,34.74880952380953
+RameshMF__library-management-system,Library Management REST API,bm25_retrieved_code,qwen2.5-coder:1.5b,10865,6,6,3,1,0.5,0.5,0.2333333333333333,0.11387824606215409,0.5,4.618,38.87484035759898
+RameshMF__library-management-system,Library Management REST API,random_code_same_budget,qwen2.5-coder:1.5b,9121,6,7,3,1,0.5,0.5,0.2333333333333333,0.0915116345223872,0.5714285714285714,4.827,37.82505547021676
+RameshMF__library-management-system,Library Management REST API,full_selected_context,qwen2.5-coder:1.5b,7318,6,9,3,1,0.5,0.5,0.4666666666666666,0.10180827700293775,0.6666666666666666,6.343,41.693790821710735
+RameshMF__library-management-system,Library Management REST API,oracle_upper_bound,qwen2.5-coder:1.5b,7702,6,5,2,1,0.5,0.3333333333333333,0.45,0.17956989247311828,0.6,4.425,37.36021505376345
+SkyCascade__SkyLearn,SkyLearn Learning Management System,readme_only,qwen2.5-coder:1.5b,3850,26,4,0,1,0.5,0.0,0.0,0.0,1.0,2.775,10.0
+SkyCascade__SkyLearn,SkyLearn Learning Management System,file_tree_only,qwen2.5-coder:1.5b,1315,26,2,1,1,0.5,0.038461538461538464,0.0,0.13513513513513514,0.5,1.57,18.37318087318087
+SkyCascade__SkyLearn,SkyLearn Learning Management System,readme_plus_tree,qwen2.5-coder:1.5b,5167,26,4,0,1,0.5,0.0,0.0,0.0,1.0,3.112,10.0
+SkyCascade__SkyLearn,SkyLearn Learning Management System,routes_controllers,qwen2.5-coder:1.5b,28437,26,7,2,1,0.5,0.07692307692307693,0.3333333333333333,0.12378048780487805,0.7142857142857143,7.313,24.072824533190385
+SkyCascade__SkyLearn,SkyLearn Learning Management System,models_services,qwen2.5-coder:1.5b,23697,26,8,0,1,0.5,0.0,0.0,0.0,1.0,6.805,10.0
+SkyCascade__SkyLearn,SkyLearn Learning Management System,readme_plus_code,qwen2.5-coder:1.5b,39670,26,5,2,1,0.5,0.07692307692307693,0.16666666666666666,0.18423423423423424,0.6,7.44,22.789154539154538
+SkyCascade__SkyLearn,SkyLearn Learning Management System,bm25_retrieved_code,qwen2.5-coder:1.5b,41670,26,2,1,1,0.5,0.038461538461538464,0.0,0.27906976744186046,0.5,6.414,20.532200357781754
+SkyCascade__SkyLearn,SkyLearn Learning Management System,random_code_same_budget,qwen2.5-coder:1.5b,25452,26,9,2,1,0.75,0.07692307692307693,0.0,0.13425925925925924,0.7777777777777778,7.114,21.928418803418808
+SkyCascade__SkyLearn,SkyLearn Learning Management System,full_selected_context,qwen2.5-coder:1.5b,47261,26,4,0,1,0.5,0.0,0.0,0.0,1.0,7.083,10.0
+SkyCascade__SkyLearn,SkyLearn Learning Management System,oracle_upper_bound,qwen2.5-coder:1.5b,47400,26,4,0,1,0.5,0.0,0.0,0.0,1.0,7.072,10.0
+abdulwahid880__School-Management-system-in-laravel-,Unifiedtransform School Management,readme_only,qwen2.5-coder:1.5b,10040,14,4,0,1,0.5,0.0,0.0,0.0,1.0,3.737,10.0
+abdulwahid880__School-Management-system-in-laravel-,Unifiedtransform School Management,file_tree_only,qwen2.5-coder:1.5b,4967,14,3,0,1,0.3333333333333333,0.0,0.0,0.0,1.0,2.347,6.666666666666667
+abdulwahid880__School-Management-system-in-laravel-,Unifiedtransform School Management,readme_plus_tree,qwen2.5-coder:1.5b,15009,14,4,0,1,0.5,0.0,0.0,0.0,1.0,3.949,10.0
+abdulwahid880__School-Management-system-in-laravel-,Unifiedtransform School Management,routes_controllers,qwen2.5-coder:1.5b,30065,14,6,0,1,0.16666666666666666,0.0,0.0,0.0,1.0,6.467,3.3333333333333335
+abdulwahid880__School-Management-system-in-laravel-,Unifiedtransform School Management,models_services,qwen2.5-coder:1.5b,30064,14,6,0,1,0.16666666666666666,0.0,0.0,0.0,1.0,6.779,3.3333333333333335
+abdulwahid880__School-Management-system-in-laravel-,Unifiedtransform School Management,readme_plus_code,qwen2.5-coder:1.5b,46110,14,4,0,1,0.5,0.0,0.0,0.0,1.0,7.288,10.0
+abdulwahid880__School-Management-system-in-laravel-,Unifiedtransform School Management,bm25_retrieved_code,qwen2.5-coder:1.5b,42131,14,7,1,1,0.5,0.07142857142857142,0.125,0.20689655172413793,0.8571428571428571,8.39,19.532019704433498
+abdulwahid880__School-Management-system-in-laravel-,Unifiedtransform School Management,random_code_same_budget,qwen2.5-coder:1.5b,32032,14,3,1,1,0.3333333333333333,0.07142857142857142,0.0,0.24,0.6666666666666666,5.117,16.099999999999998
+abdulwahid880__School-Management-system-in-laravel-,Unifiedtransform School Management,full_selected_context,qwen2.5-coder:1.5b,52018,14,6,0,1,0.8333333333333334,0.0,0.0,0.0,1.0,9.529,16.666666666666668
+abdulwahid880__School-Management-system-in-laravel-,Unifiedtransform School Management,oracle_upper_bound,qwen2.5-coder:1.5b,52018,14,4,1,1,0.6666666666666666,0.07142857142857142,0.125,0.16666666666666666,0.75,8.299,23.333333333333332
+adityagoyal222__django-lms,Django LMS,readme_only,qwen2.5-coder:1.5b,833,13,6,6,1,0.6666666666666666,0.46153846153846156,0.0,0.11666628326048616,0.0,2.885,41.23717373608679
+adityagoyal222__django-lms,Django LMS,file_tree_only,qwen2.5-coder:1.5b,630,13,7,4,1,0.3333333333333333,0.3076923076923077,0.10416666666666666,0.08133933657060027,0.42857142857142855,4.67,26.45360653207549
+adityagoyal222__django-lms,Django LMS,readme_plus_tree,qwen2.5-coder:1.5b,1465,13,4,4,1,0.6666666666666666,0.3076923076923077,0.3630952380952381,0.08994047619047618,0.0,2.172,42.713576007326004
+adityagoyal222__django-lms,Django LMS,routes_controllers,qwen2.5-coder:1.5b,10713,13,6,5,1,0.3333333333333333,0.38461538461538464,0.35,0.12110516934046348,0.16666666666666666,3.858,37.278116001645415
+adityagoyal222__django-lms,Django LMS,models_services,qwen2.5-coder:1.5b,17894,13,3,1,1,0.6666666666666666,0.07692307692307693,0.0,0.05405405405405406,0.6666666666666666,3.958,20.16978516978517
+adityagoyal222__django-lms,Django LMS,readme_plus_code,qwen2.5-coder:1.5b,29421,13,10,8,1,0.6666666666666666,0.6153846153846154,0.31934523809523807,0.22025259966288194,0.2,8.689,52.56248862864285
+adityagoyal222__django-lms,Django LMS,bm25_retrieved_code,qwen2.5-coder:1.5b,30287,13,5,5,1,0.6666666666666666,0.38461538461538464,0.18523809523809526,0.12880323505323504,0.0,5.764,42.43168222543222
+adityagoyal222__django-lms,Django LMS,random_code_same_budget,qwen2.5-coder:1.5b,19547,13,4,3,1,0.6666666666666666,0.23076923076923078,0.373015873015873,0.11566558441558443,0.25,3.987,38.10555763680764
+adityagoyal222__django-lms,Django LMS,full_selected_context,qwen2.5-coder:1.5b,30071,13,8,8,1,0.6666666666666666,0.6153846153846154,0.15223214285714287,0.15279160654160656,0.0,7.028,50.20831182706183
+adityagoyal222__django-lms,Django LMS,oracle_upper_bound,qwen2.5-coder:1.5b,31043,13,8,8,1,0.6666666666666666,0.6153846153846154,0.30446428571428574,0.1520296357790428,0.0,7.799,53.241525122766234
+engripaye__library-management-system,REST Library Management System,readme_only,qwen2.5-coder:1.5b,3396,8,5,3,1,0.5,0.375,0.0,0.06423634844687476,0.4,2.878,30.088545226703122
+engripaye__library-management-system,REST Library Management System,file_tree_only,qwen2.5-coder:1.5b,289,8,7,1,1,0.5,0.125,0.0,0.029411764705882353,0.8571428571428571,3.611,16.244747899159666
+engripaye__library-management-system,REST Library Management System,readme_plus_tree,qwen2.5-coder:1.5b,3687,8,5,3,1,0.5,0.375,0.0,0.06423634844687476,0.4,2.877,30.088545226703122
+engripaye__library-management-system,REST Library Management System,routes_controllers,qwen2.5-coder:1.5b,2913,8,4,3,1,0.5,0.375,0.12222222222222223,0.1128917378917379,0.25,2.741,34.76282051282051
+engripaye__library-management-system,REST Library Management System,models_services,qwen2.5-coder:1.5b,7611,8,4,4,1,0.5,0.5,0.1958333333333333,0.16483589851711294,0.0,3.327,43.88920514442336
+engripaye__library-management-system,REST Library Management System,readme_plus_code,qwen2.5-coder:1.5b,13901,8,6,5,1,0.5,0.625,0.39333333333333337,0.17996927803379417,0.16666666666666666,4.695,50.77453917050691
+engripaye__library-management-system,REST Library Management System,bm25_retrieved_code,qwen2.5-coder:1.5b,24638,8,8,5,1,0.0,0.625,0.0,0.12881347410759178,0.375,7.21,30.05720211161388
+engripaye__library-management-system,REST Library Management System,random_code_same_budget,qwen2.5-coder:1.5b,15432,8,3,2,1,0.5,0.25,0.0,0.1818681318681319,0.3333333333333333,3.379,28.144688644688642
+engripaye__library-management-system,REST Library Management System,full_selected_context,qwen2.5-coder:1.5b,14567,8,4,4,1,0.5,0.5,0.05,0.11126644736842106,0.0,3.223,40.168996710526315
+engripaye__library-management-system,REST Library Management System,oracle_upper_bound,qwen2.5-coder:1.5b,17576,8,8,3,1,0.5,0.375,0.12222222222222223,0.10268398268398267,0.625,6.506,30.859704184704185
+jobic10__student-management-using-django,Student Management System Django,readme_only,qwen2.5-coder:1.5b,7547,13,3,0,1,0.6666666666666666,0.0,0.0,0.0,1.0,2.248,13.333333333333334
+jobic10__student-management-using-django,Student Management System Django,file_tree_only,qwen2.5-coder:1.5b,336,13,3,0,1,0.3333333333333333,0.0,0.0,0.0,1.0,1.748,6.666666666666667
+jobic10__student-management-using-django,Student Management System Django,readme_plus_tree,qwen2.5-coder:1.5b,7885,13,3,0,1,0.6666666666666666,0.0,0.0,0.0,1.0,2.552,13.333333333333334
+jobic10__student-management-using-django,Student Management System Django,routes_controllers,qwen2.5-coder:1.5b,16142,13,3,1,1,0.6666666666666666,0.07692307692307693,0.0,0.15625,0.6666666666666666,2.74,21.702724358974358
+jobic10__student-management-using-django,Student Management System Django,models_services,qwen2.5-coder:1.5b,5301,13,8,1,1,0.6666666666666666,0.07692307692307693,0.0,0.046511627906976744,0.875,5.099,17.973315444245678
+jobic10__student-management-using-django,Student Management System Django,readme_plus_code,qwen2.5-coder:1.5b,28971,13,8,3,1,0.6666666666666666,0.23076923076923078,0.1619047619047619,0.20790598290598292,0.625,8.539,31.5169413919414
+jobic10__student-management-using-django,Student Management System Django,bm25_retrieved_code,qwen2.5-coder:1.5b,37167,13,0,0,0,0.0,0.0,0.0,0.0,1.0,7.307,0.0
+jobic10__student-management-using-django,Student Management System Django,random_code_same_budget,qwen2.5-coder:1.5b,28303,13,4,4,1,0.3333333333333333,0.3076923076923077,0.0,0.16145167601408633,0.0,4.935,29.85767257610873
+jobic10__student-management-using-django,Student Management System Django,full_selected_context,qwen2.5-coder:1.5b,29327,13,12,4,1,0.6666666666666666,0.3076923076923077,0.0,0.20493942218080152,0.6666666666666666,9.998,30.509988768609457
+jobic10__student-management-using-django,Student Management System Django,oracle_upper_bound,qwen2.5-coder:1.5b,38735,13,8,6,1,0.3333333333333333,0.46153846153846156,0.0,0.10982713008575078,0.25,8.333,31.967919771799085
+knowledgefactory4u__librarymanagementsystem,Spring Boot Library Management System,readme_only,qwen2.5-coder:1.5b,2357,10,4,2,1,1.0,0.2,0.0,0.12323232323232323,0.5,3.087,33.84848484848485
+knowledgefactory4u__librarymanagementsystem,Spring Boot Library Management System,file_tree_only,qwen2.5-coder:1.5b,210,10,7,3,1,0.0,0.3,0.2611111111111111,0.10977212506624272,0.5714285714285714,4.089,21.65451838393015
+knowledgefactory4u__librarymanagementsystem,Spring Boot Library Management System,readme_plus_tree,qwen2.5-coder:1.5b,2569,10,4,3,1,1.0,0.3,0.06666666666666667,0.12606915933528837,0.25,2.753,41.22437072336266
+knowledgefactory4u__librarymanagementsystem,Spring Boot Library Management System,routes_controllers,qwen2.5-coder:1.5b,11725,10,5,2,1,1.0,0.2,0.225,0.09926854754440961,0.6,3.55,36.989028213166144
+knowledgefactory4u__librarymanagementsystem,Spring Boot Library Management System,models_services,qwen2.5-coder:1.5b,17646,10,6,1,1,1.0,0.1,0.0,0.25,0.8333333333333334,5.556,28.916666666666668
+knowledgefactory4u__librarymanagementsystem,Spring Boot Library Management System,readme_plus_code,qwen2.5-coder:1.5b,28647,10,0,0,0,0.0,0.0,0.0,0.0,1.0,10.205,0.0
+knowledgefactory4u__librarymanagementsystem,Spring Boot Library Management System,bm25_retrieved_code,qwen2.5-coder:1.5b,41616,10,6,4,1,1.0,0.4,0.05,0.13008998525414395,0.3333333333333333,9.384,43.61801644547882
+knowledgefactory4u__librarymanagementsystem,Spring Boot Library Management System,random_code_same_budget,qwen2.5-coder:1.5b,27678,10,9,4,1,1.0,0.4,0.21666666666666667,0.13405853405853407,0.5555555555555556,7.521,44.78865578865579
+knowledgefactory4u__librarymanagementsystem,Spring Boot Library Management System,full_selected_context,qwen2.5-coder:1.5b,36207,10,0,0,0,0.0,0.0,0.0,0.0,1.0,11.076,0.0
+knowledgefactory4u__librarymanagementsystem,Spring Boot Library Management System,oracle_upper_bound,qwen2.5-coder:1.5b,36908,10,10,5,1,1.0,0.5,0.3333333333333333,0.18266066066066064,0.5,9.634,51.90657657657658
+mehmetpekdemir__Library-Management-System,Spring Boot Library Management System,readme_only,qwen2.5-coder:1.5b,1244,8,2,1,1,1.0,0.125,0.16666666666666666,0.16666666666666666,0.5,1.807,35.208333333333336
+mehmetpekdemir__Library-Management-System,Spring Boot Library Management System,file_tree_only,qwen2.5-coder:1.5b,318,8,7,1,1,0.0,0.125,0.0,0.030303030303030304,0.8571428571428571,3.919,6.258116883116884
+mehmetpekdemir__Library-Management-System,Spring Boot Library Management System,readme_plus_tree,qwen2.5-coder:1.5b,1564,8,5,2,1,1.0,0.25,0.41666666666666663,0.14654377880184333,0.6,3.401,43.28149001536098
+mehmetpekdemir__Library-Management-System,Spring Boot Library Management System,routes_controllers,qwen2.5-coder:1.5b,11054,8,5,2,1,0.0,0.25,0.20833333333333331,0.13446969696969696,0.6,3.973,18.93371212121212
+mehmetpekdemir__Library-Management-System,Spring Boot Library Management System,models_services,qwen2.5-coder:1.5b,17100,8,6,3,1,1.0,0.375,0.0,0.12482801751094436,0.5,6.02,39.997420262664164
+mehmetpekdemir__Library-Management-System,Spring Boot Library Management System,readme_plus_code,qwen2.5-coder:1.5b,29379,8,6,2,1,1.0,0.25,0.0,0.13664596273291924,0.6666666666666666,6.051,34.133022774327124
+mehmetpekdemir__Library-Management-System,Spring Boot Library Management System,bm25_retrieved_code,qwen2.5-coder:1.5b,36874,8,5,1,1,0.0,0.125,0.16666666666666666,0.2222222222222222,0.8,7.162,13.041666666666666
+mehmetpekdemir__Library-Management-System,Spring Boot Library Management System,random_code_same_budget,qwen2.5-coder:1.5b,30947,8,4,2,1,0.0,0.25,0.20833333333333331,0.10842293906810035,0.5,5.344,19.543010752688172
+mehmetpekdemir__Library-Management-System,Spring Boot Library Management System,full_selected_context,qwen2.5-coder:1.5b,30075,8,4,2,1,1.0,0.25,0.0,0.09027777777777778,0.5,5.507,35.104166666666664
+mehmetpekdemir__Library-Management-System,Spring Boot Library Management System,oracle_upper_bound,qwen2.5-coder:1.5b,31458,8,6,5,1,1.0,0.625,0.1,0.20165266106442575,0.16666666666666666,6.451,55.23312324929972
+mwinamijr__django-scms,Django School Management System API,readme_only,qwen2.5-coder:1.5b,2284,14,4,1,1,0.75,0.07142857142857142,0.0,0.05714285714285714,0.75,2.477,20.857142857142858
+mwinamijr__django-scms,Django School Management System API,file_tree_only,qwen2.5-coder:1.5b,1548,14,2,1,1,0.25,0.07142857142857142,0.0,0.09090909090909091,0.5,1.58,13.863636363636363
+mwinamijr__django-scms,Django School Management System API,readme_plus_tree,qwen2.5-coder:1.5b,3834,14,3,1,1,0.75,0.07142857142857142,0.0,0.16279069767441862,0.6666666666666666,2.301,23.275193798449617
+mwinamijr__django-scms,Django School Management System API,routes_controllers,qwen2.5-coder:1.5b,30026,14,3,0,1,0.5,0.0,0.0,0.0,1.0,4.341,10.0
+mwinamijr__django-scms,Django School Management System API,models_services,qwen2.5-coder:1.5b,30064,14,3,1,1,0.5,0.07142857142857142,0.0,0.11363636363636363,0.6666666666666666,4.547,17.537878787878785
+mwinamijr__django-scms,Django School Management System API,readme_plus_code,qwen2.5-coder:1.5b,33790,14,8,2,1,0.0,0.14285714285714285,0.08333333333333333,0.0952921157118548,0.75,8.412,10.596048402344488
+mwinamijr__django-scms,Django School Management System API,bm25_retrieved_code,qwen2.5-coder:1.5b,40396,14,0,0,0,0.0,0.0,0.0,0.0,1.0,11.682,0.0
+mwinamijr__django-scms,Django School Management System API,random_code_same_budget,qwen2.5-coder:1.5b,19928,14,6,0,1,0.5,0.0,0.0,0.0,1.0,5.306,10.0
+mwinamijr__django-scms,Django School Management System API,full_selected_context,qwen2.5-coder:1.5b,41131,14,5,2,1,0.75,0.14285714285714285,0.14583333333333331,0.13450502152080346,0.6,6.785,28.93424198947872
+mwinamijr__django-scms,Django School Management System API,oracle_upper_bound,qwen2.5-coder:1.5b,46079,14,4,1,1,0.75,0.07142857142857142,0.0,0.1282051282051282,0.75,7.427,21.923076923076923
+openfun__marsha,Marsha Educational Media Platform,readme_only,qwen2.5-coder:1.5b,10040,15,6,3,1,0.6666666666666666,0.2,0.0,0.10915466961978589,0.5,4.824,26.97065337763012
+openfun__marsha,Marsha Educational Media Platform,file_tree_only,qwen2.5-coder:1.5b,5007,15,2,1,1,0.3333333333333333,0.06666666666666667,0.0,0.09090909090909091,0.5,1.815,15.363636363636363
+openfun__marsha,Marsha Educational Media Platform,readme_plus_tree,qwen2.5-coder:1.5b,15049,15,4,3,1,0.3333333333333333,0.2,0.0,0.09381359381359382,0.25,3.936,22.573870573870575
+openfun__marsha,Marsha Educational Media Platform,routes_controllers,qwen2.5-coder:1.5b,30063,15,6,2,1,0.3333333333333333,0.13333333333333333,0.03125,0.12310606060606061,0.6666666666666666,6.121,17.138257575757578
+openfun__marsha,Marsha Educational Media Platform,models_services,qwen2.5-coder:1.5b,30060,15,3,1,1,0.3333333333333333,0.06666666666666667,0.0625,0.07894736842105263,0.6666666666666666,4.441,14.767543859649123
+openfun__marsha,Marsha Educational Media Platform,readme_plus_code,qwen2.5-coder:1.5b,46104,15,4,1,1,0.3333333333333333,0.06666666666666667,0.0625,0.10526315789473684,0.75,8.08,14.328947368421051
+openfun__marsha,Marsha Educational Media Platform,bm25_retrieved_code,qwen2.5-coder:1.5b,42129,15,5,0,1,0.0,0.0,0.0,0.0,1.0,7.863,0.0
+openfun__marsha,Marsha Educational Media Platform,random_code_same_budget,qwen2.5-coder:1.5b,35901,15,3,2,1,0.0,0.13333333333333333,0.0,0.07282741738066095,0.3333333333333333,6.047,12.425744594043248
+openfun__marsha,Marsha Educational Media Platform,full_selected_context,qwen2.5-coder:1.5b,52018,15,2,2,1,0.3333333333333333,0.13333333333333333,0.0,0.11274509803921567,0.0,6.466,23.02450980392157
+openfun__marsha,Marsha Educational Media Platform,oracle_upper_bound,qwen2.5-coder:1.5b,52018,15,2,2,1,0.3333333333333333,0.13333333333333333,0.0,0.1263213530655391,0.0,7.043,23.22815362931642
+thakurpdhiraj__library_management_system,Library Management System Microservices,readme_only,qwen2.5-coder:1.5b,5867,12,9,6,1,0.6666666666666666,0.5,0.0,0.15218423551756885,0.3333333333333333,4.532,39.78276353276353
+thakurpdhiraj__library_management_system,Library Management System Microservices,file_tree_only,qwen2.5-coder:1.5b,2662,12,8,3,1,0.6666666666666666,0.25,0.0,0.13856837606837605,0.625,4.924,27.91185897435897
+thakurpdhiraj__library_management_system,Library Management System Microservices,readme_plus_tree,qwen2.5-coder:1.5b,8531,12,7,5,1,0.6666666666666666,0.4166666666666667,0.0,0.13419598281667247,0.2857142857142857,4.362,37.0724635517739
+thakurpdhiraj__library_management_system,Library Management System Microservices,routes_controllers,qwen2.5-coder:1.5b,29891,12,5,1,1,0.3333333333333333,0.08333333333333333,0.0,0.1724137931034483,0.8,5.515,14.169540229885055
+thakurpdhiraj__library_management_system,Library Management System Microservices,models_services,qwen2.5-coder:1.5b,30062,12,14,1,1,0.3333333333333333,0.08333333333333333,0.0,0.1935483870967742,0.9285714285714286,10.18,13.20084485407066
+thakurpdhiraj__library_management_system,Library Management System Microservices,readme_plus_code,qwen2.5-coder:1.5b,41931,12,8,7,1,0.6666666666666666,0.5833333333333334,0.04184704184704185,0.1465074706820855,0.125,8.142,45.53455289717212
+thakurpdhiraj__library_management_system,Library Management System Microservices,bm25_retrieved_code,qwen2.5-coder:1.5b,42133,12,4,4,1,0.6666666666666666,0.3333333333333333,0.0,0.08932436611008039,0.0,8.123,36.3398654916512
+thakurpdhiraj__library_management_system,Library Management System Microservices,random_code_same_budget,qwen2.5-coder:1.5b,28327,12,9,2,1,0.0,0.16666666666666666,0.0,0.15692307692307694,0.7777777777777778,7.288,10.40940170940171
+thakurpdhiraj__library_management_system,Library Management System Microservices,full_selected_context,qwen2.5-coder:1.5b,50617,12,8,4,1,0.6666666666666666,0.3333333333333333,0.07323232323232323,0.11871921182266008,0.5,9.805,33.245434641986364
+thakurpdhiraj__library_management_system,Library Management System Microservices,oracle_upper_bound,qwen2.5-coder:1.5b,50637,12,9,5,1,0.6666666666666666,0.4166666666666667,0.0,0.11878489326765189,0.4444444444444444,9.592,35.253995621237
+tough-dev-school__education-backend,Tough Dev School Education Backend,readme_only,qwen2.5-coder:1.5b,2897,17,2,0,1,0.2,0.0,0.0,0.0,1.0,1.637,4.000000000000001
+tough-dev-school__education-backend,Tough Dev School Education Backend,file_tree_only,qwen2.5-coder:1.5b,5144,17,3,0,1,0.4,0.0,0.0,0.0,1.0,2.255,8.000000000000002
+tough-dev-school__education-backend,Tough Dev School Education Backend,readme_plus_tree,qwen2.5-coder:1.5b,8043,17,4,2,1,0.4,0.11764705882352941,0.0,0.075,0.5,2.827,18.24264705882353
+tough-dev-school__education-backend,Tough Dev School Education Backend,routes_controllers,qwen2.5-coder:1.5b,26530,17,6,0,1,0.4,0.0,0.0,0.0,1.0,5.424,8.000000000000002
+tough-dev-school__education-backend,Tough Dev School Education Backend,models_services,qwen2.5-coder:1.5b,26527,17,4,0,1,0.2,0.0,0.0,0.0,1.0,4.469,4.000000000000001
+tough-dev-school__education-backend,Tough Dev School Education Backend,readme_plus_code,qwen2.5-coder:1.5b,33754,17,8,2,1,0.4,0.11764705882352941,0.0,0.0402046783625731,0.75,7.638,15.220717234262127
+tough-dev-school__education-backend,Tough Dev School Education Backend,bm25_retrieved_code,qwen2.5-coder:1.5b,42133,17,4,1,1,0.4,0.058823529411764705,0.125,0.06451612903225806,0.75,7.146,16.026565464895636
+tough-dev-school__education-backend,Tough Dev School Education Backend,random_code_same_budget,qwen2.5-coder:1.5b,22708,17,3,0,1,0.2,0.0,0.0,0.0,1.0,4.421,4.000000000000001
+tough-dev-school__education-backend,Tough Dev School Education Backend,full_selected_context,qwen2.5-coder:1.5b,46868,17,2,0,1,0.4,0.0,0.0,0.0,1.0,5.672,8.000000000000002
+tough-dev-school__education-backend,Tough Dev School Education Backend,oracle_upper_bound,qwen2.5-coder:1.5b,46394,17,2,1,1,0.4,0.058823529411764705,0.2,0.13513513513513514,0.5,6.077,21.085850556438796

@@ -1,0 +1,10 @@
+category,n,percent
+matched_supported_goal,224,34.78
+matched_goal_missing_or_wrong_path,118,18.32
+actor_scope_error,105,16.3
+matched_goal_actor_label_drift,83,12.89
+implementation_level_goal,43,6.68
+framework_or_boilerplate_noise,26,4.04
+code_context_overgeneralization,23,3.57
+readme_overgeneralization,13,2.02
+near_miss_or_partial_workflow,9,1.4

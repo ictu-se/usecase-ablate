@@ -1,0 +1,37 @@
+repo,project,condition,model,artifact_chars,gold_use_cases,predicted_use_cases,matched_use_cases,parse_ok,actor_recall,use_case_recall,path_fidelity,behavior_coverage,unsupported_feature_rate,elapsed_sec,composite_score
+InvoicePlane__InvoicePlane,InvoicePlane,readme_only,qwen2.5-coder:7b,10040,6,8,3,1,0.5,0.5,0.0,0.22598566308243728,0.625,44.569,34.63978494623656
+InvoicePlane__InvoicePlane,InvoicePlane,file_tree_only,qwen2.5-coder:7b,4640,6,8,2,1,0.5,0.3333333333333333,0.08333333333333333,0.1867816091954023,0.75,35.943,28.635057471264368
+InvoicePlane__InvoicePlane,InvoicePlane,readme_plus_code,qwen2.5-coder:7b,46106,6,8,3,1,0.5,0.5,0.2698412698412698,0.2079107505070994,0.625,64.753,39.76548665443189
+InvoicePlane__InvoicePlane,InvoicePlane,random_code_same_budget,qwen2.5-coder:7b,36091,6,2,1,1,0.5,0.16666666666666666,0.0,0.26666666666666666,0.5,28.212,24.833333333333336
+InvoicePlane__InvoicePlane,InvoicePlane,full_selected_context,qwen2.5-coder:7b,52018,6,8,2,1,0.5,0.3333333333333333,0.3214285714285714,0.2796296296296296,0.75,70.783,34.789682539682545
+InvoicePlane__InvoicePlane,InvoicePlane,oracle_upper_bound,qwen2.5-coder:7b,52018,6,8,1,1,0.5,0.16666666666666666,0.5,0.2962962962962963,0.875,71.254,31.52777777777778
+firefly-iii__firefly-iii,Firefly III,readme_only,qwen2.5-coder:7b,10040,6,8,3,1,1.0,0.5,0.06666666666666667,0.07777777777777778,0.625,41.189,43.75
+firefly-iii__firefly-iii,Firefly III,file_tree_only,qwen2.5-coder:7b,7090,6,8,3,1,1.0,0.5,0.0,0.10866910866910867,0.625,33.78,42.880036630036635
+firefly-iii__firefly-iii,Firefly III,readme_plus_code,qwen2.5-coder:7b,46106,6,8,2,1,1.0,0.3333333333333333,0.0,0.1668520578420467,0.75,64.144,36.66944753429737
+firefly-iii__firefly-iii,Firefly III,random_code_same_budget,qwen2.5-coder:7b,36085,6,7,0,1,1.0,0.0,0.0,0.0,1.0,46.879,20.0
+firefly-iii__firefly-iii,Firefly III,full_selected_context,qwen2.5-coder:7b,52018,6,8,4,1,1.0,0.6666666666666666,0.0,0.13753164938509765,0.5,63.266,50.3963080741098
+firefly-iii__firefly-iii,Firefly III,oracle_upper_bound,qwen2.5-coder:7b,52018,6,8,3,1,1.0,0.5,0.1111111111111111,0.13572060123784263,0.625,58.721,45.50803124078986
+gothinkster__spring-boot-realworld-example-app,RealWorld Spring API,readme_only,qwen2.5-coder:7b,3344,6,8,4,1,0.25,0.6666666666666666,0.0,0.1415689865689866,0.5,28.67,35.45686813186813
+gothinkster__spring-boot-realworld-example-app,RealWorld Spring API,file_tree_only,qwen2.5-coder:7b,946,6,8,5,1,0.25,0.8333333333333334,0.0,0.12544444444444444,0.375,26.729,42.29833333333333
+gothinkster__spring-boot-realworld-example-app,RealWorld Spring API,readme_plus_code,qwen2.5-coder:7b,39410,6,8,4,1,0.25,0.6666666666666666,0.09166666666666667,0.13744141163496004,0.5,44.546,37.22828784119107
+gothinkster__spring-boot-realworld-example-app,RealWorld Spring API,random_code_same_budget,qwen2.5-coder:7b,35168,6,8,3,1,0.25,0.5,0.08333333333333333,0.09775132275132276,0.625,50.429,29.382936507936506
+gothinkster__spring-boot-realworld-example-app,RealWorld Spring API,full_selected_context,qwen2.5-coder:7b,46380,6,8,4,1,0.25,0.6666666666666666,0.14166666666666666,0.20711295146077752,0.5,51.504,39.27336093857833
+gothinkster__spring-boot-realworld-example-app,RealWorld Spring API,oracle_upper_bound,qwen2.5-coder:7b,45845,6,8,5,1,0.25,0.8333333333333334,0.29333333333333333,0.20225219941348974,0.375,53.474,49.317116324535675
+kimai__kimai,Kimai,readme_only,qwen2.5-coder:7b,5634,6,8,3,1,0.3333333333333333,0.5,0.18095238095238098,0.14954448701575138,0.625,32.129,33.77888159095056
+kimai__kimai,Kimai,file_tree_only,qwen2.5-coder:7b,5435,6,8,4,1,0.3333333333333333,0.6666666666666666,0.16349206349206347,0.09494505494505495,0.5,27.956,39.694017094017084
+kimai__kimai,Kimai,readme_plus_code,qwen2.5-coder:7b,38701,6,8,5,1,0.3333333333333333,0.8333333333333334,0.10857142857142858,0.14730163852374806,0.375,55.385,46.46428648261813
+kimai__kimai,Kimai,random_code_same_budget,qwen2.5-coder:7b,28485,6,1,1,1,0.3333333333333333,0.16666666666666666,0.0,0.16666666666666666,0.0,19.055,25.0
+kimai__kimai,Kimai,full_selected_context,qwen2.5-coder:7b,46464,6,8,4,1,0.3333333333333333,0.6666666666666666,0.18571428571428572,0.19233516483516483,0.5,49.051,41.599313186813184
+kimai__kimai,Kimai,oracle_upper_bound,qwen2.5-coder:7b,52018,6,8,4,1,0.3333333333333333,0.6666666666666666,0.3107142857142857,0.18852769795657726,0.5,41.032,44.04220118363437
+koel__koel,Koel,readme_only,qwen2.5-coder:7b,6436,6,8,2,1,0.0,0.3333333333333333,0.0,0.10367892976588629,0.75,13.19,15.721850613154958
+koel__koel,Koel,file_tree_only,qwen2.5-coder:7b,6074,6,0,0,0,0.0,0.0,0.0,0.0,1.0,14.361,0.0
+koel__koel,Koel,readme_plus_code,qwen2.5-coder:7b,37252,6,8,1,1,0.0,0.16666666666666666,0.0,0.1111111111111111,0.875,30.224,8.75
+koel__koel,Koel,random_code_same_budget,qwen2.5-coder:7b,33931,6,8,0,1,0.0,0.0,0.0,0.0,1.0,27.065,0.0
+koel__koel,Koel,full_selected_context,qwen2.5-coder:7b,47212,6,8,1,1,0.0,0.16666666666666666,0.0,0.1,0.875,36.92,8.583333333333334
+koel__koel,Koel,oracle_upper_bound,qwen2.5-coder:7b,48899,6,8,2,1,0.0,0.3333333333333333,0.14285714285714285,0.10555555555555556,0.75,34.42,18.607142857142854
+spring-projects__spring-petclinic,Spring PetClinic,readme_only,qwen2.5-coder:7b,10040,6,8,0,1,0.0,0.0,0.0,0.0,1.0,16.834,0.0
+spring-projects__spring-petclinic,Spring PetClinic,file_tree_only,qwen2.5-coder:7b,897,6,8,0,1,0.0,0.0,0.0,0.0,1.0,13.522,0.0
+spring-projects__spring-petclinic,Spring PetClinic,readme_plus_code,qwen2.5-coder:7b,46106,6,8,1,1,0.0,0.16666666666666666,0.0,0.1935483870967742,0.875,33.301,9.986559139784944
+spring-projects__spring-petclinic,Spring PetClinic,random_code_same_budget,qwen2.5-coder:7b,36095,6,8,4,1,0.0,0.6666666666666666,0.22499999999999998,0.16043395795898577,0.5,30.578,35.239842702718114
+spring-projects__spring-petclinic,Spring PetClinic,full_selected_context,qwen2.5-coder:7b,52018,6,8,1,1,0.0,0.16666666666666666,0.0,0.1935483870967742,0.875,35.469,9.986559139784944
+spring-projects__spring-petclinic,Spring PetClinic,oracle_upper_bound,qwen2.5-coder:7b,52018,6,8,3,1,0.0,0.5,0.20000000000000004,0.24277777777777776,0.625,34.301,28.891666666666673

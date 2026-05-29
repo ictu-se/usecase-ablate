@@ -19,7 +19,9 @@ def main():
     parser.add_argument("--timeout", type=int, default=300)
     parser.add_argument("--limit", type=int, default=0)
     parser.add_argument("--tasks", default=str(PROJECT / "data/ablation_tasks.jsonl"))
+    parser.add_argument("--oracle", default=None)
     parser.add_argument("--results-dir", default=str(PROJECT / "results"))
+    parser.add_argument("--resume", action="store_true")
     args = parser.parse_args()
 
     results_dir = Path(args.results_dir)
@@ -36,6 +38,8 @@ def main():
         ]
         if args.limit:
             cmd.extend(["--limit", str(args.limit)])
+        if args.resume:
+            cmd.append("--resume")
         print("running", " ".join(cmd), flush=True)
         subprocess.run(cmd, check=True)
 
@@ -46,6 +50,8 @@ def main():
             str(out),
             "--out", str(metrics),
         ]
+        if args.oracle:
+            cmd.extend(["--oracle", args.oracle])
         print("scoring", " ".join(cmd), flush=True)
         subprocess.run(cmd, check=True)
 

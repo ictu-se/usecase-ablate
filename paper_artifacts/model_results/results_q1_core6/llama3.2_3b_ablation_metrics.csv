@@ -1,0 +1,97 @@
+repo,project,condition,model,artifact_chars,gold_use_cases,predicted_use_cases,matched_use_cases,parse_ok,actor_recall,use_case_recall,path_fidelity,behavior_coverage,unsupported_feature_rate,elapsed_sec,composite_score
+4jean__lav_sms,LAVSMS Laravel School Management,readme_only,llama3.2:3b,3576,11,4,1,1,0.5,0.09090909090909091,0.0,0.12,0.75,17.625,17.48181818181818
+4jean__lav_sms,LAVSMS Laravel School Management,file_tree_only,llama3.2:3b,4907,11,8,3,1,0.75,0.2727272727272727,0.0,0.07452391662917979,0.625,22.201,29.41331329489224
+4jean__lav_sms,LAVSMS Laravel School Management,readme_plus_code,llama3.2:3b,39646,11,4,1,1,0.25,0.09090909090909091,0.0,0.18181818181818182,0.75,32.672,13.40909090909091
+4jean__lav_sms,LAVSMS Laravel School Management,random_code_same_budget,llama3.2:3b,35828,11,4,2,1,0.25,0.18181818181818182,0.0,0.167964404894327,0.5,30.936,18.88310243705127
+4jean__lav_sms,LAVSMS Laravel School Management,full_selected_context,llama3.2:3b,50577,11,8,2,1,0.5,0.18181818181818182,0.0,0.1615581098339719,0.75,70.944,21.287008011145943
+4jean__lav_sms,LAVSMS Laravel School Management,oracle_upper_bound,llama3.2:3b,50594,11,5,2,1,0.0,0.18181818181818182,0.19642857142857142,0.10117056856187291,0.6,41.073,15.809766320635887
+AdityaKshettri__Student-Database-Management-System-using-JAVA-Spring-Boot,Student DBMS Spring Boot,readme_only,llama3.2:3b,255,7,8,3,1,0.0,0.42857142857142855,0.0,0.2057836822329576,0.625,25.669,21.836755233494365
+AdityaKshettri__Student-Database-Management-System-using-JAVA-Spring-Boot,Student DBMS Spring Boot,file_tree_only,llama3.2:3b,844,7,8,1,1,0.0,0.14285714285714285,0.0,0.14285714285714285,0.875,17.114,8.392857142857142
+AdityaKshettri__Student-Database-Management-System-using-JAVA-Spring-Boot,Student DBMS Spring Boot,readme_plus_code,llama3.2:3b,17089,7,8,4,1,0.0,0.5714285714285714,0.03571428571428571,0.25416666666666665,0.5,32.715,29.526785714285715
+AdityaKshettri__Student-Database-Management-System-using-JAVA-Spring-Boot,Student DBMS Spring Boot,random_code_same_budget,llama3.2:3b,23193,7,4,2,1,0.0,0.2857142857142857,0.0,0.18722943722943722,0.5,23.502,17.808441558441558
+AdityaKshettri__Student-Database-Management-System-using-JAVA-Spring-Boot,Student DBMS Spring Boot,full_selected_context,llama3.2:3b,18237,7,5,4,1,0.0,0.5714285714285714,0.03571428571428571,0.20662761151891584,0.2,23.411,31.81369988706945
+AdityaKshettri__Student-Database-Management-System-using-JAVA-Spring-Boot,Student DBMS Spring Boot,oracle_upper_bound,llama3.2:3b,18966,7,5,3,1,0.0,0.42857142857142855,0.0,0.17957708490667815,0.4,24.263,23.693656273600173
+Asitha123__Java-Spring-boot-Student-Management-System,Student Management System Spring Boot,readme_only,llama3.2:3b,595,4,8,1,1,0.0,0.25,0.25,0.041666666666666664,0.875,23.663,15.625000000000004
+Asitha123__Java-Spring-boot-Student-Management-System,Student Management System Spring Boot,file_tree_only,llama3.2:3b,223,4,8,3,1,0.0,0.75,0.0,0.10342555994729907,0.625,26.034,31.551383399209488
+Asitha123__Java-Spring-boot-Student-Management-System,Student Management System Spring Boot,readme_plus_code,llama3.2:3b,13344,4,4,1,1,0.0,0.25,0.0,0.07692307692307693,0.75,21.473,12.403846153846153
+Asitha123__Java-Spring-boot-Student-Management-System,Student Management System Spring Boot,random_code_same_budget,llama3.2:3b,13579,4,6,1,1,0.0,0.25,0.25,0.15151515151515152,0.8333333333333334,24.808,17.68939393939394
+Asitha123__Java-Spring-boot-Student-Management-System,Student Management System Spring Boot,full_selected_context,llama3.2:3b,13587,4,4,3,1,0.0,0.75,0.0,0.22429193899782132,0.25,16.811,37.11437908496731
+Asitha123__Java-Spring-boot-Student-Management-System,Student Management System Spring Boot,oracle_upper_bound,llama3.2:3b,14321,4,4,1,1,0.0,0.25,0.3333333333333333,0.3684210526315789,0.75,21.283,23.442982456140353
+JacksonGao1999__StudentManagement,Student Management CRUD,readme_only,llama3.2:3b,821,6,8,4,1,0.0,0.6666666666666666,0.0,0.11003526014770393,0.5,28.863,29.98386223554889
+JacksonGao1999__StudentManagement,Student Management CRUD,file_tree_only,llama3.2:3b,435,6,8,4,1,0.0,0.6666666666666666,0.0,0.08924229506126058,0.5,27.582,29.671967759252237
+JacksonGao1999__StudentManagement,Student Management CRUD,readme_plus_code,llama3.2:3b,6655,6,4,1,1,0.0,0.16666666666666666,0.2,0.14285714285714285,0.75,17.696,14.476190476190476
+JacksonGao1999__StudentManagement,Student Management CRUD,random_code_same_budget,llama3.2:3b,36095,6,3,1,1,0.0,0.16666666666666666,0.2,0.17857142857142858,0.6666666666666666,26.94,15.845238095238095
+JacksonGao1999__StudentManagement,Student Management CRUD,full_selected_context,llama3.2:3b,10738,6,6,0,1,0.0,0.0,0.0,0.0,1.0,36.383,0.0
+JacksonGao1999__StudentManagement,Student Management CRUD,oracle_upper_bound,llama3.2:3b,19443,6,5,0,1,0.0,0.0,0.0,0.0,1.0,29.019,0.0
+RameshMF__library-management-system,Library Management REST API,readme_only,llama3.2:3b,245,6,7,3,1,0.5,0.5,0.1111111111111111,0.10708534621578099,0.5714285714285714,18.63,35.61421670117323
+RameshMF__library-management-system,Library Management REST API,file_tree_only,llama3.2:3b,238,6,8,0,1,0.0,0.0,0.0,0.0,1.0,22.144,0.0
+RameshMF__library-management-system,Library Management REST API,readme_plus_code,llama3.2:3b,6756,6,8,4,1,0.5,0.6666666666666666,0.0,0.3509661835748792,0.5,24.035,43.59782608695652
+RameshMF__library-management-system,Library Management REST API,random_code_same_budget,llama3.2:3b,9121,6,4,2,1,0.5,0.3333333333333333,0.0,0.2979310344827586,0.5,14.433,31.135632183908047
+RameshMF__library-management-system,Library Management REST API,full_selected_context,llama3.2:3b,7318,6,6,2,1,0.5,0.3333333333333333,0.0,0.2738095238095238,0.6666666666666666,22.543,29.107142857142854
+RameshMF__library-management-system,Library Management REST API,oracle_upper_bound,llama3.2:3b,7702,6,6,3,1,0.5,0.5,0.15,0.24830274921019022,0.5,23.193,39.22454123815285
+SkyCascade__SkyLearn,SkyLearn Learning Management System,readme_only,llama3.2:3b,3850,26,3,2,1,0.75,0.07692307692307693,0.1,0.1935096153846154,0.3333333333333333,11.905,29.2616185897436
+SkyCascade__SkyLearn,SkyLearn Learning Management System,file_tree_only,llama3.2:3b,1315,26,9,5,1,0.5,0.19230769230769232,0.2,0.1874029920523609,0.4444444444444444,28.553,29.0973696671102
+SkyCascade__SkyLearn,SkyLearn Learning Management System,readme_plus_code,llama3.2:3b,39670,26,5,4,1,0.75,0.15384615384615385,0.08333333333333333,0.23030489625317213,0.2,55.286,33.505855495079636
+SkyCascade__SkyLearn,SkyLearn Learning Management System,random_code_same_budget,llama3.2:3b,25452,26,0,0,0,0.0,0.0,0.0,0.0,1.0,32.028,0.0
+SkyCascade__SkyLearn,SkyLearn Learning Management System,full_selected_context,llama3.2:3b,47261,26,2,0,1,0.75,0.0,0.0,0.0,1.0,28.276,15.000000000000002
+SkyCascade__SkyLearn,SkyLearn Learning Management System,oracle_upper_bound,llama3.2:3b,47400,26,3,3,1,0.75,0.11538461538461539,0.0,0.19444444444444442,0.0,31.006,31.955128205128204
+abdulwahid880__School-Management-system-in-laravel-,Unifiedtransform School Management,readme_only,llama3.2:3b,10040,14,4,1,1,0.0,0.07142857142857142,0.0,0.041666666666666664,0.75,16.607,5.624999999999999
+abdulwahid880__School-Management-system-in-laravel-,Unifiedtransform School Management,file_tree_only,llama3.2:3b,4967,14,8,0,1,0.0,0.0,0.0,0.0,1.0,30.969,0.0
+abdulwahid880__School-Management-system-in-laravel-,Unifiedtransform School Management,readme_plus_code,llama3.2:3b,46110,14,2,1,1,0.3333333333333333,0.07142857142857142,0.0,0.15,0.5,44.001,16.416666666666668
+abdulwahid880__School-Management-system-in-laravel-,Unifiedtransform School Management,random_code_same_budget,llama3.2:3b,32032,14,3,0,1,0.3333333333333333,0.0,0.0,0.0,1.0,46.708,6.666666666666667
+abdulwahid880__School-Management-system-in-laravel-,Unifiedtransform School Management,full_selected_context,llama3.2:3b,52018,14,0,0,0,0.0,0.0,0.0,0.0,1.0,39.958,0.0
+abdulwahid880__School-Management-system-in-laravel-,Unifiedtransform School Management,oracle_upper_bound,llama3.2:3b,52018,14,2,0,1,0.3333333333333333,0.0,0.0,0.0,1.0,31.731,6.666666666666667
+adityagoyal222__django-lms,Django LMS,readme_only,llama3.2:3b,833,13,8,5,1,0.6666666666666666,0.38461538461538464,0.18047619047619046,0.14439393939393938,0.375,27.148,38.82030469530469
+adityagoyal222__django-lms,Django LMS,file_tree_only,llama3.2:3b,630,13,8,1,1,0.3333333333333333,0.07692307692307693,0.16666666666666666,0.20833333333333334,0.875,32.181,17.067307692307693
+adityagoyal222__django-lms,Django LMS,readme_plus_code,llama3.2:3b,29421,13,4,0,1,0.0,0.0,0.0,0.0,1.0,26.648,0.0
+adityagoyal222__django-lms,Django LMS,random_code_same_budget,llama3.2:3b,19547,13,4,3,1,0.3333333333333333,0.23076923076923078,0.0,0.148380355276907,0.25,22.431,24.46929507274335
+adityagoyal222__django-lms,Django LMS,full_selected_context,llama3.2:3b,30071,13,4,4,1,0.0,0.3076923076923077,0.3630952380952381,0.16219881545295464,0.0,24.623,30.464117762929853
+adityagoyal222__django-lms,Django LMS,oracle_upper_bound,llama3.2:3b,31043,13,6,6,1,0.0,0.46153846153846156,0.43452380952380953,0.189182648650612,0.0,30.736,37.68206207408152
+engripaye__library-management-system,REST Library Management System,readme_only,llama3.2:3b,3396,8,3,3,1,0.5,0.375,0.0,0.13034223628926278,0.0,14.951,35.08013354433894
+engripaye__library-management-system,REST Library Management System,file_tree_only,llama3.2:3b,289,8,8,4,1,0.5,0.5,0.16666666666666666,0.09337617897400506,0.5,19.61,37.23397601794341
+engripaye__library-management-system,REST Library Management System,readme_plus_code,llama3.2:3b,13901,8,5,4,1,0.5,0.5,0.05,0.1861451048951049,0.2,24.046,39.29217657342658
+engripaye__library-management-system,REST Library Management System,random_code_same_budget,llama3.2:3b,15432,8,3,2,1,0.5,0.25,0.0,0.13571428571428573,0.3333333333333333,14.585,27.45238095238095
+engripaye__library-management-system,REST Library Management System,full_selected_context,llama3.2:3b,14567,8,5,5,1,0.5,0.625,0.12333333333333334,0.17006865885239197,0.0,21.758,46.89269654945254
+engripaye__library-management-system,REST Library Management System,oracle_upper_bound,llama3.2:3b,17576,8,2,0,1,0.5,0.0,0.0,0.0,1.0,14.166,10.0
+jobic10__student-management-using-django,Student Management System Django,readme_only,llama3.2:3b,7547,13,3,2,1,0.6666666666666666,0.15384615384615385,0.0,0.08630952380952381,0.3333333333333333,16.767,26.67925824175824
+jobic10__student-management-using-django,Student Management System Django,file_tree_only,llama3.2:3b,336,13,8,0,1,0.6666666666666666,0.0,0.0,0.0,1.0,24.412,13.333333333333334
+jobic10__student-management-using-django,Student Management System Django,readme_plus_code,llama3.2:3b,28971,13,4,4,1,0.3333333333333333,0.3076923076923077,0.08571428571428572,0.12478680014831293,0.0,25.921,31.021985152407844
+jobic10__student-management-using-django,Student Management System Django,random_code_same_budget,llama3.2:3b,28303,13,3,3,1,0.3333333333333333,0.23076923076923078,0.1619047619047619,0.15771604938271605,0.0,18.948,30.347425722425726
+jobic10__student-management-using-django,Student Management System Django,full_selected_context,llama3.2:3b,29327,13,4,3,1,0.3333333333333333,0.23076923076923078,0.047619047619047616,0.12931034482758622,0.25,24.337,25.135625868384494
+jobic10__student-management-using-django,Student Management System Django,oracle_upper_bound,llama3.2:3b,38735,13,0,0,0,0.0,0.0,0.0,0.0,1.0,70.259,0.0
+knowledgefactory4u__librarymanagementsystem,Spring Boot Library Management System,readme_only,llama3.2:3b,2357,10,3,2,1,1.0,0.2,0.0,0.05952380952380952,0.3333333333333333,10.19,34.55952380952382
+knowledgefactory4u__librarymanagementsystem,Spring Boot Library Management System,file_tree_only,llama3.2:3b,210,10,8,3,1,0.0,0.3,0.0,0.11572649572649574,0.625,26.981,15.985897435897437
+knowledgefactory4u__librarymanagementsystem,Spring Boot Library Management System,readme_plus_code,llama3.2:3b,28647,10,7,4,1,1.0,0.4,0.24166666666666667,0.1886904761904762,0.42857142857142855,32.668,47.37797619047619
+knowledgefactory4u__librarymanagementsystem,Spring Boot Library Management System,random_code_same_budget,llama3.2:3b,27678,10,5,1,1,0.0,0.1,0.0,0.18518518518518517,0.8,27.649,8.277777777777775
+knowledgefactory4u__librarymanagementsystem,Spring Boot Library Management System,full_selected_context,llama3.2:3b,36207,10,13,5,1,1.0,0.5,0.1933333333333333,0.1537518037518037,0.6153846153846154,49.163,47.51909756909757
+knowledgefactory4u__librarymanagementsystem,Spring Boot Library Management System,oracle_upper_bound,llama3.2:3b,36908,10,4,3,1,1.0,0.3,0.2611111111111111,0.03683316507219204,0.25,49.793,43.774719698305105
+mehmetpekdemir__Library-Management-System,Spring Boot Library Management System,readme_only,llama3.2:3b,1244,8,8,4,1,1.0,0.5,0.0,0.1009189640768588,0.5,21.227,44.01378446115288
+mehmetpekdemir__Library-Management-System,Spring Boot Library Management System,file_tree_only,llama3.2:3b,318,8,8,3,1,1.0,0.375,0.0,0.04141414141414141,0.625,19.785,37.496212121212125
+mehmetpekdemir__Library-Management-System,Spring Boot Library Management System,readme_plus_code,llama3.2:3b,29379,8,4,3,1,1.0,0.375,0.19444444444444442,0.1339427752010934,0.25,19.247,46.523030516905294
+mehmetpekdemir__Library-Management-System,Spring Boot Library Management System,random_code_same_budget,llama3.2:3b,30947,8,5,4,1,0.0,0.5,0.14583333333333331,0.26495943204868155,0.2,27.495,32.39105814739689
+mehmetpekdemir__Library-Management-System,Spring Boot Library Management System,full_selected_context,llama3.2:3b,30075,8,5,0,1,0.0,0.0,0.0,0.0,1.0,23.485,0.0
+mehmetpekdemir__Library-Management-System,Spring Boot Library Management System,oracle_upper_bound,llama3.2:3b,31458,8,5,2,1,0.0,0.25,0.0,0.09224137931034482,0.6,24.842,14.133620689655174
+mwinamijr__django-scms,Django School Management System API,readme_only,llama3.2:3b,2284,14,4,2,1,0.75,0.14285714285714285,0.0,0.0988235294117647,0.5,13.299,26.482352941176472
+mwinamijr__django-scms,Django School Management System API,file_tree_only,llama3.2:3b,1548,14,8,1,1,0.25,0.07142857142857142,0.125,0.14814814814814814,0.875,26.492,13.472222222222225
+mwinamijr__django-scms,Django School Management System API,readme_plus_code,llama3.2:3b,33790,14,4,0,1,0.0,0.0,0.0,0.0,1.0,27.587,0.0
+mwinamijr__django-scms,Django School Management System API,random_code_same_budget,llama3.2:3b,19928,14,8,0,1,0.25,0.0,0.0,0.0,1.0,28.243,5.0
+mwinamijr__django-scms,Django School Management System API,full_selected_context,llama3.2:3b,41131,14,5,2,1,0.75,0.14285714285714285,0.08333333333333333,0.0733173076923077,0.6,27.972,26.76642628205128
+mwinamijr__django-scms,Django School Management System API,oracle_upper_bound,llama3.2:3b,46079,14,3,1,1,0.0,0.07142857142857142,0.16666666666666666,0.15384615384615385,0.6666666666666666,29.778,11.474358974358974
+openfun__marsha,Marsha Educational Media Platform,readme_only,llama3.2:3b,10040,15,5,2,1,0.6666666666666666,0.13333333333333333,0.0,0.11596638655462185,0.6,22.344,23.739495798319325
+openfun__marsha,Marsha Educational Media Platform,file_tree_only,llama3.2:3b,5007,15,5,2,1,0.3333333333333333,0.13333333333333333,0.0,0.11422413793103448,0.6,14.884,17.04669540229885
+openfun__marsha,Marsha Educational Media Platform,readme_plus_code,llama3.2:3b,46104,15,2,1,1,0.3333333333333333,0.06666666666666667,0.0625,0.09090909090909091,0.5,21.318,16.613636363636363
+openfun__marsha,Marsha Educational Media Platform,random_code_same_budget,llama3.2:3b,35901,15,2,2,1,0.0,0.13333333333333333,0.0,0.08410138248847926,0.0,19.706,15.928187403993855
+openfun__marsha,Marsha Educational Media Platform,full_selected_context,llama3.2:3b,52018,15,3,3,1,0.6666666666666666,0.2,0.255952380952381,0.13152337858220212,0.0,31.479,37.425231631113974
+openfun__marsha,Marsha Educational Media Platform,oracle_upper_bound,llama3.2:3b,52018,15,2,1,1,0.3333333333333333,0.06666666666666667,0.1111111111111111,0.2222222222222222,0.5,29.889,19.555555555555554
+thakurpdhiraj__library_management_system,Library Management System Microservices,readme_only,llama3.2:3b,5867,12,9,4,1,0.6666666666666666,0.3333333333333333,0.05357142857142857,0.1446704067321178,0.5555555555555556,22.545,32.68592911685479
+thakurpdhiraj__library_management_system,Library Management System Microservices,file_tree_only,llama3.2:3b,2662,12,8,5,1,0.3333333333333333,0.4166666666666667,0.0,0.13997643097643095,0.375,15.545,29.59964646464647
+thakurpdhiraj__library_management_system,Library Management System Microservices,readme_plus_code,llama3.2:3b,41931,12,16,8,1,1.0,0.6666666666666666,0.026988636363636364,0.20807362926928144,0.5,58.088,51.99421049964529
+thakurpdhiraj__library_management_system,Library Management System Microservices,random_code_same_budget,llama3.2:3b,28327,12,4,2,1,0.6666666666666666,0.16666666666666666,0.0,0.18205128205128207,0.5,22.156,26.897435897435894
+thakurpdhiraj__library_management_system,Library Management System Microservices,full_selected_context,llama3.2:3b,50617,12,11,7,1,1.0,0.5833333333333334,0.07444341372912801,0.16007872218426217,0.36363636363636365,45.653,50.67035213764952
+thakurpdhiraj__library_management_system,Library Management System Microservices,oracle_upper_bound,llama3.2:3b,50637,12,9,6,1,1.0,0.5,0.03571428571428571,0.1625893550893551,0.3333333333333333,37.419,47.319792707292706
+tough-dev-school__education-backend,Tough Dev School Education Backend,readme_only,llama3.2:3b,2897,17,8,1,1,0.2,0.058823529411764705,0.0,0.058823529411764705,0.875,23.129,8.191176470588236
+tough-dev-school__education-backend,Tough Dev School Education Backend,file_tree_only,llama3.2:3b,5144,17,9,2,1,0.4,0.11764705882352941,0.0,0.10437710437710437,0.7777777777777778,29.465,15.905525846702318
+tough-dev-school__education-backend,Tough Dev School Education Backend,readme_plus_code,llama3.2:3b,33754,17,0,0,0,0.0,0.0,0.0,0.0,1.0,22.073,0.0
+tough-dev-school__education-backend,Tough Dev School Education Backend,random_code_same_budget,llama3.2:3b,22708,17,2,0,1,0.2,0.0,0.0,0.0,1.0,15.98,4.000000000000001
+tough-dev-school__education-backend,Tough Dev School Education Backend,full_selected_context,llama3.2:3b,46868,17,2,0,1,0.4,0.0,0.0,0.0,1.0,21.995,8.000000000000002
+tough-dev-school__education-backend,Tough Dev School Education Backend,oracle_upper_bound,llama3.2:3b,46394,17,3,0,1,0.2,0.0,0.0,0.0,1.0,24.687,4.000000000000001

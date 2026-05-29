@@ -1,0 +1,45 @@
+# File tree
+README.md
+build.gradle
+gradle
+  wrapper
+    gradle-wrapper.properties
+src
+  main
+    java
+      io
+        spring
+          JacksonCustomizations.java
+          MyBatisConfig.java
+          RealWorldApplication.java
+          Util.java
+          api
+          application
+          core
+          graphql
+          infrastructure
+    resources
+      application-test.properties
+      application.properties
+      mapper
+        ArticleFavoriteMapper.xml
+        ArticleFavoritesReadService.xml
+        ArticleMapper.xml
+        ArticleReadService.xml
+        CommentMapper.xml
+        CommentReadService.xml
+        TagReadService.xml
+        TransferData.xml
+        UserMapper.xml
+        UserReadService.xml
+        UserRelationshipQueryService.xml
+  test
+    java
+      io
+        spring
+          RealworldApplicationTests.java
+          TestHelper.java
+          api
+          application
+          core
+          infrastructure

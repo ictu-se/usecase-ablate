@@ -92,7 +92,7 @@ def pred_actors(parsed, use_cases):
     return list(dict.fromkeys(a.strip() for a in actors if a.strip()))
 
 
-def use_case_similarity(pred, gold):
+def use_case_similarity(pred, gold, actor_bonus_weight=0.1):
     pred_text = " ".join([
         str(pred.get("name", "")),
         str(pred.get("description", "")),
@@ -105,7 +105,7 @@ def use_case_similarity(pred, gold):
     ])
     name_score = jaccard(tokens(pred.get("name", "")), tokens(gold["use_case_name"]))
     text_score = jaccard(tokens(pred_text), tokens(gold_text))
-    actor_bonus = 0.1 if norm(pred.get("actor", "")) == norm(gold["actor"]) else 0.0
+    actor_bonus = actor_bonus_weight if norm(pred.get("actor", "")) == norm(gold["actor"]) else 0.0
     return max(name_score, text_score + actor_bonus)
 
 
@@ -117,7 +117,7 @@ def path_hit(pred, gold):
     return pred == gold or pred.endswith("/" + gold) or gold.endswith("/" + pred) or pred in gold or gold in pred
 
 
-def score_record(record, oracle):
+def score_record(record, oracle, match_threshold=0.28, actor_bonus_weight=0.1):
     parsed = extract_json(record.get("stdout", ""))
     gold = oracle[record["repo"]]["use_cases"]
     use_cases = pred_use_cases(parsed)
@@ -134,15 +134,17 @@ def score_record(record, oracle):
         for pi, p in enumerate(use_cases):
             if pi in used_pred:
                 continue
-            score = use_case_similarity(p, g)
+            score = use_case_similarity(p, g, actor_bonus_weight=actor_bonus_weight)
             if score > best[0]:
                 best = (score, pi)
-        if best[0] >= 0.28 and best[1] is not None:
+        if best[0] >= match_threshold and best[1] is not None:
             matches.append((gi, best[1], best[0]))
             used_pred.add(best[1])
 
     use_case_recall = len(matches) / len(gold) if gold else 0.0
-    unsupported_rate = max(0, len(use_cases) - len(matches)) / len(use_cases) if use_cases else 0.0
+    unsupported_rate = max(0, len(use_cases) - len(matches)) / len(use_cases) if use_cases else 1.0
+    if parsed is None:
+        unsupported_rate = 1.0
 
     path_scores = []
     behavior_scores = []
@@ -192,10 +194,12 @@ def main():
     parser.add_argument("outputs_jsonl")
     parser.add_argument("--oracle", default=str(PROJECT / "data/use_case_oracle.jsonl"))
     parser.add_argument("--out", default=None)
+    parser.add_argument("--match-threshold", type=float, default=0.28)
+    parser.add_argument("--actor-bonus", type=float, default=0.1)
     args = parser.parse_args()
 
     oracle = {row["repo"]: row for row in load_jsonl(args.oracle)}
-    rows = [score_record(record, oracle) for record in load_jsonl(args.outputs_jsonl)]
+    rows = [score_record(record, oracle, match_threshold=args.match_threshold, actor_bonus_weight=args.actor_bonus) for record in load_jsonl(args.outputs_jsonl)]
     out_path = Path(args.out) if args.out else PROJECT / "results" / (Path(args.outputs_jsonl).stem + "_metrics.csv")
     out_path.parent.mkdir(parents=True, exist_ok=True)
     with out_path.open("w", encoding="utf-8", newline="") as handle:

@@ -1,0 +1,37 @@
+repo,project,condition,model,artifact_chars,gold_use_cases,predicted_use_cases,matched_use_cases,parse_ok,actor_recall,use_case_recall,path_fidelity,behavior_coverage,unsupported_feature_rate,elapsed_sec,composite_score
+InvoicePlane__InvoicePlane,InvoicePlane,readme_only,deepseek-coder:6.7b,10040,6,6,0,1,0.5,0.0,0.0,0.0,1.0,17.432,10.0
+InvoicePlane__InvoicePlane,InvoicePlane,file_tree_only,deepseek-coder:6.7b,4640,6,0,0,0,0.0,0.0,0.0,0.0,1.0,16.055,0.0
+InvoicePlane__InvoicePlane,InvoicePlane,readme_plus_code,deepseek-coder:6.7b,46106,6,0,0,0,0.0,0.0,0.0,0.0,1.0,36.727,0.0
+InvoicePlane__InvoicePlane,InvoicePlane,random_code_same_budget,deepseek-coder:6.7b,36091,6,6,2,1,0.5,0.3333333333333333,0.0,0.11163227016885553,0.6666666666666666,43.453,26.674484052532833
+InvoicePlane__InvoicePlane,InvoicePlane,full_selected_context,deepseek-coder:6.7b,52018,6,0,0,0,0.0,0.0,0.0,0.0,1.0,37.653,0.0
+InvoicePlane__InvoicePlane,InvoicePlane,oracle_upper_bound,deepseek-coder:6.7b,52018,6,0,0,0,0.0,0.0,0.0,0.0,1.0,40.505,0.0
+firefly-iii__firefly-iii,Firefly III,readme_only,deepseek-coder:6.7b,10040,6,6,3,1,1.0,0.5,0.16984126984126982,0.14817728822449514,0.5,17.506,48.11948472019282
+firefly-iii__firefly-iii,Firefly III,file_tree_only,deepseek-coder:6.7b,7090,6,0,0,0,0.0,0.0,0.0,0.0,1.0,15.59,0.0
+firefly-iii__firefly-iii,Firefly III,readme_plus_code,deepseek-coder:6.7b,46106,6,2,0,1,1.0,0.0,0.0,0.0,1.0,38.852,20.0
+firefly-iii__firefly-iii,Firefly III,random_code_same_budget,deepseek-coder:6.7b,36085,6,2,1,1,1.0,0.16666666666666666,0.0,0.2,0.5,29.074,33.83333333333333
+firefly-iii__firefly-iii,Firefly III,full_selected_context,deepseek-coder:6.7b,52018,6,0,0,0,0.0,0.0,0.0,0.0,1.0,63.587,0.0
+firefly-iii__firefly-iii,Firefly III,oracle_upper_bound,deepseek-coder:6.7b,52018,6,0,0,0,0.0,0.0,0.0,0.0,1.0,33.446,0.0
+gothinkster__spring-boot-realworld-example-app,RealWorld Spring API,readme_only,deepseek-coder:6.7b,3344,6,0,0,0,0.0,0.0,0.0,0.0,1.0,11.362,0.0
+gothinkster__spring-boot-realworld-example-app,RealWorld Spring API,file_tree_only,deepseek-coder:6.7b,946,6,0,0,0,0.0,0.0,0.0,0.0,1.0,8.315,0.0
+gothinkster__spring-boot-realworld-example-app,RealWorld Spring API,readme_plus_code,deepseek-coder:6.7b,39410,6,2,0,1,0.25,0.0,0.0,0.0,1.0,27.181,5.0
+gothinkster__spring-boot-realworld-example-app,RealWorld Spring API,random_code_same_budget,deepseek-coder:6.7b,35168,6,1,1,1,0.25,0.16666666666666666,0.0,0.06666666666666667,0.0,21.792,21.833333333333332
+gothinkster__spring-boot-realworld-example-app,RealWorld Spring API,full_selected_context,deepseek-coder:6.7b,46380,6,2,1,1,0.25,0.16666666666666666,0.0,0.22580645161290322,0.5,34.02,19.22043010752688
+gothinkster__spring-boot-realworld-example-app,RealWorld Spring API,oracle_upper_bound,deepseek-coder:6.7b,45845,6,4,3,1,0.25,0.5,0.24444444444444446,0.19008363201911585,0.25,37.911,37.74014336917562
+kimai__kimai,Kimai,readme_only,deepseek-coder:6.7b,5634,6,0,0,0,0.0,0.0,0.0,0.0,1.0,17.718,0.0
+kimai__kimai,Kimai,file_tree_only,deepseek-coder:6.7b,5435,6,2,1,1,0.6666666666666666,0.16666666666666666,0.0,0.1,0.5,6.989,25.666666666666664
+kimai__kimai,Kimai,readme_plus_code,deepseek-coder:6.7b,38701,6,2,0,1,0.6666666666666666,0.0,0.0,0.0,1.0,26.544,13.333333333333334
+kimai__kimai,Kimai,random_code_same_budget,deepseek-coder:6.7b,28485,6,2,1,1,0.6666666666666666,0.16666666666666666,0.0,0.06060606060606061,0.5,19.773,25.075757575757574
+kimai__kimai,Kimai,full_selected_context,deepseek-coder:6.7b,46464,6,2,0,1,0.6666666666666666,0.0,0.0,0.0,1.0,33.88,13.333333333333334
+kimai__kimai,Kimai,oracle_upper_bound,deepseek-coder:6.7b,52018,6,0,0,1,0.0,0.0,0.0,0.0,1.0,38.184,0.0
+koel__koel,Koel,readme_only,deepseek-coder:6.7b,6436,6,2,2,1,0.5,0.3333333333333333,0.0,0.08805418719211822,0.0,8.032,32.987479474548444
+koel__koel,Koel,file_tree_only,deepseek-coder:6.7b,6074,6,8,1,1,0.0,0.16666666666666666,0.0,0.2,0.875,13.911,10.083333333333332
+koel__koel,Koel,readme_plus_code,deepseek-coder:6.7b,37252,6,0,0,0,0.0,0.0,0.0,0.0,1.0,23.755,0.0
+koel__koel,Koel,random_code_same_budget,deepseek-coder:6.7b,33931,6,2,0,1,0.0,0.0,0.0,0.0,1.0,22.027,0.0
+koel__koel,Koel,full_selected_context,deepseek-coder:6.7b,47212,6,0,0,0,0.0,0.0,0.0,0.0,1.0,59.464,0.0
+koel__koel,Koel,oracle_upper_bound,deepseek-coder:6.7b,48899,6,0,0,0,0.0,0.0,0.0,0.0,1.0,59.545,0.0
+spring-projects__spring-petclinic,Spring PetClinic,readme_only,deepseek-coder:6.7b,10040,6,2,1,1,0.0,0.16666666666666666,0.0,0.2903225806451613,0.5,11.348,15.18817204301075
+spring-projects__spring-petclinic,Spring PetClinic,file_tree_only,deepseek-coder:6.7b,897,6,3,0,1,0.0,0.0,0.0,0.0,1.0,6.496,0.0
+spring-projects__spring-petclinic,Spring PetClinic,readme_plus_code,deepseek-coder:6.7b,46106,6,0,0,0,0.0,0.0,0.0,0.0,1.0,25.945,0.0
+spring-projects__spring-petclinic,Spring PetClinic,random_code_same_budget,deepseek-coder:6.7b,36095,6,0,0,0,0.0,0.0,0.0,0.0,1.0,30.763,0.0
+spring-projects__spring-petclinic,Spring PetClinic,full_selected_context,deepseek-coder:6.7b,52018,6,0,0,0,0.0,0.0,0.0,0.0,1.0,30.409,0.0
+spring-projects__spring-petclinic,Spring PetClinic,oracle_upper_bound,deepseek-coder:6.7b,52018,6,0,0,0,0.0,0.0,0.0,0.0,1.0,30.078,0.0

@@ -1,0 +1,7 @@
+condition,n,actor_scope_error,code_context_overgeneralization,framework_or_boilerplate_noise,implementation_level_goal,matched_goal_actor_label_drift,matched_goal_missing_or_wrong_path,matched_supported_goal,near_miss_or_partial_workflow,readme_overgeneralization
+file_tree_only,82,22,0,12,4,7,7,21,9,0
+full_selected_context,119,19,3,1,12,17,25,42,0,0
+oracle_upper_bound,119,18,4,1,7,24,6,59,0,0
+random_code_same_budget,119,14,10,6,8,15,27,39,0,0
+readme_only,85,12,0,0,2,9,28,21,0,13
+readme_plus_code,120,20,6,6,10,11,25,42,0,0

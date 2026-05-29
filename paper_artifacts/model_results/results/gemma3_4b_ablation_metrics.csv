@@ -1,0 +1,113 @@
+repo,project,condition,model,artifact_chars,gold_use_cases,predicted_use_cases,matched_use_cases,parse_ok,actor_recall,use_case_recall,path_fidelity,behavior_coverage,unsupported_feature_rate,elapsed_sec,composite_score
+4jean__lav_sms,LAVSMS Laravel School Management,readme_only,gemma3:4b,3576,11,8,4,1,0.5,0.36363636363636365,0.0,0.13632938357076288,0.5,15.646,29.77221348083417
+4jean__lav_sms,LAVSMS Laravel School Management,file_tree_only,gemma3:4b,4907,11,8,3,1,0.5,0.2727272727272727,0.0,0.08032890575585072,0.625,12.73,24.500388131792306
+4jean__lav_sms,LAVSMS Laravel School Management,readme_plus_tree,gemma3:4b,8485,11,0,0,0,0.0,0.0,0.0,0.0,0.0,15.567,10.0
+4jean__lav_sms,LAVSMS Laravel School Management,routes_controllers,gemma3:4b,30026,11,8,3,1,0.75,0.2727272727272727,0.13055555555555556,0.25773524720893143,0.625,21.239,34.77259436469963
+4jean__lav_sms,LAVSMS Laravel School Management,models_services,gemma3:4b,6218,11,8,5,1,0.5,0.45454545454545453,0.02,0.14365616453647373,0.375,13.48,34.71393337713802
+4jean__lav_sms,LAVSMS Laravel School Management,readme_plus_code,gemma3:4b,39648,11,8,3,1,0.5,0.2727272727272727,0.041666666666666664,0.10368009272674587,0.625,23.017,25.683989269689068
+4jean__lav_sms,LAVSMS Laravel School Management,full_selected_context,gemma3:4b,50449,11,9,3,1,0.5,0.2727272727272727,0.08928571428571429,0.09891917293233082,0.6666666666666666,28.045,26.148289758487124
+AdityaKshettri__Student-Database-Management-System-using-JAVA-Spring-Boot,Student DBMS Spring Boot,readme_only,gemma3:4b,255,7,3,2,1,0.0,0.2857142857142857,0.0,0.1935897435897436,0.3333333333333333,4.743,19.57051282051282
+AdityaKshettri__Student-Database-Management-System-using-JAVA-Spring-Boot,Student DBMS Spring Boot,file_tree_only,gemma3:4b,844,7,8,3,1,1.0,0.42857142857142855,0.1111111111111111,0.20826156299840512,0.625,13.286,44.09614566719829
+AdityaKshettri__Student-Database-Management-System-using-JAVA-Spring-Boot,Student DBMS Spring Boot,readme_plus_tree,gemma3:4b,1101,7,8,2,1,1.0,0.2857142857142857,0.22916666666666666,0.16451612903225807,0.75,13.116,39.5510752688172
+AdityaKshettri__Student-Database-Management-System-using-JAVA-Spring-Boot,Student DBMS Spring Boot,routes_controllers,gemma3:4b,9831,7,0,0,0,0.0,0.0,0.0,0.0,0.0,13.79,10.0
+AdityaKshettri__Student-Database-Management-System-using-JAVA-Spring-Boot,Student DBMS Spring Boot,models_services,gemma3:4b,9266,7,8,3,1,1.0,0.42857142857142855,0.0,0.18802151954325866,0.625,13.893,41.570322793148875
+AdityaKshettri__Student-Database-Management-System-using-JAVA-Spring-Boot,Student DBMS Spring Boot,readme_plus_code,gemma3:4b,17957,7,8,3,1,1.0,0.42857142857142855,0.1111111111111111,0.18249961040984886,0.625,16.062,43.709716378369954
+AdityaKshettri__Student-Database-Management-System-using-JAVA-Spring-Boot,Student DBMS Spring Boot,full_selected_context,gemma3:4b,18821,7,8,2,1,1.0,0.2857142857142857,0.0,0.12727272727272726,0.75,16.478,34.409090909090914
+Asitha123__Java-Spring-boot-Student-Management-System,Student Management System Spring Boot,readme_only,gemma3:4b,595,4,2,2,1,1.0,0.5,0.0,0.14870689655172414,0.0,3.769,49.730603448275865
+Asitha123__Java-Spring-boot-Student-Management-System,Student Management System Spring Boot,file_tree_only,gemma3:4b,223,4,4,0,1,1.0,0.0,0.0,0.0,1.0,6.2,20.0
+Asitha123__Java-Spring-boot-Student-Management-System,Student Management System Spring Boot,readme_plus_tree,gemma3:4b,820,4,3,2,1,1.0,0.5,0.0,0.14451612903225808,0.3333333333333333,5.121,46.33440860215053
+Asitha123__Java-Spring-boot-Student-Management-System,Student Management System Spring Boot,routes_controllers,gemma3:4b,2248,4,4,3,1,1.0,0.75,0.0,0.20118279569892472,0.25,6.62,56.76774193548386
+Asitha123__Java-Spring-boot-Student-Management-System,Student Management System Spring Boot,models_services,gemma3:4b,10520,4,4,1,1,1.0,0.25,0.0,0.07692307692307693,0.75,9.355,32.40384615384615
+Asitha123__Java-Spring-boot-Student-Management-System,Student Management System Spring Boot,readme_plus_code,gemma3:4b,13933,4,4,3,1,1.0,0.75,0.08333333333333333,0.20670062695924765,0.25,9.487,58.517176071055374
+Asitha123__Java-Spring-boot-Student-Management-System,Student Management System Spring Boot,full_selected_context,gemma3:4b,14176,4,4,3,1,1.0,0.75,0.08333333333333333,0.20670062695924765,0.25,9.396,58.517176071055374
+JacksonGao1999__StudentManagement,Student Management CRUD,readme_only,gemma3:4b,821,6,8,2,1,1.0,0.3333333333333333,0.0,0.11596638655462185,0.75,10.669,35.906162464986
+JacksonGao1999__StudentManagement,Student Management CRUD,file_tree_only,gemma3:4b,435,6,8,3,1,1.0,0.5,0.0,0.070995670995671,0.625,12.28,42.314935064935064
+JacksonGao1999__StudentManagement,Student Management CRUD,readme_plus_tree,gemma3:4b,1258,6,3,3,1,1.0,0.5,0.0,0.20419580419580421,0.0,6.774,50.56293706293707
+JacksonGao1999__StudentManagement,Student Management CRUD,routes_controllers,gemma3:4b,3524,6,4,1,1,1.0,0.16666666666666666,0.0,0.03333333333333333,0.75,7.0,28.83333333333334
+JacksonGao1999__StudentManagement,Student Management CRUD,models_services,gemma3:4b,2329,6,8,3,1,1.0,0.5,0.0,0.1824009324009324,0.625,11.104,43.98601398601399
+JacksonGao1999__StudentManagement,Student Management CRUD,readme_plus_code,gemma3:4b,15215,6,8,4,1,0.0,0.6666666666666666,0.18333333333333335,0.11904761904761905,0.5,13.875,33.78571428571428
+JacksonGao1999__StudentManagement,Student Management CRUD,full_selected_context,gemma3:4b,19298,6,5,3,1,0.0,0.5,0.21666666666666667,0.11212475633528264,0.4,13.889,29.515204678362572
+RameshMF__library-management-system,Library Management REST API,readme_only,gemma3:4b,245,6,8,3,1,1.0,0.5,0.0,0.2597278452541611,0.625,10.331,45.14591767881242
+RameshMF__library-management-system,Library Management REST API,file_tree_only,gemma3:4b,238,6,3,2,1,1.0,0.3333333333333333,0.0,0.24000000000000002,0.3333333333333333,5.597,41.93333333333334
+RameshMF__library-management-system,Library Management REST API,readme_plus_tree,gemma3:4b,485,6,8,3,1,1.0,0.5,0.0,0.2597278452541611,0.625,11.961,45.14591767881242
+RameshMF__library-management-system,Library Management REST API,routes_controllers,gemma3:4b,2731,6,8,4,1,1.0,0.6666666666666666,0.2708333333333333,0.27665719696969693,0.5,13.095,57.89985795454547
+RameshMF__library-management-system,Library Management REST API,models_services,gemma3:4b,3799,6,4,3,1,1.0,0.5,0.0,0.26813115409606636,0.25,7.57,49.021967311440996
+RameshMF__library-management-system,Library Management REST API,readme_plus_code,gemma3:4b,7299,6,8,5,1,1.0,0.8333333333333334,0.16666666666666666,0.29125851604112474,0.375,14.678,63.118877740616874
+RameshMF__library-management-system,Library Management REST API,full_selected_context,gemma3:4b,7557,6,8,5,1,1.0,0.8333333333333334,0.13333333333333333,0.3342023172905526,0.375,12.387,63.09636809269163
+SkyCascade__SkyLearn,SkyLearn Learning Management System,readme_only,gemma3:4b,3850,26,8,6,1,0.75,0.23076923076923078,0.0,0.09351187311713627,0.25,12.839,31.979601173680123
+SkyCascade__SkyLearn,SkyLearn Learning Management System,file_tree_only,gemma3:4b,1315,26,8,2,1,0.25,0.07692307692307693,0.41666666666666663,0.1123015873015873,0.75,12.16,20.210164835164832
+SkyCascade__SkyLearn,SkyLearn Learning Management System,readme_plus_tree,gemma3:4b,5167,26,8,6,1,0.75,0.23076923076923078,0.07638888888888888,0.14156518606983004,0.25,14.165,34.22817864574831
+SkyCascade__SkyLearn,SkyLearn Learning Management System,routes_controllers,gemma3:4b,28437,26,8,3,1,0.75,0.11538461538461539,0.1717171717171717,0.1537958773252891,0.625,19.274,28.529743132684317
+SkyCascade__SkyLearn,SkyLearn Learning Management System,models_services,gemma3:4b,23697,26,8,3,1,0.75,0.11538461538461539,0.2222222222222222,0.17540634674922603,0.625,17.487,29.864001184144374
+SkyCascade__SkyLearn,SkyLearn Learning Management System,readme_plus_code,gemma3:4b,39914,26,8,7,1,0.75,0.2692307692307692,0.2385590599876314,0.15024898296787698,0.125,22.08,40.19799286734771
+SkyCascade__SkyLearn,SkyLearn Learning Management System,full_selected_context,gemma3:4b,47255,26,9,7,1,0.75,0.2692307692307692,0.17285095856524427,0.12796570696916318,0.2222222222222222,24.668,37.57735947669703
+abdulwahid880__School-Management-system-in-laravel-,Unifiedtransform School Management,readme_only,gemma3:4b,10040,14,8,2,1,0.8333333333333334,0.14285714285714285,0.0625,0.11693121693121693,0.75,14.351,27.170634920634924
+abdulwahid880__School-Management-system-in-laravel-,Unifiedtransform School Management,file_tree_only,gemma3:4b,4967,14,8,5,1,0.6666666666666666,0.35714285714285715,0.08055555555555556,0.18143236074270558,0.375,15.117,36.41592985558503
+abdulwahid880__School-Management-system-in-laravel-,Unifiedtransform School Management,readme_plus_tree,gemma3:4b,15009,14,8,3,1,0.5,0.21428571428571427,0.0,0.08069381598793364,0.625,16.002,22.460407239819006
+abdulwahid880__School-Management-system-in-laravel-,Unifiedtransform School Management,routes_controllers,gemma3:4b,30061,14,8,3,1,0.6666666666666666,0.21428571428571427,0.2119047619047619,0.12239858906525573,0.625,20.752,30.6574074074074
+abdulwahid880__School-Management-system-in-laravel-,Unifiedtransform School Management,models_services,gemma3:4b,29789,14,8,2,1,0.5,0.14285714285714285,0.0,0.11038306451612903,0.75,18.083,19.155745967741936
+abdulwahid880__School-Management-system-in-laravel-,Unifiedtransform School Management,readme_plus_code,gemma3:4b,44865,14,8,5,1,0.5,0.35714285714285715,0.0,0.10864758670870725,0.375,22.273,30.379713800630608
+abdulwahid880__School-Management-system-in-laravel-,Unifiedtransform School Management,full_selected_context,gemma3:4b,52018,14,7,3,1,0.5,0.21428571428571427,0.041666666666666664,0.06743106743106743,0.5714285714285714,21.943,23.63051363051363
+adityagoyal222__django-lms,Django LMS,readme_only,gemma3:4b,833,13,8,5,1,0.6666666666666666,0.38461538461538464,0.0,0.17305822197126544,0.375,10.048,35.64074512444078
+adityagoyal222__django-lms,Django LMS,file_tree_only,gemma3:4b,630,13,3,2,1,0.3333333333333333,0.15384615384615385,0.30952380952380953,0.08333333333333333,0.3333333333333333,5.431,26.158424908424916
+adityagoyal222__django-lms,Django LMS,readme_plus_tree,gemma3:4b,1465,13,8,5,1,0.6666666666666666,0.38461538461538464,0.17857142857142855,0.1544074074074074,0.375,11.799,38.93241147741148
+adityagoyal222__django-lms,Django LMS,routes_controllers,gemma3:4b,10713,13,8,6,1,0.6666666666666666,0.46153846153846156,0.36706349206349204,0.279569464352073,0.25,15.192,48.52199129373042
+adityagoyal222__django-lms,Django LMS,models_services,gemma3:4b,17894,13,8,4,1,0.6666666666666666,0.3076923076923077,0.3005952380952381,0.18581349206349207,0.5,15.302,37.90167124542124
+adityagoyal222__django-lms,Django LMS,readme_plus_code,gemma3:4b,27824,13,0,0,0,0.0,0.0,0.0,0.0,0.0,16.797,10.0
+adityagoyal222__django-lms,Django LMS,full_selected_context,gemma3:4b,30898,13,8,5,1,0.6666666666666666,0.38461538461538464,0.46428571428571425,0.20982322025800287,0.375,19.595,45.47793438445612
+engripaye__library-management-system,REST Library Management System,readme_only,gemma3:4b,3396,8,8,5,1,1.0,0.625,0.11333333333333333,0.17302232854864436,0.375,13.107,52.987001594896334
+engripaye__library-management-system,REST Library Management System,file_tree_only,gemma3:4b,289,8,8,6,1,1.0,0.75,0.0,0.20418436191680975,0.25,12.584,56.812765428752144
+engripaye__library-management-system,REST Library Management System,readme_plus_tree,gemma3:4b,3687,8,8,5,1,0.5,0.625,0.12333333333333334,0.17196991133748346,0.375,12.972,43.17121533672892
+engripaye__library-management-system,REST Library Management System,routes_controllers,gemma3:4b,2913,8,0,0,0,0.0,0.0,0.0,0.0,0.0,14.642,10.0
+engripaye__library-management-system,REST Library Management System,models_services,gemma3:4b,7611,8,8,6,1,0.5,0.75,0.0,0.2918369899794048,0.25,12.025,48.127554849691066
+engripaye__library-management-system,REST Library Management System,readme_plus_code,gemma3:4b,17122,8,8,5,1,1.0,0.625,0.12333333333333334,0.2783848003848004,0.375,15.447,54.76743867243867
+engripaye__library-management-system,REST Library Management System,full_selected_context,gemma3:4b,17431,8,8,5,1,1.0,0.625,0.12333333333333334,0.27470632688023994,0.375,15.49,54.71226156987027
+jobic10__student-management-using-django,Student Management System Django,readme_only,gemma3:4b,7547,13,8,6,1,0.6666666666666666,0.46153846153846156,0.05555555555555555,0.12988896316102197,0.25,13.444,40.04662504570593
+jobic10__student-management-using-django,Student Management System Django,file_tree_only,gemma3:4b,336,13,3,2,1,0.3333333333333333,0.15384615384615385,0.1625,0.04246031746031746,0.3333333333333333,4.804,22.604853479853478
+jobic10__student-management-using-django,Student Management System Django,readme_plus_tree,gemma3:4b,7885,13,8,8,1,0.6666666666666666,0.6153846153846154,0.13779761904761903,0.12844520154357883,0.0,14.202,49.55442527590094
+jobic10__student-management-using-django,Student Management System Django,routes_controllers,gemma3:4b,16142,13,8,4,1,0.6666666666666666,0.3076923076923077,0.26517857142857143,0.20902511467027596,0.5,17.019,37.541512251189666
+jobic10__student-management-using-django,Student Management System Django,models_services,gemma3:4b,5301,13,3,0,1,0.6666666666666666,0.0,0.0,0.0,1.0,6.639,13.333333333333334
+jobic10__student-management-using-django,Student Management System Django,readme_plus_code,gemma3:4b,38234,13,8,6,1,1.0,0.46153846153846156,0.11428571428571428,0.1688498206300064,0.25,22.773,48.47230774901054
+jobic10__student-management-using-django,Student Management System Django,full_selected_context,gemma3:4b,38590,13,8,5,1,1.0,0.38461538461538464,0.1335714285714286,0.17514720674125642,0.375,23.355,45.01017513408588
+knowledgefactory4u__librarymanagementsystem,Spring Boot Library Management System,readme_only,gemma3:4b,2357,10,8,6,1,1.0,0.6,0.03333333333333333,0.20676222522996715,0.25,12.164,52.26810004511617
+knowledgefactory4u__librarymanagementsystem,Spring Boot Library Management System,file_tree_only,gemma3:4b,210,10,8,4,1,0.0,0.4,0.0,0.19308429118773948,0.5,11.936,21.896264367816094
+knowledgefactory4u__librarymanagementsystem,Spring Boot Library Management System,readme_plus_tree,gemma3:4b,2569,10,5,4,1,1.0,0.4,0.18333333333333335,0.15569103586344965,0.2,8.495,48.00203220461841
+knowledgefactory4u__librarymanagementsystem,Spring Boot Library Management System,routes_controllers,gemma3:4b,11725,10,11,3,1,1.0,0.3,0.0,0.12715288818229994,0.7272727272727273,18.389,35.13456605000723
+knowledgefactory4u__librarymanagementsystem,Spring Boot Library Management System,models_services,gemma3:4b,17411,10,8,6,1,0.0,0.6,0.0,0.20129679484518195,0.25,15.358,31.51945192267773
+knowledgefactory4u__librarymanagementsystem,Spring Boot Library Management System,readme_plus_code,gemma3:4b,30655,10,8,3,1,1.0,0.3,0.0,0.12089596227527262,0.625,19.96,36.06343943412909
+knowledgefactory4u__librarymanagementsystem,Spring Boot Library Management System,full_selected_context,gemma3:4b,36763,10,8,6,1,1.0,0.6,0.0,0.23622409927933638,0.25,20.316,52.04336148919004
+mehmetpekdemir__Library-Management-System,Spring Boot Library Management System,readme_only,gemma3:4b,1244,8,8,5,1,0.0,0.625,0.13787878787878788,0.13783205456095482,0.375,10.027,32.95005657599008
+mehmetpekdemir__Library-Management-System,Spring Boot Library Management System,file_tree_only,gemma3:4b,318,8,8,4,1,0.0,0.5,0.25,0.08194799658994033,0.5,10.067,28.729219948849106
+mehmetpekdemir__Library-Management-System,Spring Boot Library Management System,readme_plus_tree,gemma3:4b,1564,8,6,5,1,1.0,0.625,0.03333333333333333,0.13659420289855073,0.16666666666666666,8.367,52.923913043478265
+mehmetpekdemir__Library-Management-System,Spring Boot Library Management System,routes_controllers,gemma3:4b,11054,8,8,5,1,0.0,0.625,0.15,0.2886628335544744,0.375,13.537,35.45494250331711
+mehmetpekdemir__Library-Management-System,Spring Boot Library Management System,models_services,gemma3:4b,17100,8,8,5,1,0.0,0.625,0.0,0.2462474120082816,0.375,15.338,31.818711180124225
+mehmetpekdemir__Library-Management-System,Spring Boot Library Management System,readme_plus_code,gemma3:4b,29183,8,8,6,1,1.0,0.75,0.09722222222222221,0.19919108669108668,0.25,17.114,58.68231074481074
+mehmetpekdemir__Library-Management-System,Spring Boot Library Management System,full_selected_context,gemma3:4b,31313,8,8,7,1,0.0,0.875,0.16991341991341985,0.1752211692633399,0.125,17.574,45.40158593721849
+mwinamijr__django-scms,Django School Management System API,readme_only,gemma3:4b,2284,14,8,3,1,0.75,0.21428571428571427,0.09722222222222221,0.14638157894736842,0.625,10.49,30.39016812865497
+mwinamijr__django-scms,Django School Management System API,file_tree_only,gemma3:4b,1548,14,8,4,1,0.5,0.2857142857142857,0.03571428571428571,0.09806255835667602,0.5,12.287,27.185224089635856
+mwinamijr__django-scms,Django School Management System API,readme_plus_tree,gemma3:4b,3834,14,5,3,1,0.75,0.21428571428571427,0.09722222222222221,0.12240139298962831,0.4,8.921,32.280465339288874
+mwinamijr__django-scms,Django School Management System API,routes_controllers,gemma3:4b,28032,14,8,1,1,0.5,0.07142857142857142,0.4,0.12903225806451613,0.875,18.825,23.685483870967744
+mwinamijr__django-scms,Django School Management System API,models_services,gemma3:4b,30062,14,8,5,1,0.5,0.35714285714285715,0.0,0.1040737289013151,0.375,18.321,30.311105933519727
+mwinamijr__django-scms,Django School Management System API,readme_plus_code,gemma3:4b,38354,14,8,4,1,0.75,0.2857142857142857,0.05,0.10315656565656565,0.5,20.792,32.547348484848484
+mwinamijr__django-scms,Django School Management System API,full_selected_context,gemma3:4b,45934,14,8,5,1,0.75,0.35714285714285715,0.24111111111111114,0.11888066558798267,0.375,23.175,40.35543220604196
+openfun__marsha,Marsha Educational Media Platform,readme_only,gemma3:4b,10040,15,4,2,1,0.6666666666666666,0.13333333333333333,0.0,0.175,0.5,9.326,25.624999999999996
+openfun__marsha,Marsha Educational Media Platform,file_tree_only,gemma3:4b,5007,15,8,3,1,0.0,0.2,0.0,0.10304771856495994,0.625,14.385,12.2957157784744
+openfun__marsha,Marsha Educational Media Platform,readme_plus_tree,gemma3:4b,15049,15,8,4,1,0.6666666666666666,0.26666666666666666,0.027777777777777776,0.20079575300794983,0.5,16.373,31.23415851734147
+openfun__marsha,Marsha Educational Media Platform,routes_controllers,gemma3:4b,30061,15,5,2,1,0.3333333333333333,0.13333333333333333,0.041666666666666664,0.16666666666666669,0.6,14.513,18.666666666666668
+openfun__marsha,Marsha Educational Media Platform,models_services,gemma3:4b,30062,15,3,0,1,0.3333333333333333,0.0,0.0,0.0,1.0,14.547,6.666666666666667
+openfun__marsha,Marsha Educational Media Platform,readme_plus_code,gemma3:4b,46102,15,8,4,1,0.6666666666666666,0.26666666666666666,0.12184343434343434,0.17216084998592737,0.5,24.974,32.68594810332426
+openfun__marsha,Marsha Educational Media Platform,full_selected_context,gemma3:4b,52018,15,8,2,1,0.6666666666666666,0.13333333333333333,0.05555555555555555,0.06873385012919897,0.75,23.531,22.64211886304909
+thakurpdhiraj__library_management_system,Library Management System Microservices,readme_only,gemma3:4b,5867,12,8,6,1,1.0,0.5,0.0,0.20495628254248943,0.25,12.91,48.07434423813734
+thakurpdhiraj__library_management_system,Library Management System Microservices,file_tree_only,gemma3:4b,2662,12,8,2,1,0.6666666666666666,0.16666666666666666,0.045454545454545456,0.12982625482625482,0.75,12.28,24.523151398151395
+thakurpdhiraj__library_management_system,Library Management System Microservices,readme_plus_tree,gemma3:4b,8531,12,8,6,1,1.0,0.5,0.0,0.2189766081871345,0.25,13.28,48.28464912280702
+thakurpdhiraj__library_management_system,Library Management System Microservices,routes_controllers,gemma3:4b,30061,12,8,2,1,0.6666666666666666,0.16666666666666666,0.0,0.15877016129032256,0.75,18.456,24.0482190860215
+thakurpdhiraj__library_management_system,Library Management System Microservices,models_services,gemma3:4b,30062,12,8,3,1,0.3333333333333333,0.25,0.030303030303030304,0.22444444444444442,0.625,20.123,23.13939393939394
+thakurpdhiraj__library_management_system,Library Management System Microservices,readme_plus_code,gemma3:4b,41929,12,10,7,1,1.0,0.5833333333333334,0.0510204081632653,0.16658713572506675,0.3,22.836,50.93588186580797
+thakurpdhiraj__library_management_system,Library Management System Microservices,full_selected_context,gemma3:4b,50492,12,10,7,1,1.0,0.5833333333333334,0.07245928674500103,0.1929884322859264,0.3,24.342,51.76067888585558
+tough-dev-school__education-backend,Tough Dev School Education Backend,readme_only,gemma3:4b,2897,17,3,0,1,0.2,0.0,0.0,0.0,1.0,5.474,4.000000000000001
+tough-dev-school__education-backend,Tough Dev School Education Backend,file_tree_only,gemma3:4b,5144,17,8,2,1,0.2,0.11764705882352941,0.0,0.16050420168067225,0.75,13.87,13.025210084033615
+tough-dev-school__education-backend,Tough Dev School Education Backend,readme_plus_tree,gemma3:4b,8043,17,8,3,1,0.2,0.17647058823529413,0.0,0.10069850552306692,0.625,13.787,15.4369481710813
+tough-dev-school__education-backend,Tough Dev School Education Backend,routes_controllers,gemma3:4b,27614,17,8,3,1,0.2,0.17647058823529413,0.0,0.10963455149501661,0.625,20.032,15.570988860660545
+tough-dev-school__education-backend,Tough Dev School Education Backend,models_services,gemma3:4b,29642,17,5,1,1,0.2,0.058823529411764705,0.0,0.12195121951219512,0.8,16.081,9.88809182209469
+tough-dev-school__education-backend,Tough Dev School Education Backend,readme_plus_code,gemma3:4b,34642,17,4,3,1,0.2,0.17647058823529413,0.0,0.2293040293040293,0.25,15.077,21.116031027795735
+tough-dev-school__education-backend,Tough Dev School Education Backend,full_selected_context,gemma3:4b,46249,17,8,2,1,0.2,0.11764705882352941,0.0,0.1597222222222222,0.75,24.421,13.013480392156861

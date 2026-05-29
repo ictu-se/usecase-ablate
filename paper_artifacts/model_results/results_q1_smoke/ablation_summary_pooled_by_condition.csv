@@ -1,0 +1,4 @@
+condition,rows,parse_ok,actor_recall,use_case_recall,path_fidelity,behavior_coverage,unsupported_feature_rate,elapsed_sec,composite_score,artifact_chars,predicted_use_cases
+file_tree_only,1,1.0,0.75,0.0,0.0,0.0,1.0,4.08,15.000000000000002,4907.0,9.0
+readme_only,1,1.0,0.25,0.09090909090909091,0.0,0.12903225806451613,0.8571428571428571,5.105,11.545873481357352,3576.0,7.0
+readme_plus_tree,1,1.0,0.25,0.09090909090909091,0.0,0.1,0.8571428571428571,4.293,11.11038961038961,8485.0,7.0

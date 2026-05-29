@@ -1,0 +1,23 @@
+# File tree
+README.md
+student-crud
+  .settings
+    org.eclipse.wst.common.project.facet.core.xml
+  mbg.xml
+  pom.xml
+  src
+    main
+      java
+        com
+          qizegao
+      resources
+        applicationContext.xml
+        dbconfig.properties
+        mapper
+          DepartmentMapper.xml
+          StudentMapper.xml
+        mybatis-config.xml
+      webapp
+        WEB-INF
+          dispatcherServlet-servlet.xml
+          web.xml

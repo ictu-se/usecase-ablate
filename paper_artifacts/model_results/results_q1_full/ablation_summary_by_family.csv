@@ -1,0 +1,2 @@
+family,models,mean_best_score,mean_best_use_case_recall,mean_best_path_fidelity,mean_best_unsupported_feature_rate,mean_best_elapsed_sec,best_model,best_condition,best_score
+qwen-coder,3,35.18981983229211,0.37236347190391306,0.14637372073197966,0.477703373015873,13.907104166666665,qwen2.5-coder:7b,readme_plus_code,39.55651996278515

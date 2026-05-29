@@ -1,0 +1,97 @@
+repo,project,condition,model,artifact_chars,gold_use_cases,predicted_use_cases,matched_use_cases,parse_ok,actor_recall,use_case_recall,path_fidelity,behavior_coverage,unsupported_feature_rate,elapsed_sec,composite_score
+4jean__lav_sms,LAVSMS Laravel School Management,readme_only,claude-sonnet-4-5,3576,11,0,0,0,0.0,0.0,0.0,0.0,1.0,12.722,0.0
+4jean__lav_sms,LAVSMS Laravel School Management,file_tree_only,claude-sonnet-4-5,4907,11,0,0,0,0.0,0.0,0.0,0.0,1.0,13.891,0.0
+4jean__lav_sms,LAVSMS Laravel School Management,readme_plus_code,claude-sonnet-4-5,39646,11,0,0,0,0.0,0.0,0.0,0.0,1.0,15.587,0.0
+4jean__lav_sms,LAVSMS Laravel School Management,random_code_same_budget,claude-sonnet-4-5,35828,11,0,0,0,0.0,0.0,0.0,0.0,1.0,14.026,0.0
+4jean__lav_sms,LAVSMS Laravel School Management,full_selected_context,claude-sonnet-4-5,50577,11,0,0,0,0.0,0.0,0.0,0.0,1.0,13.934,0.0
+4jean__lav_sms,LAVSMS Laravel School Management,oracle_upper_bound,claude-sonnet-4-5,50594,11,0,0,0,0.0,0.0,0.0,0.0,1.0,13.96,0.0
+AdityaKshettri__Student-Database-Management-System-using-JAVA-Spring-Boot,Student DBMS Spring Boot,readme_only,claude-sonnet-4-5,255,7,0,0,0,0.0,0.0,0.0,0.0,1.0,11.379,0.0
+AdityaKshettri__Student-Database-Management-System-using-JAVA-Spring-Boot,Student DBMS Spring Boot,file_tree_only,claude-sonnet-4-5,844,7,0,0,0,0.0,0.0,0.0,0.0,1.0,14.179,0.0
+AdityaKshettri__Student-Database-Management-System-using-JAVA-Spring-Boot,Student DBMS Spring Boot,readme_plus_code,claude-sonnet-4-5,17089,7,0,0,0,0.0,0.0,0.0,0.0,1.0,14.708,0.0
+AdityaKshettri__Student-Database-Management-System-using-JAVA-Spring-Boot,Student DBMS Spring Boot,random_code_same_budget,claude-sonnet-4-5,23193,7,0,0,0,0.0,0.0,0.0,0.0,1.0,13.585,0.0
+AdityaKshettri__Student-Database-Management-System-using-JAVA-Spring-Boot,Student DBMS Spring Boot,full_selected_context,claude-sonnet-4-5,18237,7,0,0,0,0.0,0.0,0.0,0.0,1.0,14.16,0.0
+AdityaKshettri__Student-Database-Management-System-using-JAVA-Spring-Boot,Student DBMS Spring Boot,oracle_upper_bound,claude-sonnet-4-5,18966,7,0,0,0,0.0,0.0,0.0,0.0,1.0,13.033,0.0
+Asitha123__Java-Spring-boot-Student-Management-System,Student Management System Spring Boot,readme_only,claude-sonnet-4-5,595,4,1,0,1,0.0,0.0,0.0,0.0,1.0,10.567,0.0
+Asitha123__Java-Spring-boot-Student-Management-System,Student Management System Spring Boot,file_tree_only,claude-sonnet-4-5,223,4,1,1,1,1.0,0.25,0.6666666666666666,0.19444444444444445,0.0,9.707,54.99999999999999
+Asitha123__Java-Spring-boot-Student-Management-System,Student Management System Spring Boot,readme_plus_code,claude-sonnet-4-5,13344,4,0,0,0,0.0,0.0,0.0,0.0,1.0,12.873,0.0
+Asitha123__Java-Spring-boot-Student-Management-System,Student Management System Spring Boot,random_code_same_budget,claude-sonnet-4-5,13579,4,0,0,0,0.0,0.0,0.0,0.0,1.0,13.967,0.0
+Asitha123__Java-Spring-boot-Student-Management-System,Student Management System Spring Boot,full_selected_context,claude-sonnet-4-5,13587,4,0,0,0,0.0,0.0,0.0,0.0,1.0,13.322,0.0
+Asitha123__Java-Spring-boot-Student-Management-System,Student Management System Spring Boot,oracle_upper_bound,claude-sonnet-4-5,14321,4,0,0,0,0.0,0.0,0.0,0.0,1.0,14.0,0.0
+JacksonGao1999__StudentManagement,Student Management CRUD,readme_only,claude-sonnet-4-5,821,6,4,3,1,1.0,0.5,0.06666666666666667,0.16554206027890236,0.25,10.016,48.81646423751687
+JacksonGao1999__StudentManagement,Student Management CRUD,file_tree_only,claude-sonnet-4-5,435,6,8,4,1,0.0,0.6666666666666666,0.1625,0.17316109816109815,0.5,9.873,34.180749805749805
+JacksonGao1999__StudentManagement,Student Management CRUD,readme_plus_code,claude-sonnet-4-5,6655,6,0,0,0,0.0,0.0,0.0,0.0,1.0,14.283,0.0
+JacksonGao1999__StudentManagement,Student Management CRUD,random_code_same_budget,claude-sonnet-4-5,36095,6,0,0,0,0.0,0.0,0.0,0.0,1.0,12.801,0.0
+JacksonGao1999__StudentManagement,Student Management CRUD,full_selected_context,claude-sonnet-4-5,10738,6,0,0,0,0.0,0.0,0.0,0.0,1.0,12.306,0.0
+JacksonGao1999__StudentManagement,Student Management CRUD,oracle_upper_bound,claude-sonnet-4-5,19443,6,0,0,0,0.0,0.0,0.0,0.0,1.0,13.821,0.0
+RameshMF__library-management-system,Library Management REST API,readme_only,claude-sonnet-4-5,245,6,1,0,1,0.0,0.0,0.0,0.0,1.0,13.158,0.0
+RameshMF__library-management-system,Library Management REST API,file_tree_only,claude-sonnet-4-5,238,6,0,0,1,0.0,0.0,0.0,0.0,1.0,12.03,0.0
+RameshMF__library-management-system,Library Management REST API,readme_plus_code,claude-sonnet-4-5,6756,6,0,0,0,0.0,0.0,0.0,0.0,1.0,11.158,0.0
+RameshMF__library-management-system,Library Management REST API,random_code_same_budget,claude-sonnet-4-5,9121,6,0,0,0,0.0,0.0,0.0,0.0,1.0,12.84,0.0
+RameshMF__library-management-system,Library Management REST API,full_selected_context,claude-sonnet-4-5,7318,6,0,0,0,0.0,0.0,0.0,0.0,1.0,14.925,0.0
+RameshMF__library-management-system,Library Management REST API,oracle_upper_bound,claude-sonnet-4-5,7702,6,0,0,0,0.0,0.0,0.0,0.0,1.0,12.183,0.0
+SkyCascade__SkyLearn,SkyLearn Learning Management System,readme_only,claude-sonnet-4-5,3850,26,0,0,0,0.0,0.0,0.0,0.0,1.0,13.251,0.0
+SkyCascade__SkyLearn,SkyLearn Learning Management System,file_tree_only,claude-sonnet-4-5,1315,26,0,0,0,0.0,0.0,0.0,0.0,1.0,12.683,0.0
+SkyCascade__SkyLearn,SkyLearn Learning Management System,readme_plus_code,claude-sonnet-4-5,39670,26,0,0,0,0.0,0.0,0.0,0.0,1.0,13.867,0.0
+SkyCascade__SkyLearn,SkyLearn Learning Management System,random_code_same_budget,claude-sonnet-4-5,25452,26,0,0,0,0.0,0.0,0.0,0.0,1.0,15.882,0.0
+SkyCascade__SkyLearn,SkyLearn Learning Management System,full_selected_context,claude-sonnet-4-5,47261,26,0,0,0,0.0,0.0,0.0,0.0,1.0,14.925,0.0
+SkyCascade__SkyLearn,SkyLearn Learning Management System,oracle_upper_bound,claude-sonnet-4-5,47400,26,0,0,0,0.0,0.0,0.0,0.0,1.0,13.216,0.0
+abdulwahid880__School-Management-system-in-laravel-,Unifiedtransform School Management,readme_only,claude-sonnet-4-5,10040,14,0,0,0,0.0,0.0,0.0,0.0,1.0,11.383,0.0
+abdulwahid880__School-Management-system-in-laravel-,Unifiedtransform School Management,file_tree_only,claude-sonnet-4-5,4967,14,0,0,0,0.0,0.0,0.0,0.0,1.0,14.216,0.0
+abdulwahid880__School-Management-system-in-laravel-,Unifiedtransform School Management,readme_plus_code,claude-sonnet-4-5,46110,14,0,0,0,0.0,0.0,0.0,0.0,1.0,12.728,0.0
+abdulwahid880__School-Management-system-in-laravel-,Unifiedtransform School Management,random_code_same_budget,claude-sonnet-4-5,32032,14,0,0,0,0.0,0.0,0.0,0.0,1.0,12.913,0.0
+abdulwahid880__School-Management-system-in-laravel-,Unifiedtransform School Management,full_selected_context,claude-sonnet-4-5,52018,14,0,0,0,0.0,0.0,0.0,0.0,1.0,13.73,0.0
+abdulwahid880__School-Management-system-in-laravel-,Unifiedtransform School Management,oracle_upper_bound,claude-sonnet-4-5,52018,14,0,0,0,0.0,0.0,0.0,0.0,1.0,15.101,0.0
+adityagoyal222__django-lms,Django LMS,readme_only,claude-sonnet-4-5,833,13,0,0,0,0.0,0.0,0.0,0.0,1.0,12.397,0.0
+adityagoyal222__django-lms,Django LMS,file_tree_only,claude-sonnet-4-5,630,13,0,0,0,0.0,0.0,0.0,0.0,1.0,13.437,0.0
+adityagoyal222__django-lms,Django LMS,readme_plus_code,claude-sonnet-4-5,29421,13,0,0,0,0.0,0.0,0.0,0.0,1.0,14.514,0.0
+adityagoyal222__django-lms,Django LMS,random_code_same_budget,claude-sonnet-4-5,19547,13,0,0,0,0.0,0.0,0.0,0.0,1.0,13.929,0.0
+adityagoyal222__django-lms,Django LMS,full_selected_context,claude-sonnet-4-5,30071,13,0,0,0,0.0,0.0,0.0,0.0,1.0,14.743,0.0
+adityagoyal222__django-lms,Django LMS,oracle_upper_bound,claude-sonnet-4-5,31043,13,0,0,0,0.0,0.0,0.0,0.0,1.0,14.013,0.0
+engripaye__library-management-system,REST Library Management System,readme_only,claude-sonnet-4-5,3396,8,0,0,0,0.0,0.0,0.0,0.0,1.0,13.448,0.0
+engripaye__library-management-system,REST Library Management System,file_tree_only,claude-sonnet-4-5,289,8,0,0,1,0.5,0.0,0.0,0.0,1.0,8.887,10.0
+engripaye__library-management-system,REST Library Management System,readme_plus_code,claude-sonnet-4-5,13901,8,0,0,0,0.0,0.0,0.0,0.0,1.0,12.1,0.0
+engripaye__library-management-system,REST Library Management System,random_code_same_budget,claude-sonnet-4-5,15432,8,0,0,0,0.0,0.0,0.0,0.0,1.0,13.732,0.0
+engripaye__library-management-system,REST Library Management System,full_selected_context,claude-sonnet-4-5,14567,8,0,0,0,0.0,0.0,0.0,0.0,1.0,13.172,0.0
+engripaye__library-management-system,REST Library Management System,oracle_upper_bound,claude-sonnet-4-5,17576,8,0,0,0,0.0,0.0,0.0,0.0,1.0,12.385,0.0
+jobic10__student-management-using-django,Student Management System Django,readme_only,claude-sonnet-4-5,7547,13,0,0,0,0.0,0.0,0.0,0.0,1.0,13.313,0.0
+jobic10__student-management-using-django,Student Management System Django,file_tree_only,claude-sonnet-4-5,336,13,8,4,1,0.6666666666666666,0.3076923076923077,0.1294642857142857,0.14799568476039066,0.5,9.728,33.91178508825568
+jobic10__student-management-using-django,Student Management System Django,readme_plus_code,claude-sonnet-4-5,28971,13,0,0,0,0.0,0.0,0.0,0.0,1.0,12.799,0.0
+jobic10__student-management-using-django,Student Management System Django,random_code_same_budget,claude-sonnet-4-5,28303,13,0,0,0,0.0,0.0,0.0,0.0,1.0,14.026,0.0
+jobic10__student-management-using-django,Student Management System Django,full_selected_context,claude-sonnet-4-5,29327,13,0,0,0,0.0,0.0,0.0,0.0,1.0,12.036,0.0
+jobic10__student-management-using-django,Student Management System Django,oracle_upper_bound,claude-sonnet-4-5,38735,13,0,0,0,0.0,0.0,0.0,0.0,1.0,14.377,0.0
+knowledgefactory4u__librarymanagementsystem,Spring Boot Library Management System,readme_only,claude-sonnet-4-5,2357,10,5,5,1,1.0,0.5,0.18666666666666668,0.2007951132951133,0.0,11.366,54.24526003276004
+knowledgefactory4u__librarymanagementsystem,Spring Boot Library Management System,file_tree_only,claude-sonnet-4-5,210,10,0,0,0,0.0,0.0,0.0,0.0,1.0,13.105,0.0
+knowledgefactory4u__librarymanagementsystem,Spring Boot Library Management System,readme_plus_code,claude-sonnet-4-5,28647,10,0,0,0,0.0,0.0,0.0,0.0,1.0,12.471,0.0
+knowledgefactory4u__librarymanagementsystem,Spring Boot Library Management System,random_code_same_budget,claude-sonnet-4-5,27678,10,0,0,0,0.0,0.0,0.0,0.0,1.0,13.639,0.0
+knowledgefactory4u__librarymanagementsystem,Spring Boot Library Management System,full_selected_context,claude-sonnet-4-5,36207,10,7,7,1,1.0,0.7,0.36190476190476195,0.18634874117354652,0.0,9.583,64.53332635569843
+knowledgefactory4u__librarymanagementsystem,Spring Boot Library Management System,oracle_upper_bound,claude-sonnet-4-5,36908,10,0,0,0,0.0,0.0,0.0,0.0,1.0,13.659,0.0
+mehmetpekdemir__Library-Management-System,Spring Boot Library Management System,readme_only,claude-sonnet-4-5,1244,8,0,0,0,0.0,0.0,0.0,0.0,1.0,11.469,0.0
+mehmetpekdemir__Library-Management-System,Spring Boot Library Management System,file_tree_only,claude-sonnet-4-5,318,8,0,0,1,0.0,0.0,0.0,0.0,1.0,6.813,0.0
+mehmetpekdemir__Library-Management-System,Spring Boot Library Management System,readme_plus_code,claude-sonnet-4-5,29379,8,0,0,0,0.0,0.0,0.0,0.0,1.0,13.677,0.0
+mehmetpekdemir__Library-Management-System,Spring Boot Library Management System,random_code_same_budget,claude-sonnet-4-5,30947,8,0,0,0,0.0,0.0,0.0,0.0,1.0,13.804,0.0
+mehmetpekdemir__Library-Management-System,Spring Boot Library Management System,full_selected_context,claude-sonnet-4-5,30075,8,0,0,0,0.0,0.0,0.0,0.0,1.0,14.104,0.0
+mehmetpekdemir__Library-Management-System,Spring Boot Library Management System,oracle_upper_bound,claude-sonnet-4-5,31458,8,0,0,0,0.0,0.0,0.0,0.0,1.0,12.213,0.0
+mwinamijr__django-scms,Django School Management System API,readme_only,claude-sonnet-4-5,2284,14,0,0,0,0.0,0.0,0.0,0.0,1.0,14.229,0.0
+mwinamijr__django-scms,Django School Management System API,file_tree_only,claude-sonnet-4-5,1548,14,0,0,0,0.0,0.0,0.0,0.0,1.0,14.277,0.0
+mwinamijr__django-scms,Django School Management System API,readme_plus_code,claude-sonnet-4-5,33790,14,0,0,0,0.0,0.0,0.0,0.0,1.0,12.381,0.0
+mwinamijr__django-scms,Django School Management System API,random_code_same_budget,claude-sonnet-4-5,19928,14,0,0,0,0.0,0.0,0.0,0.0,1.0,15.323,0.0
+mwinamijr__django-scms,Django School Management System API,full_selected_context,claude-sonnet-4-5,41131,14,0,0,0,0.0,0.0,0.0,0.0,1.0,14.436,0.0
+mwinamijr__django-scms,Django School Management System API,oracle_upper_bound,claude-sonnet-4-5,46079,14,0,0,0,0.0,0.0,0.0,0.0,1.0,14.902,0.0
+openfun__marsha,Marsha Educational Media Platform,readme_only,claude-sonnet-4-5,10040,15,5,4,1,0.6666666666666666,0.26666666666666666,0.0,0.18821311598369878,0.2,11.762,33.489863406422145
+openfun__marsha,Marsha Educational Media Platform,file_tree_only,claude-sonnet-4-5,5007,15,0,0,0,0.0,0.0,0.0,0.0,1.0,14.185,0.0
+openfun__marsha,Marsha Educational Media Platform,readme_plus_code,claude-sonnet-4-5,46104,15,0,0,0,0.0,0.0,0.0,0.0,1.0,13.616,0.0
+openfun__marsha,Marsha Educational Media Platform,random_code_same_budget,claude-sonnet-4-5,35901,15,0,0,0,0.0,0.0,0.0,0.0,1.0,13.591,0.0
+openfun__marsha,Marsha Educational Media Platform,full_selected_context,claude-sonnet-4-5,52018,15,0,0,0,0.0,0.0,0.0,0.0,1.0,15.691,0.0
+openfun__marsha,Marsha Educational Media Platform,oracle_upper_bound,claude-sonnet-4-5,52018,15,0,0,0,0.0,0.0,0.0,0.0,1.0,12.556,0.0
+thakurpdhiraj__library_management_system,Library Management System Microservices,readme_only,claude-sonnet-4-5,5867,12,0,0,0,0.0,0.0,0.0,0.0,1.0,13.617,0.0
+thakurpdhiraj__library_management_system,Library Management System Microservices,file_tree_only,claude-sonnet-4-5,2662,12,0,0,0,0.0,0.0,0.0,0.0,1.0,14.272,0.0
+thakurpdhiraj__library_management_system,Library Management System Microservices,readme_plus_code,claude-sonnet-4-5,41931,12,0,0,0,0.0,0.0,0.0,0.0,1.0,13.642,0.0
+thakurpdhiraj__library_management_system,Library Management System Microservices,random_code_same_budget,claude-sonnet-4-5,28327,12,0,0,0,0.0,0.0,0.0,0.0,1.0,12.845,0.0
+thakurpdhiraj__library_management_system,Library Management System Microservices,full_selected_context,claude-sonnet-4-5,50617,12,0,0,0,0.0,0.0,0.0,0.0,1.0,12.521,0.0
+thakurpdhiraj__library_management_system,Library Management System Microservices,oracle_upper_bound,claude-sonnet-4-5,50637,12,0,0,0,0.0,0.0,0.0,0.0,1.0,13.719,0.0
+tough-dev-school__education-backend,Tough Dev School Education Backend,readme_only,claude-sonnet-4-5,2897,17,0,0,0,0.0,0.0,0.0,0.0,1.0,12.751,0.0
+tough-dev-school__education-backend,Tough Dev School Education Backend,file_tree_only,claude-sonnet-4-5,5144,17,0,0,0,0.0,0.0,0.0,0.0,1.0,13.767,0.0
+tough-dev-school__education-backend,Tough Dev School Education Backend,readme_plus_code,claude-sonnet-4-5,33754,17,0,0,0,0.0,0.0,0.0,0.0,1.0,14.236,0.0
+tough-dev-school__education-backend,Tough Dev School Education Backend,random_code_same_budget,claude-sonnet-4-5,22708,17,0,0,0,0.0,0.0,0.0,0.0,1.0,15.355,0.0
+tough-dev-school__education-backend,Tough Dev School Education Backend,full_selected_context,claude-sonnet-4-5,46868,17,0,0,0,0.0,0.0,0.0,0.0,1.0,13.716,0.0
+tough-dev-school__education-backend,Tough Dev School Education Backend,oracle_upper_bound,claude-sonnet-4-5,46394,17,0,0,0,0.0,0.0,0.0,0.0,1.0,13.107,0.0

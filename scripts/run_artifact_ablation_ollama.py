@@ -17,6 +17,14 @@ def load_jsonl(path):
                 yield json.loads(line)
 
 
+def task_key(record):
+    return (
+        record.get("repo", ""),
+        record.get("condition", ""),
+        record.get("model", ""),
+    )
+
+
 def call_ollama(model, prompt, timeout):
     started = time.time()
     payload = {
@@ -61,17 +69,29 @@ def main():
     parser.add_argument("--out", default=None)
     parser.add_argument("--timeout", type=int, default=300)
     parser.add_argument("--limit", type=int, default=0)
+    parser.add_argument("--resume", action="store_true", help="Skip task/model rows already present in the output JSONL.")
     args = parser.parse_args()
 
     safe_model = args.model.replace(":", "_").replace("/", "_")
     out_path = Path(args.out) if args.out else PROJECT / "results" / f"{safe_model}_ablation_outputs.jsonl"
     out_path.parent.mkdir(parents=True, exist_ok=True)
     template = Path(args.template).read_text(encoding="utf-8")
+    done = set()
+    if args.resume and out_path.exists():
+        done = {task_key(record) for record in load_jsonl(out_path)}
 
     count = 0
-    with out_path.open("w", encoding="utf-8", newline="\n") as out:
+    mode = "a" if args.resume else "w"
+    with out_path.open(mode, encoding="utf-8", newline="\n") as out:
         for task in load_jsonl(args.tasks):
-            pack = (PROJECT / task["artifact_pack_path"]).read_text(encoding="utf-8", errors="replace")
+            expected_key = (task["repo"], task["condition"], args.model)
+            if expected_key in done:
+                print(f"skip: {task['repo']} {task['condition']} already done", flush=True)
+                continue
+            pack_path = Path(task["artifact_pack_path"])
+            if not pack_path.is_absolute():
+                pack_path = PROJECT / pack_path
+            pack = pack_path.read_text(encoding="utf-8", errors="replace")
             prompt = render(template, task, pack)
             try:
                 result = call_ollama(args.model, prompt, args.timeout)

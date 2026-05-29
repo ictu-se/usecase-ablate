@@ -1,10 +1,12 @@
 import argparse
 import csv
+import hashlib
 import json
+import math
 import os
 import re
 import sys
-from collections import defaultdict
+from collections import Counter, defaultdict
 from pathlib import Path
 
 
@@ -19,7 +21,10 @@ CONDITIONS = [
     "routes_controllers",
     "models_services",
     "readme_plus_code",
+    "bm25_retrieved_code",
+    "random_code_same_budget",
     "full_selected_context",
+    "oracle_upper_bound",
 ]
 
 TEXT_EXTS = {
@@ -50,6 +55,14 @@ def split_paths(value):
         if item and item not in out:
             out.append(item)
     return out
+
+
+def unique(items):
+    return list(dict.fromkeys(item for item in items if item))
+
+
+def tokens(text):
+    return [t for t in re.sub(r"[^a-z0-9]+", " ", str(text or "").lower()).split() if len(t) > 2]
 
 
 def clip(text, limit):
@@ -122,6 +135,20 @@ def classify_files(paths):
     return routes, models, tests
 
 
+def path_priority(path):
+    lower = path.lower()
+    score = 0
+    if re.search(r"(urls|routes|router|controller|view|views|api|endpoint)", lower):
+        score += 60
+    if re.search(r"(model|models|service|services|serializer|schema|entity|repository|form|forms)", lower):
+        score += 45
+    if re.search(r"(^|/)(test|tests|spec|__tests__)(/|_)|(_test|\\.test|\\.spec)", lower):
+        score += 15
+    if re.search(r"(student|course|class|book|library|user|admin|teacher|school|learn|lesson)", lower):
+        score += 8
+    return (-score, path.count("/"), len(path), path)
+
+
 def snippet_block(repo_dir, paths, max_files=18, per_file=2600, total=30000):
     chunks = []
     used = 0
@@ -140,6 +167,53 @@ def snippet_block(repo_dir, paths, max_files=18, per_file=2600, total=30000):
         if used >= total:
             break
     return "\n\n".join(chunks)
+
+
+def bm25_select(repo_dir, paths, query_text, max_files=22):
+    candidates = []
+    docs = []
+    for rel in paths:
+        text = read_text(repo_dir / rel, 2200)
+        if not text:
+            continue
+        doc_tokens = tokens(rel.replace("/", " ") + " " + text)
+        if not doc_tokens:
+            continue
+        candidates.append(rel)
+        docs.append(doc_tokens)
+    if not candidates:
+        return []
+
+    query = Counter(tokens(query_text))
+    if not query:
+        query = Counter(tokens("student course class book library user admin teacher school learning management"))
+    df = Counter()
+    for doc in docs:
+        for token in set(doc):
+            df[token] += 1
+    avgdl = sum(len(doc) for doc in docs) / len(docs)
+    n_docs = len(docs)
+    k1 = 1.2
+    b = 0.75
+    scored = []
+    for rel, doc in zip(candidates, docs):
+        counts = Counter(doc)
+        score = 0.0
+        for token, qtf in query.items():
+            if token not in counts:
+                continue
+            idf = math.log(1 + (n_docs - df[token] + 0.5) / (df[token] + 0.5))
+            denom = counts[token] + k1 * (1 - b + b * len(doc) / avgdl)
+            score += idf * ((counts[token] * (k1 + 1)) / denom) * min(qtf, 3)
+        if score:
+            scored.append((score, path_priority(rel), rel))
+    return [rel for _, _, rel in sorted(scored, key=lambda item: (-item[0], item[1]))[:max_files]]
+
+
+def deterministic_random(paths, repo, max_files=22):
+    def key(path):
+        return hashlib.sha256(f"{repo}:{path}".encode("utf-8")).hexdigest()
+    return sorted(paths, key=key)[:max_files]
 
 
 def oracle_summary(rows):
@@ -162,13 +236,22 @@ def build_pack(repo_dir, repo_rows, condition):
     routes, models, tests = classify_files(paths)
     readme = read_readmes(repo_dir)
     tree = path_tree(paths)
+    code_candidates = sorted(unique(routes + models), key=path_priority)
+    all_code = [
+        p for p in paths
+        if not p.lower().endswith((".md", ".txt", ".json", ".yml", ".yaml", ".properties", ".toml"))
+    ]
+    heuristic_full = sorted(unique(routes + models + tests), key=path_priority)
+    retrieval_query = " ".join([
+        repo_dir.name.replace("__", " ").replace("-", " ").replace("_", " "),
+        readme,
+        "\n".join(paths[:300]),
+    ])
     oracle_paths = []
     for row in repo_rows:
         oracle_paths.extend(split_paths(row["code_paths"]))
         oracle_paths.extend(split_paths(row["test_paths"]))
-    oracle_paths = [p for p in dict.fromkeys(oracle_paths) if (repo_dir / p).exists()]
-    route_oracle = [p for p in oracle_paths if p in routes]
-    model_oracle = [p for p in oracle_paths if p in models]
+    oracle_paths = [p for p in unique(oracle_paths) if (repo_dir / p).exists()]
 
     if condition == "readme_only":
         body = f"# README\n{readme or '[no README found]'}"
@@ -177,20 +260,35 @@ def build_pack(repo_dir, repo_rows, condition):
     elif condition == "readme_plus_tree":
         body = f"# README\n{readme or '[no README found]'}\n\n# File tree\n{tree}"
     elif condition == "routes_controllers":
-        selected = route_oracle + [p for p in routes if p not in route_oracle]
+        selected = sorted(routes, key=path_priority)
         body = "# Routes/controllers\n" + snippet_block(repo_dir, selected)
     elif condition == "models_services":
-        selected = model_oracle + [p for p in models if p not in model_oracle]
+        selected = sorted(models, key=path_priority)
         body = "# Models/services\n" + snippet_block(repo_dir, selected)
     elif condition == "readme_plus_code":
-        selected = oracle_paths + [p for p in routes + models if p not in oracle_paths]
+        selected = code_candidates
         body = f"# README\n{readme or '[no README found]'}\n\n# Code snippets\n{snippet_block(repo_dir, selected, max_files=22, total=36000)}"
+    elif condition == "bm25_retrieved_code":
+        selected = bm25_select(repo_dir, paths, retrieval_query, max_files=22)
+        body = f"# README-derived retrieval query\n{clip(retrieval_query, 6000)}\n\n# BM25 selected code snippets\n{snippet_block(repo_dir, selected, max_files=22, total=36000)}"
+    elif condition == "random_code_same_budget":
+        selected = deterministic_random(all_code, repo_dir.name, max_files=22)
+        body = "# Deterministic random code snippets\n" + snippet_block(repo_dir, selected, max_files=22, total=36000)
     elif condition == "full_selected_context":
-        selected = oracle_paths + [p for p in routes + models + tests if p not in oracle_paths]
+        selected = heuristic_full
         body = (
             f"# README\n{readme or '[no README found]'}\n\n"
             f"# File tree\n{tree}\n\n"
             f"# Selected code and test snippets\n{snippet_block(repo_dir, selected, max_files=26, total=42000)}"
+        )
+    elif condition == "oracle_upper_bound":
+        selected = oracle_paths + [p for p in routes + models + tests if p not in oracle_paths]
+        body = (
+            "# Oracle upper-bound selected context\n"
+            "This condition is selected with checked trace paths and is used only as an upper-bound comparator.\n\n"
+            f"# README\n{readme or '[no README found]'}\n\n"
+            f"# File tree\n{tree}\n\n"
+            f"# Oracle-selected code and test snippets\n{snippet_block(repo_dir, selected, max_files=26, total=42000)}"
         )
     else:
         raise ValueError(condition)
@@ -199,8 +297,8 @@ def build_pack(repo_dir, repo_rows, condition):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--annotations", default=str(ROOT / "JCST_SE_Research_Data/annotations/use_case_ground_truth_v1.csv"))
-    parser.add_argument("--repos-dir", default=str(ROOT / "JCST_SE_Research_Data/candidate_repos"))
+    parser.add_argument("--annotations", default=str(ROOT / "datasets/11_from_source_code_to_user_goals__annotations/use_case_ground_truth_v1.csv"))
+    parser.add_argument("--repos-dir", default=str(ROOT / "datasets/11_from_source_code_to_user_goals__candidate_repos"))
     parser.add_argument("--out-dir", default=str(PROJECT / "artifact_packs"))
     parser.add_argument("--tasks", default=str(PROJECT / "data/ablation_tasks.jsonl"))
     parser.add_argument("--oracle", default=str(PROJECT / "data/use_case_oracle.jsonl"))

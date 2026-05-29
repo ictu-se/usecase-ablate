@@ -1,0 +1,257 @@
+# File tree
+.cursor
+  mcp.json
+.junie
+  guidelines.md
+  mcp
+    mcp.json
+.mcp.json
+.oxfmtrc.json
+AGENTS.md
+CLAUDE.md
+CODE_OF_CONDUCT.md
+LICENSE.md
+README.md
+api-docs
+  api.yaml
+app
+  Ai
+    Agents
+      KoelAssistant.php
+    AiAssistantResult.php
+    AiRequestContext.php
+    Serializers
+      AiResultSerializerRegistry.php
+      Contracts
+        AiResultSerializer.php
+      FavoriteResultSerializer.php
+      PlaySongsResultSerializer.php
+      PlaylistSongsResultSerializer.php
+      RadioStationResultSerializer.php
+      ShowLyricsResultSerializer.php
+      SmartPlaylistResultSerializer.php
+      SuggestSongsResultSerializer.php
+      UpdateAlbumResultSerializer.php
+      UpdateArtistResultSerializer.php
+      UpdateLyricsResultSerializer.php
+    Services
+      FavoriteableEntityResolver.php
+      PlaybackService.php
+      SongRequestResolver.php
+    Tools
+      AddRadioStation.php
+      AddToFavorites.php
+      AddToPlaylist.php
+      CreateSmartPlaylist.php
+      DeletePlaylist.php
+      GetAlbumInfo.php
+      GetArtistInfo.php
+      GetCurrentSong.php
+      GetLyrics.php
+      PlayAlbum.php
+      PlayArtist.php
+      PlayFavorites.php
+      PlayLeastPlayed.php
+      PlayMostPlayed.php
+      PlayMostPlayedAlbum.php
+      PlayMostPlayedArtist.php
+      PlayPlaylist.php
+      PlayRadioStation.php
+      PlayRecentlyAdded.php
+      PlayRecentlyAddedAlbum.php
+      PlayRecentlyAddedArtist.php
+      PlayRecentlyPlayed.php
+      PlaySimilarSongs.php
+      PlaySongs.php
+      PlaySongsByGenre.php
+      PlaySongsByLyrics.php
+      RemoveFromFavorites.php
+      RemoveFromPlaylist.php
+      RenamePlaylist.php
+      UpdateAlbumDetails.php
+      UpdateArtistDetails.php
+      UpdateSongLyrics.php
+  Attributes
+    DemoConstraint.php
+    DisabledInDemo.php
+    RequiresDemo.php
+    RequiresPlus.php
+  Builders
+    AlbumBuilder.php
+    ArtistBuilder.php
+    Concerns
+      CanScopeByUser.php
+    FavoriteableBuilder.php
+    GenreBuilder.php
+    PodcastBuilder.php
+    RadioStationBuilder.php
+    SongBuilder.php
+    UserBuilder.php
+  Casts
+    EncryptedValueCast.php
+    LicenseInstanceCast.php
+    LicenseMetaCast.php
+    Podcast
+      CategoriesCast.php
+      EnclosureCast.php
+      EpisodeMetadataCast.php
+      PodcastMetadataCast.php
+      PodcastStateCast.php
+    SmartPlaylistRulesCast.php
+    SongLyricsCast.php
+    SongStorageCast.php
+    SongTitleCast.php
+    ThemePropertiesCast.php
+    UserPreferencesCast.php
+  Console
+    Commands
+      ActivateLicenseCommand.php
+      Admin
+        ChangePasswordCommand.php
+        SetUserRoleCommand.php
+      CheckLicenseStatusCommand.php
+      CleanUpDuplicateUploadsCommand.php
+      CleanUpTempFilesCommand.php
+      CollectTagsCommand.php
+      Concerns
+        AskForPassword.php
+      DeactivateLicenseCommand.php
+      DoctorCommand.php
+      ExtractFoldersCommand.php
+      FetchArtworkCommand.php
+      ImportSearchableEntitiesCommand.php
+      InitCommand.php
+      InstallSchedulerCommand.php
+      PruneLibraryCommand.php
+      ReleaseCommand.php
+      ScanChunkCommand.php
+      ScanCommand.php
+      Storage
+        SetupDropboxStorageCommand.php
+        SetupLocalStorageCommand.php
+        SetupS3StorageCommand.php
+        StorageCommand.php
+      Subsonic
+        ShowApiKeyCommand.php
+      SyncPodcastsChunkCommand.php
+      SyncPodcastsCommand.php
+      TidyLibraryCommand.php
+  Enums
+    Acl
+      Permission.php
+      Role.php
+    DoctorResult.php
+    DownloadableType.php
+    EmbeddableType.php
+    FavoriteableType.php
+    LicenseStatus.php
+    Placement.php
+    PlayableType.php
+    ScanEvent.php
+    ScanResultType.php
+    SmartPlaylistModel.php
+    SmartPlaylistOperator.php
+    SongStorageType.php
+  Events
+    Event.php
+    LibraryChanged.php
+    MediaScanCompleted.php
+    MultipleSongsLiked.php
+    MultipleSongsUnliked.php
+    NewPlaylistCollaboratorJoined.php
+    PlaybackStarted.php
+    SongFavoriteToggled.php
+    UserUnsubscribedFromPodcast.php
+  Exceptions
+    AlbumNameConflictException.php
+    ArtistNameConflictException.php
+    CannotRemoveOwnerFromPlaylistException.php
+    Contracts
+      SubsonicThrowable.php
+    DownloadLimitExceededException.php
+    DuplicateSongUploadException.php
+    EmbeddableNotFoundException.php
+    FailedToActivateLicenseException.php
+    FailedToParsePodcastFeedException.php
+    InstallationFailedException.php
+    InvalidCredentialsException.php
+    InvitationNotFoundException.php
+    KoelPlusRequiredException.php
+    LocalStorageRequiredException.php
+    MediaBrowserNotSupportedException.php
+    MediaPathNotSetException.php
+    MethodNotImplementedException.php
+    NonCloudStorageException.php
+    NonSmartPlaylistException.php
+    NotAPlaylistCollaboratorException.php
+    OperationNotApplicableForSmartPlaylistException.php
+    PlaylistBothSongsAndRulesProvidedException.php
+    PlaylistCollaborationTokenExpiredException.php
+    ProxyAuthException.php
+    ProxyAuthIpNotAllowedException.php
+    ProxyAuthUserHeaderMissingException.php
+    SongPathNotFoundException.php
+    SongUploadFailedException.php
+    SpotifyIntegrationDisabledException.php
+    SubsonicAwareErrorRenderer.php
+    TranscodingFailedException.php
+    UnsafeUrlException.php
+    UnsupportedSongStorageTypeException.php
+    UserAlreadySubscribedToPodcastException.php
+    UserProspectUpdateDeniedException.php
+  Facades
+    Dispatcher.php
+    Download.php
+    ITunes.php
+    License.php
+    YouTube.php
+  Filesystems
+    DropboxFilesystem.php
+  Helpers
+    Encoding
+      Bom.php
+      TagFixer.php
+    Network.php
+    QueryStringParser.php
+    TestableIdentifier.php
+    Ulid.php
+    Uuid.php
+  Helpers.php
+  Http
+    Controllers
+    Integrations
+    Middleware
+    Requests
+    Resources
+    Responses
+  Jobs
+  Listeners
+  Mail
+  Models
+  Observers
+  Pipelines
+  Policies
+  Providers
+  Repositories
+  Responses
+  Rules
+  Services
+  Socialite
+  Values
+boost.json
+bootstrap
+commitlint.config.js
+composer.json
+config
+docs
+mago.toml
+package.json
+pnpm-lock.yaml
+resources
+routes
+scripts
+server.php
+tailwind.config.js
+tests
+vite.config.sw.js
+vite.config.ts

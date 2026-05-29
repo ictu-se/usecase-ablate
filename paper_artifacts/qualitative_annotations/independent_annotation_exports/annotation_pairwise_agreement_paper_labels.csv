@@ -1,0 +1,4 @@
+annotator_a,annotator_b,common_tasks,raw_agreement,expected_agreement,cohen_kappa
+Annotator 1,Annotator 2,644,0.947205,0.739441,0.797377
+Annotator 1,Annotator 3,644,0.945652,0.736963,0.793384
+Annotator 2,Annotator 3,644,0.995342,0.716316,0.983579

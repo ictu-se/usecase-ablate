@@ -1,0 +1,38 @@
+# File tree
+.mvn
+  wrapper
+    MavenWrapperDownloader.java
+    maven-wrapper.properties
+README.md
+pom.xml
+src
+  main
+    java
+      studentdbms
+        StudentDBMSApplication.java
+        controller
+          CourseController.java
+          PassportController.java
+          ReviewController.java
+          StudentController.java
+        entity
+          Course.java
+          Passport.java
+          Review.java
+          Student.java
+        repository
+          CourseRepository.java
+          PassportRepository.java
+          ReviewRepository.java
+          StudentRepository.java
+        service
+          CourseService.java
+          PassportService.java
+          ReviewService.java
+          StudentService.java
+    resources
+      application.properties
+  test
+    java
+      JavaRestMaster
+        JavaRestMasterApplicationTests.java

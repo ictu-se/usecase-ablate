@@ -1,0 +1,105 @@
+# File tree
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+README.md
+TODO.md
+accounts
+  __init__.py
+  admin.py
+  apps.py
+  decorators.py
+  filters.py
+  forms.py
+  models.py
+  signals.py
+  tests
+    __init__.py
+    test_decorators.py
+    test_filters.py
+  translation.py
+  urls.py
+  utils.py
+  validators.py
+  views.py
+config
+  __init__.py
+  asgi.py
+  settings.py
+  urls.py
+  wsgi.py
+core
+  __init__.py
+  admin.py
+  apps.py
+  forms.py
+  models.py
+  tests.py
+  translation.py
+  urls.py
+  utils.py
+  views.py
+course
+  __init__.py
+  admin.py
+  apps.py
+  decorators.py
+  filters.py
+  forms.py
+  models.py
+  tests.py
+  translation.py
+  urls.py
+  utils.py
+  views.py
+manage.py
+payments
+  __init__.py
+  admin.py
+  apps.py
+  models.py
+  tests.py
+  urls.py
+  views.py
+quiz
+  __init__.py
+  admin.py
+  apps.py
+  forms.py
+  models.py
+  templatetags
+    __init__.py
+    quiz_tags.py
+  tests.py
+  translation.py
+  urls.py
+  utils.py
+  views.py
+requirements
+  base.txt
+  local.txt
+  production.txt
+requirements.txt
+result
+  __init__.py
+  admin.py
+  apps.py
+  models.py
+  tests.py
+  urls.py
+  views.py
+scripts
+  __init__.py
+  generate_fake_accounts_data.py
+  generate_fake_core_data.py
+  generate_fake_data.py
+search
+  __init__.py
+  admin.py
+  apps.py
+  models.py
+  templatetags
+    __init__.py
+    class_name.py
+  tests.py
+  urls.py
+  views.py

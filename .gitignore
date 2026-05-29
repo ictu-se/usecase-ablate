@@ -6,7 +6,6 @@ venv/
 
 results/
 figures/
-artifact_packs/
 springer_manuscript/
 SUBMISSION*/
 *.pdf
@@ -16,3 +15,6 @@ SUBMISSION*/
 *.log
 *.out
 *.zip
+
+!paper_artifacts/
+!paper_artifacts/**

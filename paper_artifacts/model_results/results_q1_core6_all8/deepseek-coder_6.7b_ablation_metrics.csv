@@ -1,0 +1,97 @@
+repo,project,condition,model,artifact_chars,gold_use_cases,predicted_use_cases,matched_use_cases,parse_ok,actor_recall,use_case_recall,path_fidelity,behavior_coverage,unsupported_feature_rate,elapsed_sec,composite_score
+4jean__lav_sms,LAVSMS Laravel School Management,readme_only,deepseek-coder:6.7b,3576,11,0,0,0,0.0,0.0,0.0,0.0,1.0,24.262,0.0
+4jean__lav_sms,LAVSMS Laravel School Management,file_tree_only,deepseek-coder:6.7b,4907,11,6,4,1,0.75,0.36363636363636365,0.0,0.11092342342342343,0.3333333333333333,26.804,36.05779074529075
+4jean__lav_sms,LAVSMS Laravel School Management,readme_plus_code,deepseek-coder:6.7b,39646,11,0,0,0,0.0,0.0,0.0,0.0,1.0,36.049,0.0
+4jean__lav_sms,LAVSMS Laravel School Management,random_code_same_budget,deepseek-coder:6.7b,35828,11,0,0,0,0.0,0.0,0.0,0.0,1.0,37.58,0.0
+4jean__lav_sms,LAVSMS Laravel School Management,full_selected_context,deepseek-coder:6.7b,50577,11,0,0,1,0.0,0.0,0.0,0.0,1.0,59.723,0.0
+4jean__lav_sms,LAVSMS Laravel School Management,oracle_upper_bound,deepseek-coder:6.7b,50594,11,0,0,0,0.0,0.0,0.0,0.0,1.0,46.523,0.0
+AdityaKshettri__Student-Database-Management-System-using-JAVA-Spring-Boot,Student DBMS Spring Boot,readme_only,deepseek-coder:6.7b,255,7,3,2,1,1.0,0.2857142857142857,0.0,0.165,0.3333333333333333,18.781,39.141666666666666
+AdityaKshettri__Student-Database-Management-System-using-JAVA-Spring-Boot,Student DBMS Spring Boot,file_tree_only,deepseek-coder:6.7b,844,7,4,1,1,0.0,0.14285714285714285,0.0,0.13043478260869565,0.75,19.4,9.456521739130434
+AdityaKshettri__Student-Database-Management-System-using-JAVA-Spring-Boot,Student DBMS Spring Boot,readme_plus_code,deepseek-coder:6.7b,17089,7,5,2,1,0.0,0.2857142857142857,0.08333333333333333,0.09065934065934066,0.6,37.033,17.026556776556774
+AdityaKshettri__Student-Database-Management-System-using-JAVA-Spring-Boot,Student DBMS Spring Boot,random_code_same_budget,deepseek-coder:6.7b,23193,7,8,4,1,0.0,0.5714285714285714,0.11309523809523808,0.15723443223443223,0.5,47.181,29.620421245421248
+AdityaKshettri__Student-Database-Management-System-using-JAVA-Spring-Boot,Student DBMS Spring Boot,full_selected_context,deepseek-coder:6.7b,18237,7,4,3,1,0.0,0.42857142857142855,0.10317460317460318,0.1926575698505523,0.25,35.157,27.453355611250352
+AdityaKshettri__Student-Database-Management-System-using-JAVA-Spring-Boot,Student DBMS Spring Boot,oracle_upper_bound,deepseek-coder:6.7b,18966,7,6,4,1,1.0,0.5714285714285714,0.06696428571428571,0.2087620511533555,0.3333333333333333,39.493,51.13738314825271
+Asitha123__Java-Spring-boot-Student-Management-System,Student Management System Spring Boot,readme_only,deepseek-coder:6.7b,595,4,4,1,1,0.0,0.25,0.0,0.045454545454545456,0.75,21.361,11.931818181818182
+Asitha123__Java-Spring-boot-Student-Management-System,Student Management System Spring Boot,file_tree_only,deepseek-coder:6.7b,223,4,2,1,1,1.0,0.25,0.0,0.18181818181818182,0.5,18.458,36.47727272727273
+Asitha123__Java-Spring-boot-Student-Management-System,Student Management System Spring Boot,readme_plus_code,deepseek-coder:6.7b,13344,4,4,3,1,0.0,0.75,0.2222222222222222,0.17651888341543512,0.25,27.975,40.84222769567597
+Asitha123__Java-Spring-boot-Student-Management-System,Student Management System Spring Boot,random_code_same_budget,deepseek-coder:6.7b,13579,4,2,1,1,1.0,0.25,0.0,0.25,0.5,21.786,37.49999999999999
+Asitha123__Java-Spring-boot-Student-Management-System,Student Management System Spring Boot,full_selected_context,deepseek-coder:6.7b,13587,4,4,3,1,0.0,0.75,0.2222222222222222,0.17113095238095236,0.25,26.937,40.76140873015873
+Asitha123__Java-Spring-boot-Student-Management-System,Student Management System Spring Boot,oracle_upper_bound,deepseek-coder:6.7b,14321,4,4,3,1,0.0,0.75,0.2222222222222222,0.21616161616161614,0.25,28.553,41.436868686868685
+JacksonGao1999__StudentManagement,Student Management CRUD,readme_only,deepseek-coder:6.7b,821,6,4,2,1,0.0,0.3333333333333333,0.0,0.15877016129032256,0.5,19.052,19.048219086021508
+JacksonGao1999__StudentManagement,Student Management CRUD,file_tree_only,deepseek-coder:6.7b,435,6,4,3,1,0.0,0.5,0.0,0.14059817475377248,0.25,21.439,27.108972621306588
+JacksonGao1999__StudentManagement,Student Management CRUD,readme_plus_code,deepseek-coder:6.7b,6655,6,2,0,1,1.0,0.0,0.0,0.0,1.0,22.289,20.0
+JacksonGao1999__StudentManagement,Student Management CRUD,random_code_same_budget,deepseek-coder:6.7b,36095,6,0,0,0,0.0,0.0,0.0,0.0,1.0,41.422,0.0
+JacksonGao1999__StudentManagement,Student Management CRUD,full_selected_context,deepseek-coder:6.7b,10738,6,2,0,1,1.0,0.0,0.0,0.0,1.0,21.692,20.0
+JacksonGao1999__StudentManagement,Student Management CRUD,oracle_upper_bound,deepseek-coder:6.7b,19443,6,3,0,1,1.0,0.0,0.0,0.0,1.0,32.423,20.0
+RameshMF__library-management-system,Library Management REST API,readme_only,deepseek-coder:6.7b,245,6,4,2,1,0.5,0.3333333333333333,0.225,0.18121693121693122,0.5,20.801,33.88492063492063
+RameshMF__library-management-system,Library Management REST API,file_tree_only,deepseek-coder:6.7b,238,6,4,2,1,0.5,0.3333333333333333,0.0,0.18803418803418803,0.5,17.95,29.48717948717949
+RameshMF__library-management-system,Library Management REST API,readme_plus_code,deepseek-coder:6.7b,6756,6,0,0,0,0.0,0.0,0.0,0.0,1.0,26.252,0.0
+RameshMF__library-management-system,Library Management REST API,random_code_same_budget,deepseek-coder:6.7b,9121,6,4,3,1,0.5,0.5,0.2611111111111111,0.17286195286195286,0.25,28.429,42.81515151515152
+RameshMF__library-management-system,Library Management REST API,full_selected_context,deepseek-coder:6.7b,7318,6,5,2,1,0.5,0.3333333333333333,0.225,0.17752234993614302,0.6,29.024,32.82950191570882
+RameshMF__library-management-system,Library Management REST API,oracle_upper_bound,deepseek-coder:6.7b,7702,6,5,2,1,0.0,0.3333333333333333,0.225,0.21955128205128205,0.6,31.446,23.459935897435898
+SkyCascade__SkyLearn,SkyLearn Learning Management System,readme_only,deepseek-coder:6.7b,3850,26,3,3,1,0.75,0.11538461538461539,0.0,0.19486758263639983,0.0,23.207,31.961475278007534
+SkyCascade__SkyLearn,SkyLearn Learning Management System,file_tree_only,deepseek-coder:6.7b,1315,26,2,1,1,0.5,0.038461538461538464,0.14285714285714285,0.20833333333333334,0.5,19.221,22.328296703296708
+SkyCascade__SkyLearn,SkyLearn Learning Management System,readme_plus_code,deepseek-coder:6.7b,39670,26,0,0,0,0.0,0.0,0.0,0.0,1.0,39.691,0.0
+SkyCascade__SkyLearn,SkyLearn Learning Management System,random_code_same_budget,deepseek-coder:6.7b,25452,26,4,3,1,0.5,0.11538461538461539,0.047619047619047616,0.167989417989418,0.25,39.865,25.01068376068376
+SkyCascade__SkyLearn,SkyLearn Learning Management System,full_selected_context,deepseek-coder:6.7b,47261,26,0,0,0,0.0,0.0,0.0,0.0,1.0,48.828,0.0
+SkyCascade__SkyLearn,SkyLearn Learning Management System,oracle_upper_bound,deepseek-coder:6.7b,47400,26,0,0,0,0.0,0.0,0.0,0.0,1.0,45.087,0.0
+abdulwahid880__School-Management-system-in-laravel-,Unifiedtransform School Management,readme_only,deepseek-coder:6.7b,10040,14,0,0,0,0.0,0.0,0.0,0.0,1.0,19.865,0.0
+abdulwahid880__School-Management-system-in-laravel-,Unifiedtransform School Management,file_tree_only,deepseek-coder:6.7b,4967,14,5,3,1,0.8333333333333334,0.21428571428571427,0.0,0.050416666666666665,0.4,21.719,30.922916666666666
+abdulwahid880__School-Management-system-in-laravel-,Unifiedtransform School Management,readme_plus_code,deepseek-coder:6.7b,46110,14,2,0,1,0.3333333333333333,0.0,0.0,0.0,1.0,49.005,6.666666666666667
+abdulwahid880__School-Management-system-in-laravel-,Unifiedtransform School Management,random_code_same_budget,deepseek-coder:6.7b,32032,14,0,0,0,0.0,0.0,0.0,0.0,1.0,38.516,0.0
+abdulwahid880__School-Management-system-in-laravel-,Unifiedtransform School Management,full_selected_context,deepseek-coder:6.7b,52018,14,0,0,0,0.0,0.0,0.0,0.0,1.0,45.015,0.0
+abdulwahid880__School-Management-system-in-laravel-,Unifiedtransform School Management,oracle_upper_bound,deepseek-coder:6.7b,52018,14,0,0,0,0.0,0.0,0.0,0.0,1.0,40.812,0.0
+adityagoyal222__django-lms,Django LMS,readme_only,deepseek-coder:6.7b,833,13,5,5,1,0.6666666666666666,0.38461538461538464,0.0,0.14822551361681796,0.0,23.426,39.01825449912406
+adityagoyal222__django-lms,Django LMS,file_tree_only,deepseek-coder:6.7b,630,13,8,4,1,0.3333333333333333,0.3076923076923077,0.13988095238095238,0.08181170681170681,0.5,27.343,26.460692085692084
+adityagoyal222__django-lms,Django LMS,readme_plus_code,deepseek-coder:6.7b,29421,13,0,0,0,0.0,0.0,0.0,0.0,1.0,30.446,0.0
+adityagoyal222__django-lms,Django LMS,random_code_same_budget,deepseek-coder:6.7b,19547,13,8,7,1,0.6666666666666666,0.5384615384615384,0.0,0.19956814522031913,0.125,41.952,43.92300935779196
+adityagoyal222__django-lms,Django LMS,full_selected_context,deepseek-coder:6.7b,30071,13,0,0,0,0.0,0.0,0.0,0.0,1.0,32.792,0.0
+adityagoyal222__django-lms,Django LMS,oracle_upper_bound,deepseek-coder:6.7b,31043,13,8,6,1,0.3333333333333333,0.46153846153846156,0.13789682539682538,0.14120088359984542,0.25,52.634,35.19646258244701
+engripaye__library-management-system,REST Library Management System,readme_only,deepseek-coder:6.7b,3396,8,0,0,0,0.0,0.0,0.0,0.0,1.0,15.972,0.0
+engripaye__library-management-system,REST Library Management System,file_tree_only,deepseek-coder:6.7b,289,8,4,4,1,0.5,0.5,0.1125,0.14326433982683984,0.0,20.892,41.89896509740261
+engripaye__library-management-system,REST Library Management System,readme_plus_code,deepseek-coder:6.7b,13901,8,5,4,1,0.5,0.5,0.08333333333333333,0.1343217535153019,0.2,34.343,39.181492969396196
+engripaye__library-management-system,REST Library Management System,random_code_same_budget,deepseek-coder:6.7b,15432,8,4,3,1,0.5,0.375,0.08333333333333333,0.11252587991718425,0.25,30.277,33.979554865424426
+engripaye__library-management-system,REST Library Management System,full_selected_context,deepseek-coder:6.7b,14567,8,5,4,1,0.5,0.5,0.05,0.09539351851851852,0.2,34.653,37.93090277777778
+engripaye__library-management-system,REST Library Management System,oracle_upper_bound,deepseek-coder:6.7b,17576,8,0,0,0,0.0,0.0,0.0,0.0,1.0,40.884,0.0
+jobic10__student-management-using-django,Student Management System Django,readme_only,deepseek-coder:6.7b,7547,13,3,3,1,0.6666666666666666,0.23076923076923078,0.0,0.19311827956989247,0.0,23.811,34.3070306038048
+jobic10__student-management-using-django,Student Management System Django,file_tree_only,deepseek-coder:6.7b,336,13,3,3,1,0.3333333333333333,0.23076923076923078,0.10833333333333334,0.056613401035444044,0.0,18.087,27.75945742578807
+jobic10__student-management-using-django,Student Management System Django,readme_plus_code,deepseek-coder:6.7b,28971,13,3,2,1,0.6666666666666666,0.15384615384615385,0.0,0.14983164983164982,0.3333333333333333,40.83,27.632090132090138
+jobic10__student-management-using-django,Student Management System Django,random_code_same_budget,deepseek-coder:6.7b,28303,13,3,3,1,0.3333333333333333,0.23076923076923078,0.0,0.17888248229529202,0.0,37.588,27.426826978019125
+jobic10__student-management-using-django,Student Management System Django,full_selected_context,deepseek-coder:6.7b,29327,13,3,2,1,0.6666666666666666,0.15384615384615385,0.1,0.16129032258064516,0.3333333333333333,40.833,29.803970223325067
+jobic10__student-management-using-django,Student Management System Django,oracle_upper_bound,deepseek-coder:6.7b,38735,13,8,6,1,0.6666666666666666,0.46153846153846156,0.0,0.16221764764388225,0.25,63.163,39.420444201837725
+knowledgefactory4u__librarymanagementsystem,Spring Boot Library Management System,readme_only,deepseek-coder:6.7b,2357,10,0,0,0,0.0,0.0,0.0,0.0,1.0,26.936,0.0
+knowledgefactory4u__librarymanagementsystem,Spring Boot Library Management System,file_tree_only,deepseek-coder:6.7b,210,10,4,3,1,0.0,0.3,0.0,0.08993571144108777,0.25,20.18,19.349035671616317
+knowledgefactory4u__librarymanagementsystem,Spring Boot Library Management System,readme_plus_code,deepseek-coder:6.7b,28647,10,7,5,1,1.0,0.5,0.1933333333333333,0.18160098522167487,0.2857142857142857,49.599,51.23353858784894
+knowledgefactory4u__librarymanagementsystem,Spring Boot Library Management System,random_code_same_budget,deepseek-coder:6.7b,27678,10,0,0,0,0.0,0.0,0.0,0.0,1.0,30.774,0.0
+knowledgefactory4u__librarymanagementsystem,Spring Boot Library Management System,full_selected_context,deepseek-coder:6.7b,36207,10,4,3,1,1.0,0.3,0.2222222222222222,0.1433817078978369,0.25,50.182,44.595170062912
+knowledgefactory4u__librarymanagementsystem,Spring Boot Library Management System,oracle_upper_bound,deepseek-coder:6.7b,36908,10,0,0,0,0.0,0.0,0.0,0.0,1.0,38.748,0.0
+mehmetpekdemir__Library-Management-System,Spring Boot Library Management System,readme_only,deepseek-coder:6.7b,1244,8,6,5,1,0.0,0.625,0.12121212121212122,0.10234085213032582,0.16666666666666666,21.178,34.16768853953065
+mehmetpekdemir__Library-Management-System,Spring Boot Library Management System,file_tree_only,deepseek-coder:6.7b,318,8,4,3,1,0.0,0.375,0.0,0.04009661835748792,0.25,20.763,21.22644927536232
+mehmetpekdemir__Library-Management-System,Spring Boot Library Management System,readme_plus_code,deepseek-coder:6.7b,29379,8,5,3,1,0.0,0.375,0.16666666666666666,0.07390564679709481,0.4,48.312,23.566918035289753
+mehmetpekdemir__Library-Management-System,Spring Boot Library Management System,random_code_same_budget,deepseek-coder:6.7b,30947,8,8,4,1,1.0,0.5,0.2859848484848485,0.14968525838091057,0.5,60.922,50.464975845410635
+mehmetpekdemir__Library-Management-System,Spring Boot Library Management System,full_selected_context,deepseek-coder:6.7b,30075,8,7,2,1,0.0,0.25,0.25,0.05184331797235023,0.7142857142857143,56.23,17.384792626728114
+mehmetpekdemir__Library-Management-System,Spring Boot Library Management System,oracle_upper_bound,deepseek-coder:6.7b,31458,8,5,2,1,0.0,0.25,0.25,0.06350806451612903,0.6,51.25,18.702620967741936
+mwinamijr__django-scms,Django School Management System API,readme_only,deepseek-coder:6.7b,2284,14,4,3,1,0.75,0.21428571428571427,0.0,0.15823873409012726,0.25,22.484,32.37358101135192
+mwinamijr__django-scms,Django School Management System API,file_tree_only,deepseek-coder:6.7b,1548,14,3,1,1,0.5,0.07142857142857142,0.5714285714285714,0.2,0.6666666666666666,21.734,30.261904761904756
+mwinamijr__django-scms,Django School Management System API,readme_plus_code,deepseek-coder:6.7b,33790,14,0,0,0,0.0,0.0,0.0,0.0,1.0,41.958,0.0
+mwinamijr__django-scms,Django School Management System API,random_code_same_budget,deepseek-coder:6.7b,19928,14,3,1,1,0.5,0.07142857142857142,0.0,0.10526315789473684,0.6666666666666666,31.302,17.412280701754383
+mwinamijr__django-scms,Django School Management System API,full_selected_context,deepseek-coder:6.7b,41131,14,2,1,1,0.5,0.07142857142857142,0.0,0.08823529411764706,0.5,44.339,18.823529411764707
+mwinamijr__django-scms,Django School Management System API,oracle_upper_bound,deepseek-coder:6.7b,46079,14,0,0,0,0.0,0.0,0.0,0.0,1.0,56.257,0.0
+openfun__marsha,Marsha Educational Media Platform,readme_only,deepseek-coder:6.7b,10040,15,0,0,0,0.0,0.0,0.0,0.0,1.0,17.301,0.0
+openfun__marsha,Marsha Educational Media Platform,file_tree_only,deepseek-coder:6.7b,5007,15,6,1,1,0.3333333333333333,0.06666666666666667,0.0,0.13157894736842105,0.8333333333333334,24.807,12.640350877192983
+openfun__marsha,Marsha Educational Media Platform,readme_plus_code,deepseek-coder:6.7b,46104,15,0,0,0,0.0,0.0,0.0,0.0,1.0,39.569,0.0
+openfun__marsha,Marsha Educational Media Platform,random_code_same_budget,deepseek-coder:6.7b,35901,15,0,0,0,0.0,0.0,0.0,0.0,1.0,35.58,0.0
+openfun__marsha,Marsha Educational Media Platform,full_selected_context,deepseek-coder:6.7b,52018,15,0,0,0,0.0,0.0,0.0,0.0,1.0,44.193,0.0
+openfun__marsha,Marsha Educational Media Platform,oracle_upper_bound,deepseek-coder:6.7b,52018,15,0,0,0,0.0,0.0,0.0,0.0,1.0,78.664,0.0
+thakurpdhiraj__library_management_system,Library Management System Microservices,readme_only,deepseek-coder:6.7b,5867,12,6,5,1,0.6666666666666666,0.4166666666666667,0.0,0.16091461687290556,0.16666666666666666,29.054,38.66371925309359
+thakurpdhiraj__library_management_system,Library Management System Microservices,file_tree_only,deepseek-coder:6.7b,2662,12,8,3,1,0.6666666666666666,0.25,0.0,0.0977450980392157,0.625,26.937,27.299509803921566
+thakurpdhiraj__library_management_system,Library Management System Microservices,readme_plus_code,deepseek-coder:6.7b,41931,12,0,0,0,0.0,0.0,0.0,0.0,1.0,52.015,0.0
+thakurpdhiraj__library_management_system,Library Management System Microservices,random_code_same_budget,deepseek-coder:6.7b,28327,12,4,4,1,0.6666666666666666,0.3333333333333333,0.08482142857142858,0.12168121476632114,0.0,47.386,38.52164679292339
+thakurpdhiraj__library_management_system,Library Management System Microservices,full_selected_context,deepseek-coder:6.7b,50617,12,0,0,0,0.0,0.0,0.0,0.0,1.0,44.615,0.0
+thakurpdhiraj__library_management_system,Library Management System Microservices,oracle_upper_bound,deepseek-coder:6.7b,50637,12,0,0,0,0.0,0.0,0.0,0.0,1.0,59.71,0.0
+tough-dev-school__education-backend,Tough Dev School Education Backend,readme_only,deepseek-coder:6.7b,2897,17,2,1,1,0.4,0.058823529411764705,0.0,0.027777777777777776,0.5,20.454,15.475490196078434
+tough-dev-school__education-backend,Tough Dev School Education Backend,file_tree_only,deepseek-coder:6.7b,5144,17,8,1,1,0.4,0.058823529411764705,0.0,0.18181818181818182,0.875,34.204,14.036096256684495
+tough-dev-school__education-backend,Tough Dev School Education Backend,readme_plus_code,deepseek-coder:6.7b,33754,17,2,0,1,0.0,0.0,0.0,0.0,1.0,38.307,0.0
+tough-dev-school__education-backend,Tough Dev School Education Backend,random_code_same_budget,deepseek-coder:6.7b,22708,17,0,0,0,0.0,0.0,0.0,0.0,1.0,27.68,0.0
+tough-dev-school__education-backend,Tough Dev School Education Backend,full_selected_context,deepseek-coder:6.7b,46868,17,0,0,0,0.0,0.0,0.0,0.0,1.0,38.086,0.0
+tough-dev-school__education-backend,Tough Dev School Education Backend,oracle_upper_bound,deepseek-coder:6.7b,46394,17,0,0,1,0.0,0.0,0.0,0.0,1.0,46.882,0.0

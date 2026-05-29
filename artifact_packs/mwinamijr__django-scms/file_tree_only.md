@@ -1,0 +1,125 @@
+# File tree
+README.md
+academic
+  __init__.py
+  admin.py
+  apps.py
+  management
+    commands
+      __init__.py
+      update_student_debt.py
+      update_unpaid_salaries.py
+  models.py
+  serializers.py
+  tests.py
+  validators.py
+  views.py
+administration
+  __init__.py
+  admin.py
+  apps.py
+  common_objs.py
+  models.py
+  permissions.py
+  serializers.py
+  tests.py
+  views.py
+api
+  __init__.py
+  academic
+    urls.py
+  admin.py
+  administration
+    urls.py
+  apps.py
+  assignments
+    urls.py
+  attendance
+    urls.py
+  blog
+    urls.py
+  exceptions.py
+  finance
+    urls.py
+  journals
+    urls.py
+  middleware.py
+  notes
+    urls.py
+  schedule
+    urls.py
+  serializers.py
+  sis
+    urls.py
+  users
+    urls.py
+  views.py
+attendance
+  __init__.py
+  admin.py
+  apps.py
+  models.py
+  serializers.py
+  tests.py
+  views.py
+examination
+  __init__.py
+  admin.py
+  apps.py
+  models.py
+  serializers.py
+  tests.py
+  views.py
+finance
+  __init__.py
+  admin.py
+  apps.py
+  models.py
+  serializers.py
+  tests.py
+  views.py
+manage.py
+notes
+  __init__.py
+  admin.py
+  apps.py
+  models.py
+  serializers.py
+  tests.py
+  views.py
+requirements.txt
+schedule
+  __init__.py
+  admin.py
+  apps.py
+  management
+    commands
+      generate_timetable.py
+  models.py
+  serializers.py
+  tests.py
+  views.py
+school
+  __init__.py
+  asgi.py
+  settings.py
+  urls.py
+  wsgi.py
+sis
+  __init__.py
+  admin.py
+  apps.py
+  models.py
+  serializers.py
+  tests.py
+  views.py
+users
+  __init__.py
+  admin.py
+  apps.py
+  forms.py
+  managers.py
+  models.py
+  serializers.py
+  tests.py
+  views.py

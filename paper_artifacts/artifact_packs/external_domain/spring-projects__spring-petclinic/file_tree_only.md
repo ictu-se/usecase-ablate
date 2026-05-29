@@ -1,0 +1,48 @@
+# File tree
+.devcontainer
+  devcontainer.json
+.gitpod.yml
+.mvn
+  wrapper
+    maven-wrapper.properties
+LICENSE.txt
+README.md
+build.gradle
+docker-compose.yml
+gradle
+  wrapper
+    gradle-wrapper.properties
+k8s
+  db.yml
+  petclinic.yml
+pom.xml
+settings.gradle
+src
+  checkstyle
+    nohttp-checkstyle-suppressions.xml
+    nohttp-checkstyle.xml
+  main
+    java
+      org
+        springframework
+          samples
+    resources
+      application-mysql.properties
+      application-postgres.properties
+      application.properties
+      banner.txt
+      messages
+        messages.properties
+        messages_de.properties
+        messages_en.properties
+        messages_es.properties
+        messages_fa.properties
+        messages_ko.properties
+        messages_pt.properties
+        messages_ru.properties
+        messages_tr.properties
+  test
+    java
+      org
+        springframework
+          samples

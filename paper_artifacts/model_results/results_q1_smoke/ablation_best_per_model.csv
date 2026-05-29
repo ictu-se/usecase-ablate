@@ -1,0 +1,2 @@
+model,best_condition,composite_score,use_case_recall,path_fidelity,unsupported_feature_rate,elapsed_sec
+qwen2.5-coder:1.5b,file_tree_only,15.000000000000002,0.0,0.0,1.0,4.08

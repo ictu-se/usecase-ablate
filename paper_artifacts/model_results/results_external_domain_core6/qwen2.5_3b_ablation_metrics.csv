@@ -1,0 +1,37 @@
+repo,project,condition,model,artifact_chars,gold_use_cases,predicted_use_cases,matched_use_cases,parse_ok,actor_recall,use_case_recall,path_fidelity,behavior_coverage,unsupported_feature_rate,elapsed_sec,composite_score
+InvoicePlane__InvoicePlane,InvoicePlane,readme_only,qwen2.5:3b,10040,6,8,2,1,0.5,0.3333333333333333,0.0,0.1518467852257182,0.75,9.273,26.44436844505244
+InvoicePlane__InvoicePlane,InvoicePlane,file_tree_only,qwen2.5:3b,4640,6,8,1,1,1.0,0.16666666666666666,0.0,0.21052631578947367,0.875,8.711,30.241228070175442
+InvoicePlane__InvoicePlane,InvoicePlane,readme_plus_code,qwen2.5:3b,46106,6,8,1,1,1.0,0.16666666666666666,0.14285714285714285,0.18181818181818182,0.875,16.582,32.66774891774892
+InvoicePlane__InvoicePlane,InvoicePlane,random_code_same_budget,qwen2.5:3b,36091,6,3,1,1,1.0,0.16666666666666666,0.0,0.1282051282051282,0.6666666666666666,10.733,31.08974358974359
+InvoicePlane__InvoicePlane,InvoicePlane,full_selected_context,qwen2.5:3b,52018,6,8,1,1,1.0,0.16666666666666666,0.14285714285714285,0.16216216216216217,0.875,18.064,32.37290862290863
+InvoicePlane__InvoicePlane,InvoicePlane,oracle_upper_bound,qwen2.5:3b,52018,6,8,2,1,1.0,0.3333333333333333,0.38095238095238093,0.11944444444444445,0.75,18.646,43.577380952380956
+firefly-iii__firefly-iii,Firefly III,readme_only,qwen2.5:3b,10040,6,8,3,1,1.0,0.5,0.17777777777777778,0.1966645820304357,0.625,9.514,47.7555242860121
+firefly-iii__firefly-iii,Firefly III,file_tree_only,qwen2.5:3b,7090,6,8,2,1,1.0,0.3333333333333333,0.0,0.20064516129032256,0.75,7.551,37.17634408602151
+firefly-iii__firefly-iii,Firefly III,readme_plus_code,qwen2.5:3b,46106,6,8,1,1,1.0,0.16666666666666666,0.0,0.11538461538461539,0.875,14.61,28.814102564102566
+firefly-iii__firefly-iii,Firefly III,random_code_same_budget,qwen2.5:3b,36085,6,6,1,1,1.0,0.16666666666666666,0.0,0.17647058823529413,0.8333333333333334,13.181,30.147058823529417
+firefly-iii__firefly-iii,Firefly III,full_selected_context,qwen2.5:3b,52018,6,10,1,1,1.0,0.16666666666666666,0.0,0.16666666666666666,0.9,21.134,29.33333333333334
+firefly-iii__firefly-iii,Firefly III,oracle_upper_bound,qwen2.5:3b,52018,6,8,1,1,1.0,0.16666666666666666,0.16666666666666666,0.14634146341463414,0.875,20.731,32.611788617886184
+gothinkster__spring-boot-realworld-example-app,RealWorld Spring API,readme_only,qwen2.5:3b,3344,6,8,4,1,0.25,0.6666666666666666,0.0,0.11631316694593878,0.5,6.021,35.07803083752241
+gothinkster__spring-boot-realworld-example-app,RealWorld Spring API,file_tree_only,qwen2.5:3b,946,6,8,3,1,0.25,0.5,0.0,0.10614083983649202,0.625,8.595,27.842112597547374
+gothinkster__spring-boot-realworld-example-app,RealWorld Spring API,readme_plus_code,qwen2.5:3b,39410,6,8,3,1,0.25,0.5,0.05555555555555555,0.1887540973562479,0.625,14.9,30.192422571454824
+gothinkster__spring-boot-realworld-example-app,RealWorld Spring API,random_code_same_budget,qwen2.5:3b,35168,6,8,3,1,0.25,0.5,0.05555555555555555,0.14993894993894993,0.625,16.406,29.610195360195355
+gothinkster__spring-boot-realworld-example-app,RealWorld Spring API,full_selected_context,qwen2.5:3b,46380,6,8,4,1,0.25,0.6666666666666666,0.18333333333333332,0.19081372012406494,0.5,15.904,39.86220580186097
+gothinkster__spring-boot-realworld-example-app,RealWorld Spring API,oracle_upper_bound,qwen2.5:3b,45845,6,8,4,1,0.25,0.6666666666666666,0.325,0.14449497574497575,0.5,17.041,42.000757969507966
+kimai__kimai,Kimai,readme_only,qwen2.5:3b,5634,6,8,2,1,0.6666666666666666,0.3333333333333333,0.0,0.11724137931034484,0.75,6.22,29.258620689655174
+kimai__kimai,Kimai,file_tree_only,qwen2.5:3b,5435,6,8,2,1,0.6666666666666666,0.3333333333333333,0.2,0.12152777777777778,0.75,9.648,33.32291666666667
+kimai__kimai,Kimai,readme_plus_code,qwen2.5:3b,38701,6,8,1,1,0.6666666666666666,0.16666666666666666,0.0,0.045454545454545456,0.875,16.031,21.098484848484848
+kimai__kimai,Kimai,random_code_same_budget,qwen2.5:3b,28485,6,8,0,1,0.6666666666666666,0.0,0.0,0.0,1.0,14.29,13.333333333333334
+kimai__kimai,Kimai,full_selected_context,qwen2.5:3b,46464,6,8,0,1,0.6666666666666666,0.0,0.0,0.0,1.0,17.559,13.333333333333334
+kimai__kimai,Kimai,oracle_upper_bound,qwen2.5:3b,52018,6,0,0,0,0.0,0.0,0.0,0.0,1.0,21.02,0.0
+koel__koel,Koel,readme_only,qwen2.5:3b,6436,6,8,3,1,0.0,0.5,0.0,0.13555555555555557,0.625,6.87,23.283333333333335
+koel__koel,Koel,file_tree_only,qwen2.5:3b,6074,6,8,0,1,0.0,0.0,0.0,0.0,1.0,8.217,0.0
+koel__koel,Koel,readme_plus_code,qwen2.5:3b,37252,6,8,0,1,0.5,0.0,0.0,0.0,1.0,16.473,10.0
+koel__koel,Koel,random_code_same_budget,qwen2.5:3b,33931,6,8,1,1,0.0,0.16666666666666666,0.16666666666666666,0.15384615384615385,0.875,12.668,12.724358974358974
+koel__koel,Koel,full_selected_context,qwen2.5:3b,47212,6,8,1,1,0.0,0.16666666666666666,0.14285714285714285,0.09375,0.875,17.32,11.34672619047619
+koel__koel,Koel,oracle_upper_bound,qwen2.5:3b,48899,6,8,3,1,0.0,0.5,0.15079365079365079,0.1455026455026455,0.625,17.356,26.4484126984127
+spring-projects__spring-petclinic,Spring PetClinic,readme_only,qwen2.5:3b,10040,6,8,1,1,0.0,0.16666666666666666,0.0,0.16666666666666666,0.875,9.302,9.583333333333332
+spring-projects__spring-petclinic,Spring PetClinic,file_tree_only,qwen2.5:3b,897,6,2,1,1,0.0,0.16666666666666666,0.0,0.25925925925925924,0.5,2.523,14.72222222222222
+spring-projects__spring-petclinic,Spring PetClinic,readme_plus_code,qwen2.5:3b,46106,6,8,1,1,0.0,0.16666666666666666,0.0,0.08571428571428572,0.875,16.703,8.369047619047617
+spring-projects__spring-petclinic,Spring PetClinic,random_code_same_budget,qwen2.5:3b,36095,6,8,3,1,0.0,0.5,0.0,0.22891192628034732,0.625,13.637,24.68367889420521
+spring-projects__spring-petclinic,Spring PetClinic,full_selected_context,qwen2.5:3b,52018,6,8,3,1,0.0,0.5,0.0,0.1580319322254806,0.625,18.063,23.62047898338221
+spring-projects__spring-petclinic,Spring PetClinic,oracle_upper_bound,qwen2.5:3b,52018,6,8,5,1,0.0,0.8333333333333334,0.0,0.21419848864655186,0.375,21.056,38.62964399636495

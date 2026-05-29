@@ -1,0 +1,25 @@
+# File tree
+README.md
+main_app
+  EditResultView.py
+  EmailBackend.py
+  __init__.py
+  admin.py
+  apps.py
+  forms.py
+  hod_views.py
+  middleware.py
+  models.py
+  staff_views.py
+  student_views.py
+  tests.py
+  urls.py
+  views.py
+manage.py
+requirements.txt
+student_management_system
+  __init__.py
+  asgi.py
+  settings.py
+  urls.py
+  wsgi.py

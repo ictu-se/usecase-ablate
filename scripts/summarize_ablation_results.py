@@ -1,5 +1,6 @@
 import argparse
 import csv
+import random
 from collections import defaultdict
 from pathlib import Path
 
@@ -32,6 +33,32 @@ def stdev(values):
     return (sum((v - avg) ** 2 for v in vals) / (len(vals) - 1)) ** 0.5
 
 
+def quantile(values, q):
+    vals = sorted(v for v in values if v is not None)
+    if not vals:
+        return None
+    pos = (len(vals) - 1) * q
+    low = int(pos)
+    high = min(low + 1, len(vals) - 1)
+    frac = pos - low
+    return vals[low] * (1 - frac) + vals[high] * frac
+
+
+def bootstrap_ci(values, iterations=2000, seed=20260528):
+    vals = [v for v in values if v is not None]
+    if not vals:
+        return None, None
+    if len(vals) == 1:
+        return vals[0], vals[0]
+    rng = random.Random(seed)
+    means = []
+    n = len(vals)
+    for _ in range(iterations):
+        sample = [vals[rng.randrange(n)] for _ in range(n)]
+        means.append(sum(sample) / n)
+    return quantile(means, 0.025), quantile(means, 0.975)
+
+
 def write_csv(path, rows, fields):
     path.parent.mkdir(parents=True, exist_ok=True)
     with Path(path).open("w", encoding="utf-8", newline="") as handle:
@@ -55,6 +82,10 @@ def model_family(model):
         return "gemma"
     if model.startswith("granite"):
         return "granite"
+    if model.startswith("deepseek-v4"):
+        return "deepseek-v4-api"
+    if model.startswith("claude"):
+        return "anthropic-claude"
     return "other"
 
 
@@ -112,6 +143,22 @@ def main():
     pooled_fields = ["condition", "rows"] + metric_names
     write_csv(results_dir / "ablation_summary_pooled_by_condition.csv", pooled_summary, pooled_fields)
 
+    ci_rows = []
+    for condition, group in sorted(pooled_by_condition.items()):
+        out = {"condition": condition, "rows": len(group)}
+        for metric in ["composite_score", "use_case_recall", "path_fidelity", "unsupported_feature_rate", "elapsed_sec"]:
+            vals = [as_float(row.get(metric)) for row in group]
+            low, high = bootstrap_ci(vals)
+            out[f"{metric}_mean"] = mean(vals)
+            out[f"{metric}_sd"] = stdev(vals)
+            out[f"{metric}_ci_low"] = low
+            out[f"{metric}_ci_high"] = high
+        ci_rows.append(out)
+    ci_fields = ["condition", "rows"]
+    for metric in ["composite_score", "use_case_recall", "path_fidelity", "unsupported_feature_rate", "elapsed_sec"]:
+        ci_fields.extend([f"{metric}_mean", f"{metric}_sd", f"{metric}_ci_low", f"{metric}_ci_high"])
+    write_csv(results_dir / "ablation_condition_bootstrap_ci.csv", ci_rows, ci_fields)
+
     repo_summary = []
     for (repo, condition), group in sorted(by_repo_condition.items()):
         out = {"repo": repo, "condition": condition, "rows": len(group)}
@@ -123,6 +170,8 @@ def main():
     best_by_model = []
     grouped_by_model = defaultdict(list)
     for row in summary:
+        if row["condition"] == "oracle_upper_bound":
+            continue
         grouped_by_model[row["model"]].append(row)
     for model, group in sorted(grouped_by_model.items()):
         best = max(group, key=lambda row: row["composite_score"] if row["composite_score"] is not None else -1)
@@ -185,10 +234,14 @@ def main():
 
     comparisons = [
         ("readme_plus_code_minus_readme_only", "readme_plus_code", "readme_only"),
+        ("bm25_minus_readme_plus_code", "bm25_retrieved_code", "readme_plus_code"),
+        ("bm25_minus_random_code", "bm25_retrieved_code", "random_code_same_budget"),
         ("full_minus_readme_plus_code", "full_selected_context", "readme_plus_code"),
         ("readme_plus_code_minus_file_tree", "readme_plus_code", "file_tree_only"),
+        ("readme_plus_code_minus_random_code", "readme_plus_code", "random_code_same_budget"),
         ("routes_minus_file_tree", "routes_controllers", "file_tree_only"),
         ("models_minus_file_tree", "models_services", "file_tree_only"),
+        ("oracle_upper_bound_minus_readme_plus_code", "oracle_upper_bound", "readme_plus_code"),
     ]
     paired_rows = []
     for model in sorted({row["model"] for row in rows}):
@@ -209,6 +262,9 @@ def main():
             for metric, values in diffs.items():
                 out[f"{metric}_delta_mean"] = mean(values)
                 out[f"{metric}_delta_sd"] = stdev(values)
+                low, high = bootstrap_ci(values)
+                out[f"{metric}_delta_ci_low"] = low
+                out[f"{metric}_delta_ci_high"] = high
             paired_rows.append(out)
 
     pooled_repo_condition = {}
@@ -234,11 +290,14 @@ def main():
         for metric, values in diffs.items():
             out[f"{metric}_delta_mean"] = mean(values)
             out[f"{metric}_delta_sd"] = stdev(values)
+            low, high = bootstrap_ci(values)
+            out[f"{metric}_delta_ci_low"] = low
+            out[f"{metric}_delta_ci_high"] = high
         paired_rows.append(out)
 
     paired_fields = ["model", "comparison", "pairs"]
     for metric in ["composite_score", "use_case_recall", "path_fidelity", "unsupported_feature_rate", "elapsed_sec"]:
-        paired_fields.extend([f"{metric}_delta_mean", f"{metric}_delta_sd"])
+        paired_fields.extend([f"{metric}_delta_mean", f"{metric}_delta_sd", f"{metric}_delta_ci_low", f"{metric}_delta_ci_high"])
     write_csv(results_dir / "ablation_paired_deltas.csv", paired_rows, paired_fields)
 
     try:
@@ -255,7 +314,10 @@ def main():
         "routes_controllers",
         "models_services",
         "readme_plus_code",
+        "bm25_retrieved_code",
+        "random_code_same_budget",
         "full_selected_context",
+        "oracle_upper_bound",
     ]
     compact = {
         "readme_only": "README",
@@ -264,10 +326,13 @@ def main():
         "routes_controllers": "Routes",
         "models_services": "Models",
         "readme_plus_code": "README+code",
+        "bm25_retrieved_code": "BM25",
+        "random_code_same_budget": "Random code",
         "full_selected_context": "Full",
+        "oracle_upper_bound": "Oracle UB",
     }
     plot_rows = pooled_summary
-    plot_rows = sorted(plot_rows, key=lambda r: order.index(r["condition"]))
+    plot_rows = sorted(plot_rows, key=lambda r: order.index(r["condition"]) if r["condition"] in order else 999)
     labels = [compact[r["condition"]] for r in plot_rows]
     scores = [r["composite_score"] for r in plot_rows]
     unsupported = [r["unsupported_feature_rate"] for r in plot_rows]

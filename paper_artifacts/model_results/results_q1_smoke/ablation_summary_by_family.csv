@@ -1,0 +1,2 @@
+family,models,mean_best_score,mean_best_use_case_recall,mean_best_path_fidelity,mean_best_unsupported_feature_rate,mean_best_elapsed_sec,best_model,best_condition,best_score
+qwen-coder,1,15.000000000000002,0.0,0.0,1.0,4.08,qwen2.5-coder:1.5b,file_tree_only,15.000000000000002

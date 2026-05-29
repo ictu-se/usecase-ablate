@@ -1,0 +1,263 @@
+# File tree
+.junie
+  PR-1441-security-dry-analysis.md
+  guidelines.md
+ADDITIONAL_SECURITY_FIXES_v1.7.2.md
+AGENTS.md
+CHANGELOG.md
+CONTRIBUTING.md
+CVE_REQUEST_SUMMARY.md
+Gruntfile.js
+INSTALLATION.md
+LICENSE.txt
+MIGRATION_GUIDE_v1.7.2.md
+README.md
+RELEASE_NOTES_v1.7.2_PR_TABLE.md
+SECURITY.md
+SECURITY_ADVISORY_ARBITRARY_FILE_DELETION.md
+SECURITY_ADVISORY_RCE_FIX.md
+SECURITY_AUDIT_XSS_FAMILY_NAME.md
+SECURITY_AUDIT_XSS_UNIT_INVOICE.md
+SECURITY_DOCS_README.md
+SECURITY_SUMMARY.md
+TRANSLATIONS.md
+UPGRADE.md
+application
+  config
+    autoload.php
+    config.php
+    constants.php
+    database.php
+    doctypes.php
+    foreign_chars.php
+    hooks.php
+    index.html
+    invoice_plane.php
+    memcached.php
+    migration.php
+    mimes.php
+    number_formats.php
+    payment_gateways.php
+    profiler.php
+    routes.php
+    smileys.php
+    user_agents.php
+  controllers
+    Welcome.php
+    index.html
+  core
+    Admin_Controller.php
+    Base_Controller.php
+    Form_Validation_Model.php
+    Guest_Controller.php
+    MY_Loader.php
+    MY_Model.php
+    MY_Router.php
+    Response_Model.php
+    User_Controller.php
+    Validator.php
+    XSS_Protection_Trait.php
+    index.html
+  errors
+    error_404.php
+    error_db.php
+    error_general.php
+    error_php.php
+    index.html
+  helpers
+    XMLconfigs
+      README.md
+    client_helper.php
+    country-list
+      ar
+        country.php
+      bg
+        country.php
+      ca
+        country.php
+      cs
+        country.php
+      da
+        country.php
+      de
+        country.php
+      de_CH
+        country.php
+      el
+        country.php
+      en
+        country.php
+      es
+        country.php
+      fa
+        country.php
+      fi
+        country.php
+      fr
+        country.php
+      fr_CA
+        country.php
+      he
+        country.php
+      hr
+        country.php
+      id
+        country.php
+      it
+        country.php
+      ja
+        country.php
+      lt
+        country.php
+      lv
+        country.php
+      nl
+        country.php
+      no
+        country.php
+      pl
+        country.php
+      pt_BR
+        country.php
+      pt_PT
+        country.php
+      ro
+        country.php
+      ru
+        country.php
+      sk
+        country.php
+      sl
+        country.php
+      sq
+        country.php
+      sr_CS
+        country.php
+      sv_SE
+        country.php
+      tr
+        country.php
+      vi
+        country.php
+    country_helper.php
+    custom_values_helper.php
+    date_helper.php
+    diacritics_helper.php
+    dropzone_helper.php
+    e-invoice_helper.php
+    echo_helper.php
+    file_security_helper.php
+    html_sanitizer_helper.php
+    index.html
+    invoice_helper.php
+    ip_security_helper.php
+    json_error_helper.php
+    mailer_helper.php
+    mpdf_helper.php
+    number_helper.php
+    orphan_helper.php
+    pager_helper.php
+    payments_helper.php
+    pdf_helper.php
+    redirect_helper.php
+    security_helper.php
+    settings_helper.php
+    template_helper.php
+    trans_helper.php
+    user_helper.php
+    zugferd_helper.php
+  hooks
+    SetTimezoneClass.php
+    index.html
+  index.html
+  language
+    english
+      custom_lang.php
+      gateway_lang.php
+      index.html
+      ip_lang.php
+  libraries
+    ClientTitleEnum.php
+    Crypt.php
+    Cryptor.php
+    MY_Form_validation.php
+    QrCode.php
+    Sumex.php
+    XMLtemplates
+      README.md
+    gateways
+      PaypalLib.php
+    index.html
+  modules
+    clients
+      Enums
+        ClientTitleEnum.php
+      controllers
+        Ajax.php
+        Clients.php
+      models
+        Mdl_client_notes.php
+        Mdl_clients.php
+      views
+        form.php
+        index.php
+        partial_client_address.php
+        partial_client_einvoicing.php
+        partial_client_table.php
+        partial_notes.php
+        script_select2_client_id.js
+        view.php
+    custom_fields
+      controllers
+        Custom_fields.php
+      models
+        Mdl_client_custom.php
+        Mdl_custom_fields.php
+        Mdl_invoice_custom.php
+        Mdl_payment_custom.php
+        Mdl_quote_custom.php
+        Mdl_user_custom.php
+      views
+        form.php
+        index.php
+        partial_custom_fields_table.php
+    custom_values
+    dashboard
+    email_templates
+    families
+    filter
+    guest
+    import
+    invoice_groups
+    invoices
+    layout
+    mailer
+    payment_methods
+    payments
+    products
+    projects
+    quotes
+    reports
+    sessions
+    settings
+    setup
+    tasks
+    tax_rates
+    units
+    upload
+    user_clients
+    users
+    welcome
+  third_party
+  views
+compose.yml
+composer.json
+index.php
+package.json
+phpcs.xml
+pint.json
+rector.php
+resources
+robots.txt
+uploads
+verify_file_deletion_fix.php

@@ -1,0 +1,77 @@
+# README
+## README.md
+# Backend for [tough-dev.school](https://tough-dev.school/)
+
+![CI](https://github.com/tough-dev-school/education-backend/actions/workflows/ci.yml/badge.svg) [![Crossplatform](https://github.com/tough-dev-school/education-backend/actions/workflows/crossplatform.yml/badge.svg)](https://github.com/tough-dev-school/education-backend/actions/workflows/crossplatform.yml)
+
+Django-based production project, integrated with Tinkoff, Dashamail, Postmark, S3 and telegram. Frontend is built on vue.js in the [separate repo](https://github.com/tough-dev-school/lms-frontend-v2).
+
+## Configuration
+
+Configuration is stored in `src/core/.env`, for examples see `src/core/.env.ci`
+
+## Installing on a local machine
+
+This project requires python 3.14. Deps are managed by [uv](https://docs.astral.sh/uv/).
+
+Install requirements:
+
+```bash
+uv sync
+```
+
+Configure postgres and redis. It's convenient to use docker and docker-compose:
+
+```bash
+docker compose up -d
+```
+
+If you don't have access to de-anonymized db image use `postgres:13.6-alpine` in `docker-compose.yml` instead:
+
+```yaml
+postgres:
+    image: postgres:13.6-alpine
+    ...
+```
+
+Run the server:
+
+```bash
+cp src/core/.env.ci src/core/.env
+
+uv run python src/manage.py migrate
+uv run python src/manage.py createsuperuser
+
+make server
+```
+
+Testing:
+
+```bash
+# run lint
+make lint
+
+# run unit tests
+make test
+```
+
+## Backend Code requirements
+
+### Style
+
+* Obey [django's style guide](https://docs.djangoproject.com/en/dev/internals/contributing/writing-code/coding-style).
+* Configure your IDE to use `ruff` for checking your python code. For running linters manualy, do `make lint`
+* Prefer English over your native language in comments and commit messages.
+* Commit messages should contain the unique id of issue they are linked to (refs #100500)
+* Every model and a model method should have a docstring.
+
+### Code organisation
+
+* KISS and DRY.
+* Obey [django best practices](http://django-best-practices.readthedocs.io/en/latest/index.html)
+* If you want to implement some business logic — make a service for that. Service examples: [UserCreator](https://github.com/tough-dev-school/education-backend/blob/master/src/apps/users/services/user_creator.py), [OrderCreator](https://github.com/tough-dev-school/education-backend/blob/master/src/apps/orders/services/order_creator.py)
+* **No logic is allowed within the views or templates**. Only services and models.
+* Use PEP-484 [type hints](https://www.python.org/dev/peps/pep-0484/) when possible.
+* Prefer [Manager](https://docs.djangoproject.com/en/dev/topics/db/managers/) methods over static methods.
+* Do not use [signals](https://docs.djangoproject.com/en/dev/topics/signals/) for business logic. Signals are good only for notification purposes.
+* No l10n is allowed in python code, use [django translation](https://docs.djangoproject.com/en/dev/topics/i18n/translation/).

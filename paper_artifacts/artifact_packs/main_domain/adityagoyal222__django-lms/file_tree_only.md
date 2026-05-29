@@ -1,0 +1,54 @@
+# File tree
+README.md
+assignments
+  __init__.py
+  admin.py
+  apps.py
+  forms.py
+  models.py
+  schema.py
+  tests.py
+  urls.py
+  views.py
+courses
+  __init__.py
+  admin.py
+  apps.py
+  context_processors.py
+  models.py
+  schema.py
+  tests.py
+  urls.py
+  views.py
+django_lms
+  __init__.py
+  asgi.py
+  schema.py
+  settings.py
+  urls.py
+  views.py
+  wsgi.py
+docker-compose.yml
+dumpdata.json
+manage.py
+requirements.txt
+resources
+  __init__.py
+  admin.py
+  apps.py
+  forms.py
+  models.py
+  schema.py
+  tests.py
+  urls.py
+  views.py
+users
+  __init__.py
+  admin.py
+  apps.py
+  forms.py
+  models.py
+  schema.py
+  tests.py
+  urls.py
+  views.py
